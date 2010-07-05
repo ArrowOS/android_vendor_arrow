@@ -90,7 +90,7 @@ backup_file() {
       then
          echo "Skipping odexed apk $1";
       else
-         cp $1 $C/$F
+         cp -p $1 $C/$F
       fi
    fi
 }
