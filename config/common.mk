@@ -26,6 +26,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl
 
+	+
+# init file
+PRODUCT_COPY_FILES += \
+    vendor/arrow/prebuilt/common/etc/init.local.rc:root/init.arrow.rc
+
 # Packages
 include vendor/arrow/config/packages.mk
 
