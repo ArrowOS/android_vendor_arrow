@@ -18,7 +18,7 @@ check_prereq() {
 }
 
 check_installscript() {
-   if [ -f "/tmp/.installscript" ];
+   if [ -f "/tmp/.installscript" -a ! -f "$S/etc/force_backuptool" ];
    then
       echo "/tmp/.installscript found. Skipping backuptool."
       PROCEED=0;
@@ -68,6 +68,7 @@ framework/com.google.android.maps.jar
 lib/libinterstitial.so
 lib/libspeech.so
 etc/custom_backup_list.txt
+etc/force_backuptool
 EOF
 }
 
