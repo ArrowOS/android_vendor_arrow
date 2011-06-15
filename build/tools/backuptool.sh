@@ -135,9 +135,15 @@ restore_file() {
    fi
 }
 
+# don't (u)mount system if already done
+UMOUNT=0
+
 case "$1" in
    backup)
-      mount $S
+      if [ ! -f "$S/build.prop" ]; then
+         mount $S
+         UMOUNT=1
+      fi
       check_prereq;
       check_installscript;
       if [ $PROCEED -ne 0 ];
@@ -150,9 +156,15 @@ case "$1" in
            done
          done
       fi
-      umount $S
+      if [ $UMOUNT -ne 0 ]; then
+         umount $S
+      fi
    ;;
    restore)
+      if [ ! -f "$S/build.prop" ]; then
+         mount $S
+         UMOUNT=1
+      fi
       check_prereq;
       check_installscript;
       if [ $PROCEED -ne 0 ];
@@ -166,6 +178,10 @@ case "$1" in
          done
          rm -rf $C
       fi
+      if [ $UMOUNT -ne 0 ]; then
+         umount $S
+      fi
+      sync
    ;;
    *)
       echo "Usage: $0 {backup|restore}"
