@@ -55,3 +55,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # (for devices that check this)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     net.tethering.noprovisioning=true
+
+# Enable ADB authentication
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.adb.secure=1
