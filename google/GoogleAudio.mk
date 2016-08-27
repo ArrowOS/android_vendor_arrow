@@ -16,14 +16,23 @@ LOCAL_PATH := vendor/themes/google
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/alarms/Argon.ogg:system/media/audio/alarms/Argon.ogg \
+    $(LOCAL_PATH)/alarms/Awaken.ogg:system/media/audio/alarms/Awaken.ogg \
+    $(LOCAL_PATH)/alarms/Bounce.ogg:system/media/audio/alarms/Bounce.ogg \
     $(LOCAL_PATH)/alarms/Carbon.ogg:system/media/audio/alarms/Carbon.ogg \
+    $(LOCAL_PATH)/alarms/Drip.ogg:system/media/audio/alarms/Drip.ogg \
+    $(LOCAL_PATH)/alarms/Gallop.ogg:system/media/audio/alarms/Gallop.ogg \
     $(LOCAL_PATH)/alarms/Helium.ogg:system/media/audio/alarms/Helium.ogg \
     $(LOCAL_PATH)/alarms/Krypton.ogg:system/media/audio/alarms/Krypton.ogg \
     $(LOCAL_PATH)/alarms/Neon.ogg:system/media/audio/alarms/Neon.ogg \
+    $(LOCAL_PATH)/alarms/Nudge.ogg:system/media/audio/alarms/Nudge.ogg \
+    $(LOCAL_PATH)/alarms/Orbit.ogg:system/media/audio/alarms/Orbit.ogg \
     $(LOCAL_PATH)/alarms/Osmium.ogg:system/media/audio/alarms/Osmium.ogg \
     $(LOCAL_PATH)/alarms/Oxygen.ogg:system/media/audio/alarms/Oxygen.ogg \
     $(LOCAL_PATH)/alarms/Platinum.ogg:system/media/audio/alarms/Platinum.ogg \
+    $(LOCAL_PATH)/alarms/Rise.ogg:system/media/audio/alarms/Rise.ogg \
+    $(LOCAL_PATH)/alarms/Sway.ogg:system/media/audio/alarms/Sway.ogg \
     $(LOCAL_PATH)/alarms/Timer.ogg:system/media/audio/alarms/Timer.ogg \
+    $(LOCAL_PATH)/alarms/Wag.ogg:system/media/audio/alarms/Wag.ogg \
     $(LOCAL_PATH)/effects/audio_end.ogg:system/media/audio/ui/audio_end.ogg \
     $(LOCAL_PATH)/effects/audio_initiate.ogg:system/media/audio/ui/audio_initiate.ogg \
     $(LOCAL_PATH)/effects/camera_click.ogg:system/media/audio/ui/camera_click.ogg \
