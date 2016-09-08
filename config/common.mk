@@ -47,6 +47,17 @@ PRODUCT_COPY_FILES += \
     vendor/arrow/build/tools/backuptool.functions:install/bin/backuptool.functions \
     vendor/arrow/build/tools/50-cm.sh:system/addon.d/50-cm.sh
 
+# LatinIME gesture typing
+ifeq ($(TARGET_ARCH),arm64)
+PRODUCT_COPY_FILES += \
+    vendor/arrow/prebuilt/common/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so \
+    vendor/arrow/prebuilt/common/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinimegoogle.so
+else
+PRODUCT_COPY_FILES += \
+    vendor/arrow/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so \
+    vendor/arrow/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+endif
+
 # World APN list
 PRODUCT_COPY_FILES += \
     vendor/arrow/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
