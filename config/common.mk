@@ -67,3 +67,6 @@ include vendor/arrow/config/packages.mk
 
 # Props
 include vendor/arrow/config/props.mk
+
+# include definitions for SDCLANG
+include device/qcom/common/sdclang/sdclang.mk
