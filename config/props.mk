@@ -20,6 +20,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
 endif
 
+ifeq ($(BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE),)
+  ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.device.cache_dir=/data/cache
+else
+  ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.device.cache_dir=/cache
+endif
+
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -32,3 +40,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.build.selinux=1 \
     persist.sys.root_access=0
+
