@@ -48,8 +48,10 @@ custom_dependencies = "arrow.dependencies"
 org_manifest = "ArrowOS"  # leave empty if org is provided in manifest
 org_display = "ArrowOS"  # needed for displaying
 
-github_auth = None
+arrow_manifest = ".repo/manifests/arrow.xml"
+hals_manifest = ".repo/manifests/hals.xml"
 
+github_auth = None
 
 local_manifests = '.repo/local_manifests'
 if not os.path.exists(local_manifests):
@@ -77,6 +79,14 @@ def add_auth(g_req):
     if github_auth:
         g_req.add_header("Authorization", "Basic %s" % github_auth)
 
+def exists_in_tree(lm, repository):
+     for child in lm.getchildren():
+        try:
+            if child.attrib['path'].endswith(repository):
+                return child
+        except:
+            pass
+     return None
 
 def indent(elem, level=0):
     # in-place prettyprint formatter
@@ -155,6 +165,9 @@ def is_in_manifest(project_path):
 
 def add_to_manifest(repos, fallback_branch=None):
     lm = load_manifest(custom_local_manifest)
+    mlm = load_manifest(default_manifest)
+    arrowm = load_manifest(arrow_manifest)
+    halm = load_manifest(hals_manifest)
 
     for repo in repos:
         repo_name = repo['repository']
@@ -178,6 +191,21 @@ def add_to_manifest(repos, fallback_branch=None):
 
 	if "/" not in repo_name and repo_remote is not org_manifest:
 	    repo_name = os.path.join(org_display, repo_name)
+
+	existing_m_project = None
+        if exists_in_tree(mlm, repo_target) != None:
+	    existing_m_project = exists_in_tree(mlm, repo_target)
+        elif exists_in_tree(arrowm, repo_target) != None:
+	    existing_m_project = exists_in_tree(arrowm, repo_target)
+        elif exists_in_tree(halm, repo_target) != None:
+	    existing_m_project = exists_in_tree(halm, repo_target)
+
+        if existing_m_project != None:
+            if existing_m_project.attrib['path'] == repo['target_path']:
+                print('%s already exists in main manifest, replacing with new dep' % repo_name)
+                lm.append(ElementTree.Element("remove-project", attrib = {
+                    "name": existing_m_project.attrib['name']
+                }))
 
         print('Adding dependency: %s -> %s' % (repo_name, repo_target))
 
