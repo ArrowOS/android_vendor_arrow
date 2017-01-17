@@ -33,10 +33,17 @@ PRODUCT_COPY_FILES += \
     vendor/arrow/prebuilt/common/etc/init.local.rc:system/etc/init/init.arrow.rc
 
 # Backup Tool
+ifeq ($(AB_OTA_UPDATER),true)
+PRODUCT_COPY_FILES += \
+    vendor/arrow/build/tools/backuptool_ab.sh:system/bin/backuptool_ab.sh \
+    vendor/arrow/build/tools/backuptool_ab.functions:system/bin/backuptool_ab.functions \
+    vendor/arrow/build/tools/backuptool_postinstall.sh:system/bin/backuptool_postinstall.sh
+else
 PRODUCT_COPY_FILES += \
     vendor/arrow/build/tools/backuptool.sh:install/bin/backuptool.sh \
     vendor/arrow/build/tools/backuptool.functions:install/bin/backuptool.functions \
     vendor/arrow/build/tools/50-cm.sh:system/addon.d/50-cm.sh
+endif
 
 # World APN list
 PRODUCT_COPY_FILES += \
