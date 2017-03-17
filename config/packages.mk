@@ -89,3 +89,7 @@ PRODUCT_PACKAGES += \
     procmem \
     procrank
 endif
+
+# Charger images
+PRODUCT_PACKAGES += \
+    charger_res_images
