@@ -48,6 +48,10 @@ PRODUCT_COPY_FILES += \
     vendor/arrow/build/tools/backuptool.functions:install/bin/backuptool.functions \
     vendor/arrow/build/tools/50-cm.sh:system/addon.d/50-cm.sh
 
+# Selective SPN list
+PRODUCT_COPY_FILES += \
+    vendor/arrow/prebuilt/common/etc/selective-spn-conf.xml:system/etc/selective-spn-conf.xml
+
 # Packages
 include vendor/arrow/config/packages.mk
 
