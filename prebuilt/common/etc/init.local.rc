@@ -18,6 +18,9 @@ on init
     chmod 0664 /dev/bfqio/rt-display/tasks
     chmod 0220 /dev/bfqio/rt-display/cgroup.event_control
 
+# allow system to communicate pocket state
+    chown system system /sys/kernel/pocket_judge/inpocket
+
 on post-fs-data
     mkdir /data/ssh 0750 root shell
     mkdir /data/ssh/empty 0600 root shell
