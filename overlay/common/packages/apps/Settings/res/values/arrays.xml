@@ -29,4 +29,13 @@
         <item>25</item>
     </integer-array>
 
+    <!-- Array of titles for sim color for multi-sim -->
+    <string-array name="color_picker">
+        <item>Pixel</item>
+        <item>Blue</item>
+        <item>Indigo</item>
+        <item>Purple</item>
+        <item>Pink</item>
+        <item>Red</item>
+    </string-array>
 </resources>
