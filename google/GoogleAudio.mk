@@ -1,4 +1,4 @@
-# Copyright 2016 The Pure Nexus Project
+# Copyright 2016-2017 The Pure Nexus Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,6 +20,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/alarms/Bounce.ogg:system/media/audio/alarms/Bounce.ogg \
     $(LOCAL_PATH)/alarms/Carbon.ogg:system/media/audio/alarms/Carbon.ogg \
     $(LOCAL_PATH)/alarms/Drip.ogg:system/media/audio/alarms/Drip.ogg \
+    $(LOCAL_PATH)/alarms/Flow.ogg:system/media/audio/alarms/Flow.ogg \
     $(LOCAL_PATH)/alarms/Gallop.ogg:system/media/audio/alarms/Gallop.ogg \
     $(LOCAL_PATH)/alarms/Helium.ogg:system/media/audio/alarms/Helium.ogg \
     $(LOCAL_PATH)/alarms/Krypton.ogg:system/media/audio/alarms/Krypton.ogg \
@@ -58,25 +59,42 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/effects/VideoStop.ogg:system/media/audio/ui/VideoStop.ogg \
     $(LOCAL_PATH)/effects/WirelessChargingStarted.ogg:system/media/audio/ui/WirelessChargingStarted.ogg \
     $(LOCAL_PATH)/notifications/Ariel.ogg:system/media/audio/notifications/Ariel.ogg \
+    $(LOCAL_PATH)/notifications/Birdsong.ogg:system/media/audio/notifications/Birdsong.ogg \
     $(LOCAL_PATH)/notifications/Carme.ogg:system/media/audio/notifications/Carme.ogg \
     $(LOCAL_PATH)/notifications/Ceres.ogg:system/media/audio/notifications/Ceres.ogg \
+    $(LOCAL_PATH)/notifications/Chime.ogg:system/media/audio/notifications/Chime.ogg \
+    $(LOCAL_PATH)/notifications/Clink.ogg:system/media/audio/notifications/Clink.ogg \
     $(LOCAL_PATH)/notifications/Elara.ogg:system/media/audio/notifications/Elara.ogg \
     $(LOCAL_PATH)/notifications/Europa.ogg:system/media/audio/notifications/Europa.ogg \
+    $(LOCAL_PATH)/notifications/Flick.ogg:system/media/audio/notifications/Flick.ogg \
+    $(LOCAL_PATH)/notifications/Hey.ogg:system/media/audio/notifications/Hey.ogg \
     $(LOCAL_PATH)/notifications/Iapetus.ogg:system/media/audio/notifications/Iapetus.ogg \
     $(LOCAL_PATH)/notifications/Io.ogg:system/media/audio/notifications/Io.ogg \
+    $(LOCAL_PATH)/notifications/Note.ogg:system/media/audio/notifications/Note.ogg \
     $(LOCAL_PATH)/notifications/Rhea.ogg:system/media/audio/notifications/Rhea.ogg \
     $(LOCAL_PATH)/notifications/Salacia.ogg:system/media/audio/notifications/Salacia.ogg \
+    $(LOCAL_PATH)/notifications/Strum.ogg:system/media/audio/notifications/Strum.ogg \
     $(LOCAL_PATH)/notifications/Tethys.ogg:system/media/audio/notifications/Tethys.ogg \
     $(LOCAL_PATH)/notifications/Titan.ogg:system/media/audio/notifications/Titan.ogg \
+    $(LOCAL_PATH)/notifications/Trill.ogg:system/media/audio/notifications/Trill.ogg \
     $(LOCAL_PATH)/ringtones/Atria.ogg:system/media/audio/ringtones/Atria.ogg \
+    $(LOCAL_PATH)/ringtones/Beats.ogg:system/media/audio/ringtones/Beats.ogg \
     $(LOCAL_PATH)/ringtones/Callisto.ogg:system/media/audio/ringtones/Callisto.ogg \
+    $(LOCAL_PATH)/ringtones/Dance_party.ogg:system/media/audio/ringtones/Dance_party.ogg \
     $(LOCAL_PATH)/ringtones/Dione.ogg:system/media/audio/ringtones/Dione.ogg \
+    $(LOCAL_PATH)/ringtones/Early_bird.ogg:system/media/audio/ringtones/Early_bird.ogg \
     $(LOCAL_PATH)/ringtones/Ganymede.ogg:system/media/audio/ringtones/Ganymede.ogg \
+    $(LOCAL_PATH)/ringtones/Hey_hey.ogg:system/media/audio/ringtones/Hey_hey.ogg \
     $(LOCAL_PATH)/ringtones/Luna.ogg:system/media/audio/ringtones/Luna.ogg \
     $(LOCAL_PATH)/ringtones/Oberon.ogg:system/media/audio/ringtones/Oberon.ogg \
     $(LOCAL_PATH)/ringtones/Phobos.ogg:system/media/audio/ringtones/Phobos.ogg \
     $(LOCAL_PATH)/ringtones/Pyxis.ogg:system/media/audio/ringtones/Pyxis.ogg \
+    $(LOCAL_PATH)/ringtones/Rrrring.ogg:system/media/audio/ringtones/Rrrring.ogg \
     $(LOCAL_PATH)/ringtones/Sedna.ogg:system/media/audio/ringtones/Sedna.ogg \
+    $(LOCAL_PATH)/ringtones/Shooting_star.ogg:system/media/audio/ringtones/Shooting_star.ogg \
+    $(LOCAL_PATH)/ringtones/Spaceship.ogg:system/media/audio/ringtones/Spaceship.ogg \
+    $(LOCAL_PATH)/ringtones/Summer_night.ogg:system/media/audio/ringtones/Summer_night.ogg \
     $(LOCAL_PATH)/ringtones/Titania.ogg:system/media/audio/ringtones/Titania.ogg \
     $(LOCAL_PATH)/ringtones/Triton.ogg:system/media/audio/ringtones/Triton.ogg \
     $(LOCAL_PATH)/ringtones/Umbriel.ogg:system/media/audio/ringtones/Umbriel.ogg \
+    $(LOCAL_PATH)/ringtones/Zen.ogg:system/media/audio/ringtones/Zen.ogg
