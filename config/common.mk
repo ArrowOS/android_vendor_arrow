@@ -38,6 +38,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/arrow/prebuilt/common/etc/spn-conf.xml:system/etc/spn-conf.xml
 
+# Fix Google dialer
+PRODUCT_COPY_FILES += \
+    vendor/arrow/prebuilt/common/etc/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
+
 # Packages
 include vendor/arrow/config/packages.mk
 
