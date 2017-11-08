@@ -42,6 +42,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/arrow/prebuilt/common/etc/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
 
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/arrow/build/tools/backuptool.sh:install/bin/backuptool.sh \
+    vendor/arrow/build/tools/backuptool.functions:install/bin/backuptool.functions \
+    vendor/arrow/build/tools/50-cm.sh:system/addon.d/50-cm.sh
+
 # Packages
 include vendor/arrow/config/packages.mk
 
