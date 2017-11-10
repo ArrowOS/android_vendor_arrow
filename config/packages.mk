@@ -71,6 +71,16 @@ PRODUCT_PACKAGES += \
     YellowAccent \
     WhiteAccent
 
+# Fonts
+PRODUCT_COPY_FILES += \
+    vendor/arrow/fonts/GoogleSans-Regular.ttf:system/fonts/GoogleSans-Regular.ttf \
+    vendor/arrow/fonts/GoogleSans-Medium.ttf:system/fonts/GoogleSans-Medium.ttf \
+    vendor/arrow/fonts/GoogleSans-MediumItalic.ttf:system/fonts/GoogleSans-MediumItalic.ttf \
+    vendor/arrow/fonts/GoogleSans-Italic.ttf:system/fonts/GoogleSans-Italic.ttf \
+    vendor/arrow/fonts/GoogleSans-Bold.ttf:system/fonts/GoogleSans-Bold.ttf \
+    vendor/arrow/fonts/GoogleSans-BoldItalic.ttf:system/fonts/GoogleSans-BoldItalic.ttf
+ADDITIONAL_FONTS_FILE := vendor/arrow/fonts/google-sans.xml
+
 # Extra tools
 PRODUCT_PACKAGES += \
     7z \
