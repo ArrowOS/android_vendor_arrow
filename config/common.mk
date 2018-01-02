@@ -44,7 +44,8 @@ else
 PRODUCT_COPY_FILES += \
     vendor/arrow/build/tools/backuptool.sh:install/bin/backuptool.sh \
     vendor/arrow/build/tools/backuptool.functions:install/bin/backuptool.functions \
-    vendor/arrow/build/tools/50-cm.sh:system/addon.d/50-cm.sh
+    vendor/arrow/build/tools/50-cm.sh:system/addon.d/50-cm.sh \
+    vendor/arrow/build/tools/clean_cache.sh:system/bin/clean_cache.sh
 endif
 
 # World APN list
