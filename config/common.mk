@@ -47,6 +47,9 @@ PRODUCT_COPY_FILES += \
     vendor/arrow/build/tools/50-cm.sh:system/addon.d/50-cm.sh
 endif
 
+PRODUCT_COPY_FILES += \
+    vendor/arrow/build/tools/clean_cache.sh:system/bin/clean_cache.sh
+
 # World APN list
 PRODUCT_COPY_FILES += \
     vendor/arrow/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
