@@ -50,3 +50,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Storage manager
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.storage_manager.enabled=true
+
+# Tethering - allow without requiring a provisioning app
+# (for devices that check this)
+PRODUCT_PROPERTY_OVERRIDES += \
+    net.tethering.noprovisioning=true
