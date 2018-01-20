@@ -111,7 +111,7 @@
   <apn carrier="Test IMS"
       mcc="001"
       mnc="01"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       authtype="0"
       protocol="IPV4V6"
@@ -200,7 +200,7 @@
   <apn carrier="Test IMS"
       mcc="001"
       mnc="010"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       authtype="0"
       protocol="IPV4V6"
@@ -469,7 +469,7 @@
   <apn carrier="LTE - VZW Roaming IMS"
       mcc="204"
       mnc="04"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       authtype="0"
       protocol="IPV4V6"
@@ -485,7 +485,7 @@
   <apn carrier="EHRPD - VZW Roaming IMS"
       mcc="204"
       mnc="04"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       authtype="0"
       protocol="IPV4V6"
@@ -5153,7 +5153,7 @@
   <apn carrier="Test IMS"
       mcc="246"
       mnc="081"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
@@ -5163,7 +5163,7 @@
   <apn carrier="Test IMS"
       mcc="246"
       mnc="081"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
@@ -5292,7 +5292,7 @@
   <apn carrier="Test IMS"
       mcc="246"
       mnc="81"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
@@ -5306,7 +5306,7 @@
   <apn carrier="Test IMS"
       mcc="246"
       mnc="81"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
@@ -6020,23 +6020,12 @@
       apn="internet.telekom"
       user="telekom"
       password="telekom"
-      authtype="1"
-      type="default,supl,ia"
-      protocol="IPV4V6"
-  />
-
-  <apn carrier="Telekom Internet"
-      mcc="262"
-      mnc="01"
-      apn="internet.telekom"
-      user="telekom"
-      password="telekom"
       mmsc="http://mms.t-mobile.de/servlets/mms"
       mmsproxy="109.237.176.193"
       mmsport="8008"
       bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17"
       authtype="1"
-      type="mms"
+      type="mms,default,supl,ia"
       protocol="IPV4V6"
   />
 
@@ -6051,7 +6040,7 @@
       mmsport="8008"
       bearer_bitmask="18"
       authtype="1"
-      type="mms"
+      type="mms,supl"
       protocol="IPV4V6"
       user_visible="false"
   />
@@ -7092,12 +7081,28 @@
       mmsproxy="mmsproxy.fido.ca"
       mmsc="http://mms.fido.ca"
       mmsport="80"
+      bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17"
       mvno_match_data="DD"
       mvno_type="gid"
       protocol="IPV4V6"
       roaming_protocol="IP"
   />
 
+  <apn carrier="Fido Netsvcs"
+      mcc="302"
+      mnc="370"
+      apn="netsvcs"
+      type="mms"
+      mmsproxy="mmsproxy.fido.ca"
+      mmsc="http://mms.fido.ca"
+      mmsport="80"
+      bearer_bitmask="18"
+      mvno_match_data="DD"
+      mvno_type="gid"
+      protocol="IPV4V6"
+      roaming_protocol="IP"
+      user_visible="false"
+  />
   <apn carrier="Fido IMS"
       mcc="302"
       mnc="370"
@@ -7107,6 +7112,7 @@
       mvno_type="gid"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      user_visible="false"
   />
 
   <apn carrier="Fido Tethering"
@@ -7133,24 +7139,45 @@
       mvno_type="gid"
   />
 
-  <apn carrier="Wind Mobile Internet"
+  <apn carrier="Internet"
       mcc="302"
       mnc="490"
-      apn="internet.windmobile.ca"
-      type="default,hipri,dun,supl"
+      apn="internet.freedommobile.ca"
+      type="default,dun,supl"
+      protocol="IPV4V6"
+      user_editable="false"
   />
 
-  <apn carrier="Wind Mobile MMS"
+  <apn carrier="MMS"
       mcc="302"
       mnc="490"
-      apn="mms.windmobile.ca"
+      apn="mms.freedommobile.ca"
       mmsc="http://mms.windmobile.ca"
       mmsproxy="74.115.197.70"
       mmsport="8080"
       type="mms"
+      user_editable="false"
   />
 
-  <apn carrier="Videotron Mobile"
+  <apn carrier="VoLTE"
+      mcc="302"
+      mnc="490"
+      apn="volte.mobilefrdm.ca"
+      type="ims"
+      protocol="IPV4V6"
+      user_visible="false"
+  />
+
+  <apn carrier="E911"
+      mcc="302"
+      mnc="490"
+      apn="e911.mobilefrdm.ca"
+      type="emergency"
+      protocol="IPV4V6"
+      user_visible="false"
+  />
+
+  <apn carrier="Videotron"
       mcc="302"
       mnc="500"
       apn="media.ng"
@@ -7158,6 +7185,27 @@
       mmsproxy="10.208.89.17"
       mmsport="8080"
       type="default,supl,mms"
+      user_editable="false"
+  />
+
+  <apn carrier="LTE IMS"
+      mcc="302"
+      mnc="500"
+      apn="ims"
+      type="ims"
+      protocol="IPV6"
+      roaming_protocol="IPV6"
+      user_visible="false"
+  />
+
+  <apn carrier="Emergency"
+      mcc="302"
+      mnc="500"
+      apn="sos"
+      type="emergency"
+      protocol="IPV6"
+      roaming_protocol="IPV6"
+      user_visible="false"
   />
 
   <apn carrier="Videotron Mobile"
@@ -7293,6 +7341,15 @@
       mvno_match_data="CITYFONE"
   />
 
+  <apn carrier="Rogers IMS"
+      mcc="302"
+      mnc="720"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_visible="false"
+  />
   <apn carrier="Rogers Internet"
       mcc="302"
       mnc="720"
@@ -7301,15 +7358,20 @@
       mmsproxy="mmsproxy.rogers.com"
       mmsc="http://mms.gprs.rogers.com"
       mmsport="80"
+      bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
   />
 
-  <apn carrier="Rogers IMS"
+  <apn carrier="Rogers Netsvcs"
       mcc="302"
       mnc="720"
-      apn="ims"
-      type="ims"
+      apn="netsvcs"
+      type="mms"
+      mmsproxy="mmsproxy.rogers.com"
+      mmsc="http://mms.gprs.rogers.com"
+      mmsport="80"
+      bearer_bitmask="18"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
       user_visible="false"
@@ -7365,7 +7427,7 @@
   <apn carrier="Bluewire IMS"
       mcc="310"
       mnc="000"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="bluewire"
@@ -7377,7 +7439,7 @@
   <apn carrier="Bluewire IMS"
       mcc="310"
       mnc="000"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="bluewire"
@@ -7459,7 +7521,7 @@
   <apn carrier="Flatwire IMS"
       mcc="310"
       mnc="000"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="flatwire"
@@ -7471,7 +7533,7 @@
   <apn carrier="Flatwire IMS"
       mcc="310"
       mnc="000"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="flatwire"
@@ -7553,7 +7615,7 @@
   <apn carrier="Mobipcs IMS"
       mcc="310"
       mnc="000"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="mobipcs"
@@ -7565,7 +7627,7 @@
   <apn carrier="Mobipcs IMS"
       mcc="310"
       mnc="000"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="mobipcs"
@@ -7647,7 +7709,7 @@
   <apn carrier="Mobilenation IMS"
       mcc="310"
       mnc="000"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="mobilenation"
@@ -7659,7 +7721,7 @@
   <apn carrier="Mobilenation IMS"
       mcc="310"
       mnc="000"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="mobilenation"
@@ -7741,7 +7803,7 @@
   <apn carrier="Mohave IMS"
       mcc="310"
       mnc="000"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="mohave"
@@ -7753,7 +7815,7 @@
   <apn carrier="Mohave IMS"
       mcc="310"
       mnc="000"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="mohave"
@@ -7835,7 +7897,7 @@
   <apn carrier="Peopleswire IMS"
       mcc="310"
       mnc="000"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="Peopleswire"
@@ -7847,7 +7909,7 @@
   <apn carrier="Peopleswire IMS"
       mcc="310"
       mnc="000"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="Peopleswire"
@@ -7929,7 +7991,7 @@
   <apn carrier="Revol IMS"
       mcc="310"
       mnc="000"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="revol"
@@ -7941,7 +8003,7 @@
   <apn carrier="Revol IMS"
       mcc="310"
       mnc="000"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="revol"
@@ -8039,7 +8101,7 @@
   <apn carrier="Distribution IMS"
       mcc="310"
       mnc="000"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="distribution"
@@ -8051,7 +8113,7 @@
   <apn carrier="Distribution IMS"
       mcc="310"
       mnc="000"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="distribution"
@@ -8143,7 +8205,7 @@
       mnc="004"
       apn="internet"
       authtype="3"
-      type="default,mms,supl,fota,ims,cbs"
+      type="default,mms,supl,fota,cbs"
       mmsc="http://mms.vtext.com/servlets/mms"
       protocol="IPV4V6"
       bearer_bitmask="4|5|6|7|8|12"
@@ -8154,7 +8216,7 @@
       mnc="004"
       apn="internet"
       authtype="3"
-      type="default,mms,supl,fota,ims,cbs,dun"
+      type="default,mms,supl,fota,cbs,dun"
       mmsc="http://mms.vtext.com/servlets/mms"
       protocol="IPV4V6"
       bearer_bitmask="4|5|6|7|8|12"
@@ -8195,7 +8257,7 @@
   <apn carrier="Verizon IMS"
       mcc="310"
       mnc="004"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims"
       protocol="IPV4V6"
       roaming_protocol="IPV6"
@@ -8244,7 +8306,7 @@
   <apn carrier=" ALU Test-SIM IMS"
       mcc="310"
       mnc="028"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
@@ -8298,7 +8360,7 @@
   <apn carrier="Itewire IMS"
       mcc="310"
       mnc="032"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="itewire"
@@ -8310,7 +8372,7 @@
   <apn carrier="Itewire IMS"
       mcc="310"
       mnc="032"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="itewire"
@@ -8392,7 +8454,7 @@
   <apn carrier="Etex IMS"
       mcc="310"
       mnc="035"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="etex"
@@ -8404,7 +8466,7 @@
   <apn carrier="Etex IMS"
       mcc="310"
       mnc="035"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="etex"
@@ -8486,7 +8548,7 @@
   <apn carrier="Mta IMS"
       mcc="310"
       mnc="040"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="mta"
@@ -8498,7 +8560,7 @@
   <apn carrier="Mta IMS"
       mcc="310"
       mnc="040"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="mta"
@@ -8580,7 +8642,7 @@
   <apn carrier="Alaskacomm IMS"
       mcc="310"
       mnc="050"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="alaskacomm"
@@ -8592,7 +8654,7 @@
   <apn carrier="Alaskacomm IMS"
       mcc="310"
       mnc="050"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="alaskacomm"
@@ -8816,7 +8878,7 @@
   <apn carrier="Carolina IMS"
       mcc="310"
       mnc="130"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="carolinawest"
@@ -8828,7 +8890,7 @@
   <apn carrier="Carolina IMS"
       mcc="310"
       mnc="130"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="carolinawest"
@@ -9372,19 +9434,9 @@
   <apn carrier="T-Mobile US 260"
       mcc="310"
       mnc="260"
-      apn=""
-      type="ia"
-      protocol="IPV6"
-      roaming_protocol="IP"
-      mtu="1440"
-  />
-
-  <apn carrier="T-Mobile US 260"
-      mcc="310"
-      mnc="260"
       apn="fast.t-mobile.com"
       type="default,supl,mms,ia,dun"
-      protocol="IPV4V6"
+      protocol="IPV6"
       roaming_protocol="IP"
       mtu="1440"
   />
@@ -9406,7 +9458,7 @@
       apn="TMUS"
       mmsc="http://mms.msg.eng.t-mobile.com/mms/wapenc"
       type="mms"
-      protocol="IPV4V6"
+      protocol="IPV6"
       roaming_protocol="IP"
       bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18"
   />
@@ -9793,7 +9845,7 @@
   <apn carrier="Alltel2 IMS"
       mcc="310"
       mnc="330"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="alltel2"
@@ -9805,7 +9857,7 @@
   <apn carrier="Alltel2 IMS"
       mcc="310"
       mnc="330"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="alltel2"
@@ -9887,7 +9939,7 @@
   <apn carrier="Pioneer IMS"
       mcc="310"
       mnc="360"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="pioneer"
@@ -9899,7 +9951,7 @@
   <apn carrier="Pioneer IMS"
       mcc="310"
       mnc="360"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="pioneer"
@@ -10122,7 +10174,7 @@
   <apn carrier="Gci IMS"
       mcc="310"
       mnc="430"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="gci"
@@ -10134,7 +10186,7 @@
   <apn carrier="Gci IMS"
       mcc="310"
       mnc="430"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="gci"
@@ -10518,7 +10570,7 @@
   <apn carrier="Inland IMS"
       mcc="310"
       mnc="580"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="inland"
@@ -10530,7 +10582,7 @@
   <apn carrier="Inland IMS"
       mcc="310"
       mnc="580"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="inland"
@@ -10679,7 +10731,7 @@
   <apn carrier="Cellcom IMS"
       mcc="310"
       mnc="600"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="cellcom"
@@ -10691,7 +10743,7 @@
   <apn carrier="Cellcom IMS"
       mcc="310"
       mnc="600"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="cellcom"
@@ -10926,7 +10978,7 @@
   <apn carrier="Appalachian IMS"
       mcc="310"
       mnc="750"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="appalachian"
@@ -10938,7 +10990,7 @@
   <apn carrier="Appalachian IMS"
       mcc="310"
       mnc="750"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="appalachian"
@@ -11103,7 +11155,7 @@
   <apn carrier="Nepa IMS"
       mcc="310"
       mnc="820"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="nepa"
@@ -11115,7 +11167,7 @@
   <apn carrier="Nepa IMS"
       mcc="310"
       mnc="820"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="nepa"
@@ -11241,7 +11293,7 @@
   <apn carrier="Midrivers IMS"
       mcc="310"
       mnc="900"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="midrivers"
@@ -11253,7 +11305,7 @@
   <apn carrier="Midrivers IMS"
       mcc="310"
       mnc="900"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="midrivers"
@@ -11344,7 +11396,7 @@
   <apn carrier="Jamesvalley IMS"
       mcc="310"
       mnc="920"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="jamesvalley"
@@ -11356,7 +11408,7 @@
   <apn carrier="Jamesvalley IMS"
       mcc="310"
       mnc="920"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="jamesvalley"
@@ -11438,7 +11490,7 @@
   <apn carrier="Coppervalley IMS"
       mcc="310"
       mnc="930"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="coppervalley"
@@ -11450,7 +11502,7 @@
   <apn carrier="Coppervalley IMS"
       mcc="310"
       mnc="930"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="coppervalley"
@@ -11532,7 +11584,7 @@
   <apn carrier="Nntcwire IMS"
       mcc="310"
       mnc="960"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="nntcwire"
@@ -11544,7 +11596,7 @@
   <apn carrier="Nntcwire IMS"
       mcc="310"
       mnc="960"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="nntcwire"
@@ -11626,7 +11678,7 @@
   <apn carrier="Silverstar IMS"
       mcc="310"
       mnc="960"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="silverstar"
@@ -11638,7 +11690,7 @@
   <apn carrier="Silverstar IMS"
       mcc="310"
       mnc="960"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="silverstar"
@@ -11720,7 +11772,7 @@
   <apn carrier="Snakeriver IMS"
       mcc="310"
       mnc="960"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="snakeriver"
@@ -11732,7 +11784,7 @@
   <apn carrier="Snakeriver IMS"
       mcc="310"
       mnc="960"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="snakeriver"
@@ -11814,7 +11866,7 @@
   <apn carrier="Southcentral IMS"
       mcc="310"
       mnc="960"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="southcentral"
@@ -11826,7 +11878,7 @@
   <apn carrier="Southcentral IMS"
       mcc="310"
       mnc="960"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="southcentral"
@@ -11908,7 +11960,7 @@
   <apn carrier="Strata IMS"
       mcc="310"
       mnc="960"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="strata"
@@ -11920,7 +11972,7 @@
   <apn carrier="Strata IMS"
       mcc="310"
       mnc="960"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="strata"
@@ -12002,7 +12054,7 @@
   <apn carrier="Syringa IMS"
       mcc="310"
       mnc="960"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="syringa"
@@ -12014,7 +12066,7 @@
   <apn carrier="Syringa IMS"
       mcc="310"
       mnc="960"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="syringa"
@@ -12096,7 +12148,7 @@
   <apn carrier="Thumb IMS"
       mcc="311"
       mnc="050"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="thumbcellular"
@@ -12108,7 +12160,7 @@
   <apn carrier="Thumb IMS"
       mcc="311"
       mnc="050"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="thumbcellular"
@@ -12190,7 +12242,7 @@
   <apn carrier="Elementmobile IMS"
       mcc="311"
       mnc="070"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="elementmobile"
@@ -12202,7 +12254,7 @@
   <apn carrier="Elementmobile IMS"
       mcc="311"
       mnc="070"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="elementmobile"
@@ -12304,7 +12356,7 @@
   <apn carrier="Sprocket IMS"
       mcc="311"
       mnc="140"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="sprocket"
@@ -12316,7 +12368,7 @@
   <apn carrier="Sprocket IMS"
       mcc="311"
       mnc="140"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="sprocket"
@@ -12917,7 +12969,7 @@
   <apn carrier="Leaco IMS"
       mcc="311"
       mnc="310"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="leaco"
@@ -12929,7 +12981,7 @@
   <apn carrier="Leaco IMS"
       mcc="311"
       mnc="310"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="leaco"
@@ -13011,7 +13063,7 @@
   <apn carrier="Illinois IMS"
       mcc="311"
       mnc="340"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="illinoisvalley"
@@ -13023,7 +13075,7 @@
   <apn carrier="Illinois IMS"
       mcc="311"
       mnc="340"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="illinoisvalley"
@@ -13105,7 +13157,7 @@
   <apn carrier="Nemont IMS"
       mcc="311"
       mnc="350"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="nemont"
@@ -13117,7 +13169,7 @@
   <apn carrier="Nemont IMS"
       mcc="311"
       mnc="350"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="nemont"
@@ -13285,7 +13337,7 @@
   <apn carrier="Ericsson Test-SIM IMS"
       mcc="311"
       mnc="390"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       authtype="0"
       protocol="IPV4V6"
@@ -13300,7 +13352,7 @@
   <apn carrier="Ericsson Test-SIM IMS"
       mcc="311"
       mnc="390"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       authtype="0"
       protocol="IPV4V6"
@@ -13363,7 +13415,7 @@
   <apn carrier="Chatmobrsa2 IMS"
       mcc="311"
       mnc="410"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="chatmobrsa2"
@@ -13375,7 +13427,7 @@
   <apn carrier="Chatmobrsa2 IMS"
       mcc="311"
       mnc="410"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="chatmobrsa2"
@@ -13457,7 +13509,7 @@
   <apn carrier="NW IMS"
       mcc="311"
       mnc="420"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="northwestcell"
@@ -13469,7 +13521,7 @@
   <apn carrier="NW IMS"
       mcc="311"
       mnc="420"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="northwestcell"
@@ -13551,7 +13603,7 @@
   <apn carrier="Chatmobrsa1 IMS"
       mcc="311"
       mnc="430"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="chatmobrsa1"
@@ -13563,7 +13615,7 @@
   <apn carrier="Chatmobrsa1 IMS"
       mcc="311"
       mnc="430"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="chatmobrsa1"
@@ -13645,7 +13697,7 @@
   <apn carrier="Bluegrass IMS"
       mcc="311"
       mnc="440"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="bluegrass"
@@ -13657,7 +13709,7 @@
   <apn carrier="Bluegrass IMS"
       mcc="311"
       mnc="440"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="bluegrass"
@@ -13739,7 +13791,7 @@
   <apn carrier="Ptci IMS"
       mcc="311"
       mnc="450"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="ptci"
@@ -13751,7 +13803,7 @@
   <apn carrier="Ptci IMS"
       mcc="311"
       mnc="450"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="ptci"
@@ -13824,7 +13876,7 @@
       mnc="480"
       apn="internet"
       authtype="3"
-      type="default,mms,supl,fota,ims,cbs,dun"
+      type="default,mms,supl,fota,cbs,dun"
       mmsc="http://mms.vtext.com/servlets/mms"
       protocol="IPV4V6"
       bearer_bitmask="4|5|6|7|8|12"
@@ -13868,7 +13920,7 @@
   <apn carrier="Verizon"
       mcc="311"
       mnc="480"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       authtype="0"
       protocol="IPV4V6"
@@ -14449,7 +14501,7 @@
   <apn carrier="Gsc IMS"
       mcc="311"
       mnc="590"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="gsc"
@@ -14461,7 +14513,7 @@
   <apn carrier="Gsc IMS"
       mcc="311"
       mnc="590"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="gsc"
@@ -14543,7 +14595,7 @@
   <apn carrier="Cox IMS"
       mcc="311"
       mnc="600"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="cox"
@@ -14555,7 +14607,7 @@
   <apn carrier="Cox IMS"
       mcc="311"
       mnc="600"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="cox"
@@ -14637,7 +14689,7 @@
   <apn carrier="Srtcomm IMS"
       mcc="311"
       mnc="610"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="srtcomm"
@@ -14649,7 +14701,7 @@
   <apn carrier="Srtcomm IMS"
       mcc="311"
       mnc="610"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="srtcomm"
@@ -14731,7 +14783,7 @@
   <apn carrier="United IMS"
       mcc="311"
       mnc="650"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="unitedwireless"
@@ -14743,7 +14795,7 @@
   <apn carrier="United IMS"
       mcc="311"
       mnc="650"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="unitedwireless"
@@ -14825,7 +14877,7 @@
   <apn carrier="Pinebelt IMS"
       mcc="311"
       mnc="670"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="pinebelt"
@@ -14837,7 +14889,7 @@
   <apn carrier="Pinebelt IMS"
       mcc="311"
       mnc="670"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="pinebelt"
@@ -14939,7 +14991,7 @@
   <apn carrier="Chariton IMS"
       mcc="311"
       mnc="920"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="charitonvalley"
@@ -14951,7 +15003,7 @@
   <apn carrier="Chariton IMS"
       mcc="311"
       mnc="920"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="charitonvalley"
@@ -15045,7 +15097,7 @@
   <apn carrier="Custer IMS"
       mcc="312"
       mnc="040"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="custer"
@@ -15057,7 +15109,7 @@
   <apn carrier="Custer IMS"
       mcc="312"
       mnc="040"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="custer"
@@ -15139,7 +15191,7 @@
   <apn carrier="Chatmobility IMS"
       mcc="312"
       mnc="160"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="chatmobility"
@@ -15151,7 +15203,7 @@
   <apn carrier="Chatmobility IMS"
       mcc="312"
       mnc="160"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="chatmobility"
@@ -15311,7 +15363,7 @@
   <apn carrier="Openmobile IMS"
       mcc="330"
       mnc="000"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="openmobile"
@@ -15323,7 +15375,7 @@
   <apn carrier="Openmobile IMS"
       mcc="330"
       mnc="000"
-      apn="VZWIMS"
+      apn="IMS"
       type="ims,ia"
       mvno_type="spn"
       mvno_match_data="openmobile"
@@ -18710,6 +18762,7 @@
       mnc="56"
       apn="internet"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="IDEA GPRS"
@@ -18719,6 +18772,7 @@
       proxy="10.4.42.15"
       port="8080"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="IDEA MMS"
@@ -18729,6 +18783,7 @@
       mmsproxy="10.4.42.15"
       mmsport="8080"
       type="mms"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnlmms"
@@ -18739,6 +18794,7 @@
       mmsproxy="10.210.10.11"
       mmsport="8080"
       type="mms"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnlnet"
@@ -18746,6 +18802,7 @@
       mnc="57"
       apn="bsnlnet"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnllive"
@@ -18755,6 +18812,7 @@
       proxy="10.220.67.131"
       port="8080"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnlmms"
@@ -18765,6 +18823,7 @@
       mmsproxy="10.210.10.11"
       mmsport="8080"
       type="mms"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnlnet"
@@ -18772,6 +18831,7 @@
       mnc="58"
       apn="bsnlnet"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnllive"
@@ -18781,6 +18841,7 @@
       proxy="10.220.67.131"
       port="8080"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnlmms"
@@ -18791,6 +18852,7 @@
       mmsproxy="10.210.10.11"
       mmsport="8080"
       type="mms"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnlnet"
@@ -18798,6 +18860,7 @@
       mnc="59"
       apn="bsnlnet"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnllive"
@@ -18807,6 +18870,7 @@
       proxy="10.220.67.131"
       port="8080"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="Vodafonemobileconnect"
@@ -18814,6 +18878,7 @@
       mnc="60"
       apn="www"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="Vodafone live"
@@ -18823,6 +18888,7 @@
       proxy="10.10.1.100"
       port="9401"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="Vodafone_MMS"
@@ -18833,6 +18899,7 @@
       mmsproxy="10.10.1.100"
       mmsport="9401"
       type="mms"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnlmms"
@@ -18843,6 +18910,7 @@
       mmsproxy="10.210.10.11"
       mmsport="8080"
       type="mms"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnlnet"
@@ -18850,6 +18918,7 @@
       mnc="62"
       apn="bsnlnet"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnllive"
@@ -18859,6 +18928,7 @@
       proxy="10.220.67.131"
       port="8080"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnlmms"
@@ -18869,6 +18939,7 @@
       mmsproxy="10.210.10.11"
       mmsport="8080"
       type="mms"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnlnet"
@@ -18876,6 +18947,7 @@
       mnc="64"
       apn="bsnlnet"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnllive"
@@ -18885,6 +18957,7 @@
       proxy="10.220.67.131"
       port="8080"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnlmms"
@@ -18895,6 +18968,7 @@
       mmsproxy="10.210.10.11"
       mmsport="8080"
       type="mms"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnlnet"
@@ -18902,6 +18976,7 @@
       mnc="66"
       apn="bsnlnet"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnllive"
@@ -18911,6 +18986,7 @@
       proxy="10.220.67.131"
       port="8080"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="Reliance MMS"
@@ -18921,6 +18997,7 @@
       mmsproxy="10.239.221.7"
       mmsport="8080"
       type="mms"
+      protocol="IPV4V6"
   />
 
   <apn carrier="Reliance Net"
@@ -18928,6 +19005,7 @@
       mnc="67"
       apn="smartnet"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="Reliance WAP"
@@ -18938,6 +19016,7 @@
       port="8080"
       authtype="1"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="MTNL"
@@ -18951,6 +19030,7 @@
       mmsproxy="10.10.10.10"
       mmsport="9401"
       type="default,mms,supl,agps,fota,dun"
+      protocol="IPV4V6"
   />
 
   <apn carrier="MTNL"
@@ -18973,6 +19053,7 @@
       mnc="70"
       apn="airtelgprs.com"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="AIRTEL LIVE"
@@ -18982,6 +19063,7 @@
       proxy="100.1.200.99"
       port="8080"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="Airtel MMS"
@@ -18993,6 +19075,7 @@
       mmsproxy="100.1.201.172"
       mmsport="8799"
       type="mms"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnlmms"
@@ -19003,6 +19086,7 @@
       mmsproxy="10.210.10.11"
       mmsport="8080"
       type="mms"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnlnet"
@@ -19010,6 +19094,7 @@
       mnc="71"
       apn="bsnlnet"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnllive"
@@ -19019,6 +19104,7 @@
       proxy="10.220.67.131"
       port="8080"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnlmms"
@@ -19029,6 +19115,7 @@
       mmsproxy="10.210.10.11"
       mmsport="8080"
       type="mms"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnlnet"
@@ -19036,6 +19123,7 @@
       mnc="72"
       apn="bsnlnet"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnllive"
@@ -19045,6 +19133,7 @@
       proxy="10.220.67.131"
       port="8080"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnlmms"
@@ -19055,6 +19144,7 @@
       mmsproxy="10.210.10.11"
       mmsport="8080"
       type="mms"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnlnet"
@@ -19062,6 +19152,7 @@
       mnc="73"
       apn="bsnlnet"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnllive"
@@ -19071,6 +19162,7 @@
       proxy="10.220.67.131"
       port="8080"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnlmms"
@@ -19081,6 +19173,7 @@
       mmsproxy="10.210.10.11"
       mmsport="8080"
       type="mms"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnlnet"
@@ -19088,6 +19181,7 @@
       mnc="74"
       apn="bsnlnet"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnllive"
@@ -19097,6 +19191,7 @@
       proxy="10.220.67.131"
       port="8080"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnlmms"
@@ -19107,6 +19202,7 @@
       mmsproxy="10.210.10.11"
       mmsport="8080"
       type="mms"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnlnet"
@@ -19114,6 +19210,7 @@
       mnc="75"
       apn="bsnlnet"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnllive"
@@ -19123,6 +19220,7 @@
       proxy="10.220.67.131"
       port="8080"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnlmms"
@@ -19133,6 +19231,7 @@
       mmsproxy="10.210.10.11"
       mmsport="8080"
       type="mms"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnlnet"
@@ -19140,6 +19239,7 @@
       mnc="76"
       apn="bsnlnet"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnllive"
@@ -19149,6 +19249,7 @@
       proxy="10.220.67.131"
       port="8080"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnlmms"
@@ -19159,6 +19260,7 @@
       mmsproxy="10.210.10.11"
       mmsport="8080"
       type="mms"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnlnet"
@@ -19166,6 +19268,7 @@
       mnc="77"
       apn="bsnlnet"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnllive"
@@ -19175,6 +19278,7 @@
       proxy="10.220.67.131"
       port="8080"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="Idea_Internet"
@@ -19182,6 +19286,7 @@
       mnc="78"
       apn="internet"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="IDEA GPRS"
@@ -19191,6 +19296,7 @@
       proxy="10.4.42.15"
       port="8080"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="IDEA MMS"
@@ -19201,6 +19307,7 @@
       mmsproxy="10.4.42.15"
       mmsport="8080"
       type="mms"
+      protocol="IPV4V6"
   />
 
   <apn carrier="bsnlmms"
@@ -19612,6 +19719,7 @@
       mmsproxy="100.1.201.172"
       mmsport="8799"
       type="mms"
+      protocol="IPV4V6"
   />
 
   <apn carrier="Mobile Office"
@@ -19619,6 +19727,7 @@
       mnc="94"
       apn="airtelgprs.com"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="AIRTEL LIVE"
@@ -19628,6 +19737,7 @@
       proxy="100.1.200.99"
       port="8080"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="Airtel MMS"
@@ -19639,6 +19749,7 @@
       mmsproxy="100.1.201.172"
       mmsport="8799"
       type="mms"
+      protocol="IPV4V6"
   />
 
   <apn carrier="Mobile Office"
@@ -19646,6 +19757,7 @@
       mnc="95"
       apn="airtelgprs.com"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="AIRTEL LIVE"
@@ -19655,6 +19767,7 @@
       proxy="100.1.200.99"
       port="8080"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="Airtel MMS"
@@ -19666,6 +19779,7 @@
       mmsproxy="100.1.201.172"
       mmsport="8799"
       type="mms"
+      protocol="IPV4V6"
   />
 
   <apn carrier="Mobile Office"
@@ -19673,6 +19787,7 @@
       mnc="96"
       apn="airtelgprs.com"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="AIRTEL LIVE"
@@ -19682,6 +19797,7 @@
       proxy="100.1.200.99"
       port="8080"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="Airtel MMS"
@@ -22515,6 +22631,7 @@
       mmsproxy="10.4.42.15"
       mmsport="8080"
       type="mms"
+      protocol="IPV4V6"
   />
 
   <apn carrier="Idea_Internet"
@@ -22522,6 +22639,7 @@
       mnc="852"
       apn="internet"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="IDEA GPRS"
@@ -22531,6 +22649,7 @@
       proxy="10.4.42.15"
       port="8080"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="IDEA MMS"
@@ -22541,6 +22660,7 @@
       mmsproxy="10.4.42.15"
       mmsport="8080"
       type="mms"
+      protocol="IPV4V6"
   />
 
   <apn carrier="Idea_Internet"
@@ -22548,6 +22668,7 @@
       mnc="853"
       apn="internet"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="IDEA GPRS"
@@ -24445,11 +24566,11 @@
       type="mms"
   />
 
-  <apn carrier="Partner"
+  <apn carrier="3G Portal"
       mcc="425"
       mnc="10"
-      apn="uinternet"
-      mmsc=""
+      apn="uwap.orange.co.il"
+      mmsc="http://192.168.220.15/servlets/mms"
       mmsport="8080"
       type="default,supl,mms"
   />
