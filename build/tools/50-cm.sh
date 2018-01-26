@@ -2,6 +2,9 @@
 # 
 # /system/addon.d/50-cm.sh
 # During a CM9 upgrade, this script backs up /system/etc/hosts,
+#
+# ADDOND_VERSION=2
+#
 # /system is formatted and reinstalled, then the file is restored.
 #
 
