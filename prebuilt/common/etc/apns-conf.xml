@@ -32395,4 +32395,61 @@
       port="8080"
       type="default"
   />
+
+  <apn carrier="StraightTalk Verizon"
+      mcc="311"
+      mnc="480"
+      apn="TRACFONE.VZWENTP"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      type="default,dun,supl"
+  />
+
+  <apn carrier="StraightTalk T-Mobile"
+      mcc="311"
+      mnc="260"
+      apn="wap.tracfone"
+      mmsc="http://mmsc.tracfone.com"
+      user=""
+      password=""
+      proxy=""
+      port="8080"
+      type="default,supl,mms"
+  />
+
+  <apn carrier="StraightTalk ATT"
+      mcc="311"
+      mnc="410"
+      apn="tfdata"
+      mmsc="http://mms-tf.net"
+      mmsproxy="mms3.tracfone.com"
+      mmsport="80"
+      port="80"
+      type="default,supl,mms"
+  />
+
+  <apn carrier="StraightTalk ATT"
+      mcc="311"
+      mnc="410"
+      apn="att.mvno"
+      user=""
+      password=""
+      proxy=""
+      mmsc="http://mmsc.cingular.com"
+      mmsproxy="66.209.11.33"
+      mmsport="80"
+      port=""
+      type="default,supl,mms"
+  />
+
+  <apn carrier="StraightTalk ATT.mvno"
+      mcc="311"
+      mnc="410"
+      apn="att.mvno"
+      mmsc="http://mmsc.cingular.com"
+      mmsproxy="66.209.11.33"
+      mmsport="80"
+      port="80"
+      type="default,supl,mms"
+  />
 </apns>
