@@ -14,7 +14,7 @@ $(call add_json_bool, Needs_text_relocations,                     $(filter true,
 $(call add_json_str,  Specific_camera_parameter_library,          $(TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY))
 $(call add_json_bool, Apply_msm8974_1440p_egl_workaround, $(filter true,$(TARGET_MSM8974_1440P_EGL_WORKAROUND)))
 $(call add_json_str_omitempty, Target_process_sdk_version_override, $(TARGET_PROCESS_SDK_VERSION_OVERRIDE))
-$(call add_json_str_omitempty,  Target_shim_libs,                           $(TARGET_LD_SHIM_LIBS))
+$(call add_json_str_omitempty,  Target_shim_libs,                           $(subst $(space),:,$(TARGET_LD_SHIM_LIBS)))
 $(call add_json_bool, Uses_generic_camera_parameter_library,      $(if $(TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY),,true))
 $(call add_json_bool, Uses_metadata_as_fde_key, $(filter true,$(TARGET_USES_METADATA_AS_FDE_KEY)))
 $(call add_json_bool, Uses_nvidia_enhancements,                   $(filter TRUE,$(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)))
