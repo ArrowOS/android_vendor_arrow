@@ -14,4 +14,12 @@
     <color name="zen_introduction">#ff000000</color>
     <color name="zen_qs_panel_close_button_color">@android:color/black</color>
 
+    <!-- Screen pinning layout -->
+    <color name="screen_pinning_background_color">@*android:color/accent_device_default_light</color>
+    <color name="screen_pinning_title_text">@android:color/black</color>
+    <color name="screen_pinning_description_text">@android:color/black</color>
+    <color name="screen_pinning_button_text">@android:color/black</color>
+    <color name="screen_pinning_bg_circ_color">#40000000</color>
+    <color name="screen_pinning_nav_icon_hightlight_outer_color">@android:color/black</color>
+
 </resources>
