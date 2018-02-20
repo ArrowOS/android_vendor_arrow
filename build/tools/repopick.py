@@ -146,8 +146,8 @@ def fetch_query(remote_url, query):
         raise Exception('Gerrit URL should be in the form http[s]://hostname/ or ssh://[user@]host[:port]')
 
 if __name__ == '__main__':
-    # Default to CyanogenMod Gerrit
-    default_gerrit = 'https://review.cyanogenmod.org'
+    # Default to ArrowOS Gerrit
+    default_gerrit = 'https://review.arrowos.net'
 
     parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description=textwrap.dedent('''\
         repopick.py is a utility to simplify the process of cherry picking
@@ -243,7 +243,7 @@ if __name__ == '__main__':
     #{project: {path, revision}}
 
     for project in projects:
-        name = project.get('name')
+        name = ("ArrowOS/")+project.get('name')
         path = project.get('path')
         revision = project.get('revision')
         if revision is None:
@@ -412,9 +412,9 @@ if __name__ == '__main__':
                 print('Trying to fetch the change from GitHub')
 
             if args.pull:
-                cmd = ['git pull --no-edit github', item['fetch'][method]['ref']]
+                cmd = ['git pull --no-edit arrow', item['fetch'][method]['ref']]
             else:
-                cmd = ['git fetch github', item['fetch'][method]['ref']]
+                cmd = ['git fetch arrow', item['fetch'][method]['ref']]
             if args.quiet:
                 cmd.append('--quiet')
             else:
