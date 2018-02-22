@@ -56,14 +56,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Exchange2
 
-WITH_EXFAT ?= true
-ifeq ($(WITH_EXFAT),true)
-TARGET_USES_EXFAT := true
-PRODUCT_PACKAGES += \
-    mount.exfat \
+# exFAT tools
+ PRODUCT_PACKAGES += \
     fsck.exfat \
     mkfs.exfat
-endif
 
 # Openssh
 PRODUCT_PACKAGES += \
