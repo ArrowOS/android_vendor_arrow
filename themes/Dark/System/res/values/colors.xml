@@ -20,4 +20,7 @@
     <color name="power_menu_screenshot">@*android:color/accent_device_default_light</color>
     <color name="power_menu_airplane">@*android:color/accent_device_default_light</color>
 
+    <!-- Notification info -->
+    <color name="notification_info_button_text">@*android:color/notification_default_color</color>
+
 </resources>
