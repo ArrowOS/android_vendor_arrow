@@ -23,4 +23,7 @@
     <!-- Notification info -->
     <color name="notification_info_button_text">@*android:color/notification_default_color</color>
 
+    <!-- Updater snackbar text color -->
+    <color name="updater_snackbar_text_color">@android:color/black</color>
+
 </resources>
