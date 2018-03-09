@@ -65,6 +65,7 @@ PRODUCT_PACKAGES += \
     SettingsDark \
     SystemDark \
     TealAccent \
+    UpdaterDark \
     YellowAccent \
     WhiteAccent
 
