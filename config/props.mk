@@ -39,5 +39,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.build.selinux=1 \
-    persist.sys.root_access=0
+    persist.sys.root_access=0 \
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.virtual=0
 
