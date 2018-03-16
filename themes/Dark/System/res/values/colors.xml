@@ -26,4 +26,6 @@
     <!-- Updater snackbar text color -->
     <color name="updater_snackbar_text_color">@android:color/black</color>
 
+    <color name="autofill_save_title_color">@android:color/black</color>
+    <color name="autofill_autofill_save_custom_subtitle_color">@android:color/black</color>
 </resources>
