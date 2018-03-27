@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- VPN footer -->
+    <color name="quick_settings_footer_background_color">#212121</color>
+
     <!-- DUI dialogs -->
     <color name="smartbar_editor_popup_background">@*android:color/background_floating_material_dark</color>
     <color name="smartbar_editor_popup_text">@android:color/white</color>
