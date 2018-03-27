@@ -22,5 +22,6 @@
     <color name="accent_device_default_700">#FF4CAF50</color>
     <color name="accent_device_default_light">#FF4CAF50</color>
     <color name="accent_device_default_dark">#FF4CAF50</color>
+    <color name="settings_icon_tint_color">#FF4CAF50</color>
 
 </resources>

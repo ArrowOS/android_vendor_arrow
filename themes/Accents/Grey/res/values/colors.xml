@@ -22,5 +22,6 @@
     <color name="accent_device_default_700">#FF9E9E9E</color>
     <color name="accent_device_default_light">#FF9E9E9E</color>
     <color name="accent_device_default_dark">#FF9E9E9E</color>
+    <color name="settings_icon_tint_color">#FF9E9E9E</color>
 
 </resources>
