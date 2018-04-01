@@ -81,6 +81,10 @@ PRODUCT_COPY_FILES += \
     vendor/arrow/fonts/GoogleSans-BoldItalic.ttf:system/fonts/GoogleSans-BoldItalic.ttf
 ADDITIONAL_FONTS_FILE := vendor/arrow/fonts/google-sans.xml
 
+# Fonts packages
+PRODUCT_PACKAGES += \
+    invictrix-fonts
+
 # Extra tools
 PRODUCT_PACKAGES += \
     7z \
