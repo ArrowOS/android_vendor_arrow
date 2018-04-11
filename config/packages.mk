@@ -32,13 +32,15 @@ PRODUCT_PACKAGES += \
     GBoardDarkTheme \
     SettingsDarkTheme \
     SystemDarkTheme \
-    SystemUIDarkTheme
+    SystemUIDarkTheme \
+    UpdaterDark
 
 # Themes Black
 PRODUCT_PACKAGES += \
     SettingsBlackTheme \
     SystemBlackTheme \
-    SystemUIBlackTheme
+    SystemUIBlackTheme \
+    UpdaterBlackAF
 
 # Accents
 PRODUCT_PACKAGES += \
