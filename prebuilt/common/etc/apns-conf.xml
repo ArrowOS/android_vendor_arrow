@@ -8797,32 +8797,71 @@
       type="default,supl"
   />
 
-  <!-- Need two APNs for CDMA technologies: a default that is used normally -->
-  <!-- and a second APN to be used when DUN is required.  Even though the -->
-  <!-- parameters appear the same, the profileID sent to the radio when requesting -->
-  <!-- a DUN connection will be different -->
-  <!-- bearer 4, 5, 6, 7, 8, 12 -->
-  <apn carrier="Sprint"
+  <apn carrier="Sprint MMS"
       mcc="310"
       mnc="120"
-      apn="sprint"
-      type="default,supl,mms,ims,cbs"
-      mmsc="http://mms.sprintpcs.com"
+      apn="Sprint"
+      user="Sprint"
+      server="*"
+      type="mms"
+      password="*"
+      mmsc="http://oap7.sprintpcs.com"
       mmsproxy="68.28.31.7"
       mmsport="80"
-      bearer_bitmask="4|5|6|7|8|12"
+      authtype="3"
   />
-  <!-- bearer 4, 5, 6, 7, 8, 12 -->
-  <apn carrier="Sprint"
+
+  <apn carrier="Sprint LTE ota"
       mcc="310"
       mnc="120"
-      apn="sprint"
-      type="default,supl,mms,ims,cbs,dun"
+      apn="otasn"
+      type="fota"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+  />
+
+  <apn carrier="Sprint EHRPD ota"
+      mcc="310"
+      mnc="120"
+      apn="otasn"
+      type="fota"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+  />
+
+  <apn carrier="Sprint LTE internet"
+      mcc="310"
+      mnc="120"
+      apn="x.ispsn"
+      type="default,mms,supl,hipri"
       mmsc="http://mms.sprintpcs.com"
       mmsproxy="68.28.31.7"
       mmsport="80"
-      bearer_bitmask="4|5|6|7|8|12"
-      profile_id="1"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+  />
+
+  <apn carrier="Sprint EHRPD internet"
+      mcc="310" mnc="120"
+      apn="x.ispsn"
+      type="default,mms,supl,hipri"
+      mmsc="http://mms.sprintpcs.com"
+      mmsproxy="68.28.31.7"
+      mmsport="80"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+  />
+
+  <apn carrier="Sprint internet"
+      mcc="310"
+      mnc="120"
+      apn="x.ispsn"
+      type="mms,supl,hipri"
+      mmsc="http://mms.sprintpcs.com"
+      mmsproxy="68.28.31.7"
+      mmsport="80"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
   />
 
   <!-- this APN will be deleted and replaced by a new ia APN by the HFA provisioning process.
