@@ -8,6 +8,7 @@
 
     <!-- Resolver -->
     <color name="resolver_list_bg">@*android:color/background_material_dark</color>
+    <color name="chooser_service_row_background_color">@*android:color/background_material_dark</color>
 
     <!-- Power menu items -->
     <color name="power_menu_power_off">@*android:color/accent_device_default_light</color>
