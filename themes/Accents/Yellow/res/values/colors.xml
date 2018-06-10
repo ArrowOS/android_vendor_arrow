@@ -24,4 +24,11 @@
     <color name="accent_device_default_dark">#FFFFEB3B</color>
     <color name="settings_icon_tint_color">#FFFFEB3B</color>
 
+    <!-- Generic colors -->
+    <color name="generic_theme_primary">#FFFFEB3B</color>
+    <color name="generic_theme_primary_dark">#FFCCBC2F</color>
+    <color name="generic_theme_accent">#FFE5D335</color>
+
+    <!-- Fastscroller -->
+    <color name="fastscroller_text_color">#FF000000</color>
 </resources>
