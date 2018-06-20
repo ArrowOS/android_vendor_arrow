@@ -1,6 +1,8 @@
 _contents := $(_contents)    "Arrow":{$(newline)
 
 # See build/core/soong_config.mk for the add_json_* functions you can use here.
+$(call add_json_bool, Device_support_hwfde,                       $(filter true,$(TARGET_HW_DISK_ENCRYPTION)))
+$(call add_json_bool, Device_support_hwfde_perf,                  $(filter true,$(TARGET_HW_DISK_ENCRYPTION_PERF)))
 $(call add_json_bool, Has_legacy_camera_hal1,                     $(filter true,$(TARGET_HAS_LEGACY_CAMERA_HAL1)))
 $(call add_json_bool, Needs_legacy_camera_hal1_dyn_native_handle, $(filter true,$(TARGET_NEEDS_LEGACY_CAMERA_HAL1_DYN_NATIVE_HANDLE)))
 $(call add_json_bool, Needs_text_relocations,                     $(filter true,$(TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS)))
