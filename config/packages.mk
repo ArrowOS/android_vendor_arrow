@@ -40,7 +40,8 @@ PRODUCT_PACKAGES += \
 # Themes Black
 PRODUCT_PACKAGES += \
     SettingsBlackTheme \
-    SystemBlackTheme
+    SystemBlackTheme \
+    SystemUIBlackTheme
 
 # Overlays
 PRODUCT_PACKAGES += \
