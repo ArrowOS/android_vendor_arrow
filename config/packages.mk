@@ -20,7 +20,8 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     LatinIME \
     Launcher3 \
-    messaging
+    messaging \
+    Phonograph
 
 # Extra tools
 PRODUCT_PACKAGES += \
