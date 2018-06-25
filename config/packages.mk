@@ -21,6 +21,7 @@ PRODUCT_PACKAGES += \
     LatinIME \
     Launcher3 \
     messaging \
+    ruthless \
     Phonograph
 
 # Extra tools
