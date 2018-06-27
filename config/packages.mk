@@ -23,6 +23,7 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     messaging \
     ruthless \
+    OmniJaws \
     Phonograph
 
 # Extra tools
