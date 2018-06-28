@@ -24,6 +24,7 @@ PRODUCT_PACKAGES += \
     messaging \
     ruthless \
     OmniJaws \
+    Snap \
     Phonograph
 
 # Extra tools
