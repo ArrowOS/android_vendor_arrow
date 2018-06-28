@@ -25,6 +25,7 @@ PRODUCT_PACKAGES += \
     ruthless \
     stats \
     OmniJaws \
+    Snap \
     Phonograph
 
 # Extra tools
