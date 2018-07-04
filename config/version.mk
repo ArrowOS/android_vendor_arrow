@@ -38,7 +38,7 @@ ifdef ARROW_OFFICIAL
     endif
 endif
 
-ARROW_VERSION := Arrow-$(ARROW_MOD_VERSION)-$(CURRENT_DEVICE)-$(ARROW_BUILD_TYPE)-$(shell date -u +%Y%m%d)
+ARROW_VERSION := Arrow→ $(ARROW_MOD_VERSION)→ $(CURRENT_DEVICE)→ $(ARROW_BUILD_TYPE)→ $(shell date -u +%Y%m%d)
 
 
 PRODUCT_PROPERTY_OVERRIDES += \
