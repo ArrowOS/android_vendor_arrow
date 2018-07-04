@@ -1,3 +1,4 @@
+
 # Copyright (C) 2016 The Pure Nexus Project
 # Copyright (C) 2016 The JDCTeam
 #
@@ -13,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ARROW_MOD_VERSION = v1
+ARROW_MOD_VERSION = v8.1
 
 ifndef ARROW_BUILD_TYPE
     ARROW_BUILD_TYPE := UNOFFICIAL
