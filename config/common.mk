@@ -51,6 +51,9 @@ PRODUCT_COPY_FILES += \
     vendor/arrow/prebuilt/common/media/audio/BatteryPlugged.ogg:system/media/audio/ui/BatteryPlugged.ogg \
     vendor/arrow/prebuilt/common/media/audio/BatteryPlugged_48k.ogg:system/media/audio/ui/BatteryPlugged_48k.ogg
 
+# Bootanimation
+include vendor/arrow/config/bootanimation.mk
+
 # Packages
 include vendor/arrow/config/packages.mk
 
