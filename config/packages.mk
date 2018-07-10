@@ -22,9 +22,9 @@ PRODUCT_PACKAGES += \
     LatinIME \
     Launcher3 \
     messaging \
-    ruthless \
     stats \
     OmniJaws \
+    Trebuchet \
     Snap \
     Phonograph
 
