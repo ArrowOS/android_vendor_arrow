@@ -18,5 +18,5 @@
  */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="gboard_overlay_dark">Gboard</string>
+  <string name="gboard_overlay_dark">Google-toetsenbord</string>
 </resources>

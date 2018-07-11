@@ -18,5 +18,5 @@
  */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="dui_overlay_dark">DUI Dialogs</string>
+  <string name="dui_overlay_dark">DUI 对话框</string>
 </resources>

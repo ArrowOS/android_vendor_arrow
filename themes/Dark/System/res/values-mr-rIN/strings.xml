@@ -18,5 +18,5 @@
  */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="system_overlay_dark">系统</string>
+  <string name="system_overlay_dark">System</string>
 </resources>

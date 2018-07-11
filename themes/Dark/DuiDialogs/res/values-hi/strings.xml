@@ -18,5 +18,5 @@
  */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="system_overlay_dark">系统</string>
+  <string name="dui_overlay_dark">डीयूआई संवाद</string>
 </resources>

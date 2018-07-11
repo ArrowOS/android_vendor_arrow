@@ -18,17 +18,17 @@
  */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="settings_overlay_dark">设置</string>
+  <string name="settings_overlay_dark">सेटिंग्स</string>
   <string name="change_content">
         <![CDATA[
-        	<b><font color="#FFFFFF">Title:</font></b><br />
+        	<b><font color="#FFFFFF">नाम:</font></b><br />
         	<font color="#e8e8e8">%title</font><br /><br />
-        	<b><font color="#FFFFFF">Commit message:</font></b><br />
+        	<b><font color="#FFFFFF">Commit मेसेज:</font></b><br />
         	<font color="#e8e8e8">%message</font><br /><br />
-        	<b><font color="#FFFFFF">Owner:</font></b> <font color="#e8e8e8">%owner</font><br />
+        	<b><font color="#FFFFFF">मालिक:</font></b> <font color="#e8e8e8">%owner</font><br />
         	<b><font color="#FFFFFF">Merged:</font></b> <font color="#e8e8e8">%date</font><br />
         	<b><font color="#FFFFFF">Branch:</font></b> <font color="#e8e8e8">%branch</font><br />
-        	<b><font color="#FFFFFF">Project:</font></b> <font color="#e8e8e8">%project</font><br />
+        	<b><font color="#FFFFFF">प्रोजेक्ट:</font></b> <font color="#e8e8e8">%project</font><br />
         ]]>
     </string>
 </resources>
