@@ -45,8 +45,8 @@ default_manifest = ".repo/manifest.xml"
 custom_local_manifest = ".repo/local_manifests/roomservice.xml"
 custom_default_revision = "arrow-8.x"
 custom_dependencies = "arrow.dependencies"
-org_manifest = "ArrowOS"  # leave empty if org is provided in manifest
-org_display = "ArrowOS"  # needed for displaying
+org_manifest = "ArrowOS-Devices"  # leave empty if org is provided in manifest
+org_display = "ArrowOS-Devices"  # needed for displaying
 
 arrow_manifest = ".repo/manifests/arrow.xml"
 hals_manifest = ".repo/manifests/hals.xml"
@@ -134,6 +134,8 @@ def get_revision(manifest=None, p="build"):
         if proj.get('path').strip('/') == p:
             project = proj
             break
+    if project is None:
+        return custom_default_revision
     revision = project.get('revision')
     if revision:
         return revision.replace('refs/heads/', '').replace('refs/tags/', '')
@@ -369,7 +371,7 @@ def main():
         print("Found repository: %s" % repository['name'])
 
         fallback_branch = detect_revision(repository)
-        manufacturer = repo_name[7:-(len(device)+1)]
+        manufacturer = repo_name[15:-(len(device)+1)]
         repo_path = "device/%s/%s" % (manufacturer, device)
         adding = [{'repository': repo_name, 'target_path': repo_path}]
 
