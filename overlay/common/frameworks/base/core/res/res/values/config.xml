@@ -58,7 +58,7 @@
             0 - Nothing
             1 - Go to home
     -->
-    <integer name="config_backPanicBehavior">1</integer>
+    <integer name="config_backPanicBehavior">0</integer>
 
     <!--  Whether Multiuser UI should be shown -->
     <bool name="config_enableMultiUserUI">true</bool>
