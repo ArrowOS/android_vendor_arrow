@@ -75,22 +75,17 @@ PRODUCT_PACKAGES += \
     getcap \
     e2fsck \
     fsck.ntfs \
-    gdbserver \
     htop \
     lib7z \
     libsepol \
-    micro_bench \
     mke2fs \
     mkfs.ntfs \
     mount.ntfs \
     nano \
     openvpn \
-    oprofiled \
     pigz \
     powertop \
     setcap \
-    sqlite3 \
-    strace \
     tune2fs \
     unrar \
     unzip \
@@ -127,11 +122,11 @@ PRODUCT_PACKAGES += \
     rsync
 
 # These packages are excluded from user builds
-ifneq ($(TARGET_BUILD_VARIANT),user)
-PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES_DEBUG += \
+    micro_bench \
     procmem \
-    procrank
-endif
+    procrank \
+    strace
 
 # Charger images
 PRODUCT_PACKAGES += \
