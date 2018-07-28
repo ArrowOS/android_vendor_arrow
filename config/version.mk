@@ -15,28 +15,7 @@
 
 ARROW_MOD_VERSION = v8.1
 
-ifndef ARROW_BUILD_TYPE
-    ARROW_BUILD_TYPE := UNOFFICIAL
-endif
-
-ifeq ($(ARROW_BETA),true)
-    ARROW_BUILD_TYPE := BETA
-endif
-
-CURRENT_DEVICE=$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3)
-
-ifdef ARROW_OFFICIAL
-   LIST = $(shell curl -s https://raw.githubusercontent.com/ArrowOS/android_vendor_arrow/arrow-8.x/arrow.devices)
-   FOUND_DEVICE =  $(filter $(CURRENT_DEVICE), $(LIST))
-    ifeq ($(FOUND_DEVICE),$(CURRENT_DEVICE))
-      IS_OFFICIAL=true
-      ARROW_BUILD_TYPE := OFFICIAL
-    endif
-    ifneq ($(IS_OFFICIAL), true)
-       ARROW_BUILD_TYPE := UNOFFICIAL
-       $(error Device is not official "$(FOUND)")
-    endif
-endif
+ARROW_BUILD_TYPE := OFFICIAL
 
 ARROW_VERSION := Arrow-$(ARROW_MOD_VERSION)-$(CURRENT_DEVICE)-$(ARROW_BUILD_TYPE)-$(shell date -u +%Y%m%d)
 
