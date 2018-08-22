@@ -30,14 +30,14 @@ PRODUCT_PACKAGES += \
     Phonograph
 
 # Themes
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     DuiDarkTheme \
     GBoardDarkTheme \
     SettingsDarkTheme \
     SystemDarkTheme
 
 # Overlays
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     AmberAccent \
     BlackAccent \
     BlueAccent \
@@ -134,8 +134,8 @@ PRODUCT_PACKAGES += \
     charger_res_images
 
 # DU Utils Library
-PRODUCT_PACKAGES += \
-    org.dirtyunicorns.utils
+#PRODUCT_PACKAGES += \
+#    org.dirtyunicorns.utils
 
-PRODUCT_BOOT_JARS += \
-    org.dirtyunicorns.utils
+#PRODUCT_BOOT_JARS += \
+#    org.dirtyunicorns.utils
