@@ -26,7 +26,8 @@ PRODUCT_PACKAGES += \
     Phonograph \
     Simple-Gallery \
     stats \
-    Stk
+    Stk \
+    Turbo
 
 # Themes Dark
 PRODUCT_PACKAGES += \
@@ -110,6 +111,11 @@ PRODUCT_PACKAGES += \
     vim \
     wget \
     zip
+
+# Turbo
+PRODUCT_PACKAGES += \
+    Turbo \
+    turbo.xml
 
 # Exchange support
 PRODUCT_PACKAGES += \
