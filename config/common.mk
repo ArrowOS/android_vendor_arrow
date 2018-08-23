@@ -18,7 +18,9 @@ PRODUCT_COPY_FILES += \
     vendor/arrow/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
     vendor/arrow/prebuilt/common/bin/sysinit:system/bin/sysinit  \
 
-DEVICE_PACKAGE_OVERLAYS += vendor/arrow/overlay/common
+DEVICE_PACKAGE_OVERLAYS += \
+    vendor/arrow/overlay/common \
+    vendor/arrow/overlay/themes
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
