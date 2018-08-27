@@ -45,4 +45,5 @@ type ProductVariables struct {
 	Uses_nvidia_enhancements  *bool `json:",omitempty"`
 	Uses_qcom_bsp_legacy  *bool `json:",omitempty"`
 	Uses_qti_camera_device  *bool `json:",omitempty"`
+	Target_use_sdclang							*bool `json:",omitempty"`
 }
