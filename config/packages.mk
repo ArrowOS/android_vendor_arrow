@@ -115,7 +115,8 @@ PRODUCT_PACKAGES += \
 # Turbo
 PRODUCT_PACKAGES += \
     Turbo \
-    turbo.xml
+    turbo.xml \
+    privapp-permissions-turbo.xml
 
 # Exchange support
 PRODUCT_PACKAGES += \
