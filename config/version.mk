@@ -49,3 +49,5 @@ ARROW_DISPLAY_VERSION := Arrow-$(ARROW_MOD_VERSION)-$(ARROW_BUILD_TYPE)
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
   ro.arrow.display.version=$(ARROW_DISPLAY_VERSION)
+
+ro.arrow.builddate := $(shell date -u +%Y%m%d)
