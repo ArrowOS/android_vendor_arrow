@@ -19,7 +19,7 @@ PRODUCT_PACKAGES += \
     Calendar \
     ExactCalculator \
     LatinIME \
-    Launcher3 \
+    Launcher3Prebuilt \
     messaging \
     Simple-Gallery \
     stats \
