@@ -18,6 +18,7 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     Calendar \
     ExactCalculator \
+    Jelly \
     LatinIME \
     Launcher3Prebuilt \
     messaging \
