@@ -22,11 +22,7 @@ PRODUCT_PACKAGES += \
     Launcher3Prebuilt \
     messaging \
     Simple-Gallery \
-    stats \
-    OmniJaws \
-    Trebuchet \
-    Snap \
-    Phonograph
+    stats
 
 # Extra tools
 PRODUCT_PACKAGES += \
