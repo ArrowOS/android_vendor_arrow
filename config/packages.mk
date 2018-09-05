@@ -20,7 +20,7 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     Jelly \
     LatinIME \
-    Launcher3Prebuilt \
+    Launcher3QuickStepGo \
     messaging \
     Simple-Gallery \
     stats
