@@ -16,9 +16,9 @@
 # Required packages
 PRODUCT_PACKAGES += \
     BluetoothExt \
+    Browser \
     Calendar \
     ExactCalculator \
-    Jelly \
     LatinIME \
     Launcher3QuickStep \
     messaging \
