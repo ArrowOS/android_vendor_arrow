@@ -128,3 +128,9 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
+# World APN list
+include vendor/arrow/config/apns-conf.mk
+
+PRODUCT_PACKAGES += \
+    apns-conf.xml
+
