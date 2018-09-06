@@ -25,6 +25,41 @@ PRODUCT_PACKAGES += \
     Simple-Gallery \
     stats
 
+# Themes
+PRODUCT_PACKAGES += \
+    GBoardDarkTheme \
+    SettingsDarkTheme \
+    SystemDarkTheme \
+    SystemUIDarkTheme
+
+# Overlays
+PRODUCT_PACKAGES += \
+    AmberAccent \
+    BlackAccent \
+    BlueAccent \
+    BlueGreyAccent \
+    BrownAccent \
+    CyanAccent \
+    DeepOrangeAccent \
+    DeepPurpleAccent \
+    DuiDark \
+    GBoardDark \
+    GreenAccent \
+    GreyAccent \
+    IndigoAccent \
+    LightBlueAccent \
+    LightGreenAccent \
+    LimeAccent \
+    OrangeAccent \
+    PinkAccent \
+    PurpleAccent \
+    RedAccent \
+    SettingsDark \
+    SystemDark \
+    TealAccent \
+    YellowAccent \
+    WhiteAccent
+
 # Extra tools
 PRODUCT_PACKAGES += \
     7z \

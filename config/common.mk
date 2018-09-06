@@ -55,7 +55,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/arrow/prebuilt/common/etc/sensitive_pn.xml:system/etc/sensitive_pn.xml
 
-
 # Pixel sysconfig
 PRODUCT_COPY_FILES += \
     vendor/arrow/prebuilt/common/etc/sysconfig/pixel.xml:system/etc/sysconfig/pixel.xml
