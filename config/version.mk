@@ -26,7 +26,7 @@ endif
 CURRENT_DEVICE=$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3)
 
 ifdef ARROW_OFFICIAL
-   LIST = $(shell curl -s https://raw.githubusercontent.com/ArrowOS/android_vendor_arrow/arrow-8.x/arrow.devices)
+   LIST = $(shell curl -s https://raw.githubusercontent.com/ArrowOS/android_vendor_arrow/arrow-9.x/arrow.devices)
    FOUND_DEVICE =  $(filter $(CURRENT_DEVICE), $(LIST))
     ifeq ($(FOUND_DEVICE),$(CURRENT_DEVICE))
       IS_OFFICIAL=true
