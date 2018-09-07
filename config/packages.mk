@@ -23,7 +23,8 @@ PRODUCT_PACKAGES += \
     Launcher3QuickStep \
     messaging \
     Simple-Gallery \
-    stats
+    stats \
+    Stk
 
 # Extra tools
 PRODUCT_PACKAGES += \
