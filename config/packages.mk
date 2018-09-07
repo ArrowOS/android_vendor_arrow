@@ -27,6 +27,7 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     Trebuchet \
     Snap \
+    Stk \
     Phonograph
 
 # Themes
