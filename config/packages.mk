@@ -22,6 +22,7 @@ PRODUCT_PACKAGES += \
     LatinIME \
     Launcher3QuickStep \
     messaging \
+    OmniJaws \
     Simple-Gallery \
     stats \
     Stk
