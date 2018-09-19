@@ -23,3 +23,5 @@ endif
 ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
 include vendor/arrow/config/BoardConfigQcom.mk
 endif
+
+include vendor/arrow/config/BoardConfigSoong.mk
