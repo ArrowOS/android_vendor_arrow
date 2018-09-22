@@ -25,3 +25,5 @@ include vendor/arrow/config/BoardConfigQcom.mk
 endif
 
 include vendor/arrow/config/BoardConfigSoong.mk
+
+PRODUCT_SOONG_NAMESPACES += $(PATHMAP_SOONG_NAMESPACES)
