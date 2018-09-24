@@ -25,7 +25,8 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     Simple-Gallery \
     stats \
-    Stk
+    Stk \
+    Updater
 
 # Themes Dark
 PRODUCT_PACKAGES += \
