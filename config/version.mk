@@ -31,6 +31,10 @@ ifdef ARROW_OFFICIAL
     ifeq ($(FOUND_DEVICE),$(CURRENT_DEVICE))
       IS_OFFICIAL=true
       ARROW_BUILD_TYPE := OFFICIAL
+
+PRODUCT_PACKAGES += \
+    Updater
+
     endif
     ifneq ($(IS_OFFICIAL), true)
        ARROW_BUILD_TYPE := UNOFFICIAL
