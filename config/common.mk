@@ -67,3 +67,6 @@ include vendor/arrow/config/packages.mk
 
 # Props
 include vendor/arrow/config/props.mk
+
+# Sounds
+include vendor/arrow/config/sounds.mk
