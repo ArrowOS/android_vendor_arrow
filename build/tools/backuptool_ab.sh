@@ -5,7 +5,7 @@
 
 export S=/system
 export C=/postinstall/tmp/backupdir
-export V=8.1
+export V=v9.0
 
 # Scripts in /system/addon.d expect to find backuptool.functions in /tmp
 mkdir -p /postinstall/tmp/
@@ -36,7 +36,7 @@ if [ ! -r /system/build.prop ]; then
     return 0
 fi
 
-grep -q "^ro.arrow.version=$V.*" /system/etc/prop.default /system/build.prop && return 1
+grep -q "^ro.modversion=v$V.*" /system/etc/prop.default /system/build.prop && return 1
 
 echo "Not backing up files from incompatible version: $V"
 return 0
