@@ -33,7 +33,8 @@ PRODUCT_PACKAGES += \
 
 ifeq ($(TARGET_EXCLUDE_LAWNCHAIR),)
 PRODUCT_PACKAGES += \
-    Lawnchair
+    Lawnchair \
+    LawnConf
 endif
 
 # Accents
