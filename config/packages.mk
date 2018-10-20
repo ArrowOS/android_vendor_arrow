@@ -33,7 +33,8 @@ PRODUCT_PACKAGES += \
 
 ifeq ($(TARGET_EXCLUDE_LAWNCHAIR),)
 PRODUCT_PACKAGES += \
-    Lawnchair
+    Lawnchair \
+    LawnConf
 endif
 
 # Accents
@@ -135,4 +136,66 @@ PRODUCT_PACKAGES += \
 
 # World APN list
 PRODUCT_PACKAGES += \
+<<<<<<< HEAD
     apns-conf.xml
+=======
+    Lean
+
+# Include librsjni explicitly to workaround GMS issue
+PRODUCT_PACKAGES += \
+    librsjni
+
+# Accent and Base packages
+PRODUCT_PACKAGES += \
+    AmberTheme \
+    BlueTheme \
+    CyanTheme \
+    DeepOrangeTheme \
+    DeepPurpleTheme \
+    GreenTheme \
+    IndigoTheme \
+    LightBlueTheme \
+    LightGreenTheme \
+    LimeTheme \
+    OrangeTheme \
+    PinkTheme \
+    PixelBaseTheme \
+    PixelTheme \
+    PurpleTheme \
+    RedTheme \
+    StockBaseTheme \
+    StockFixedBaseTheme \
+    StockTheme \
+    YellowTheme
+
+# Dark/BlackUI Packages
+PRODUCT_PACKAGES += \
+    GBoardDarkTheme \
+    SettingsDarkTheme \
+    SystemDarkTheme \
+    SysuiQsDarkTheme
+#    SettingsBlackTheme \
+#    SystemBlackTheme \
+#    SystemSettingsIconTint \
+#    SysuiQsBlackTheme
+
+# Lawnchair Default Configuration
+PRODUCT_PACKAGES += \
+    LawnConf
+
+PRODUCT_COPY_FILES += \
+   vendor/potato/prebuilt/common/fonts/GoogleSans-Regular.ttf:system/fonts/GoogleSans-Regular.ttf \
+   vendor/potato/prebuilt/common/fonts/GoogleSans-Medium.ttf:system/fonts/GoogleSans-Medium.ttf \
+   vendor/potato/prebuilt/common/fonts/GoogleSans-MediumItalic.ttf:system/fonts/GoogleSans-MediumItalic.ttf \
+   vendor/potato/prebuilt/common/fonts/GoogleSans-Italic.ttf:system/fonts/GoogleSans-Italic.ttf \
+   vendor/potato/prebuilt/common/fonts/GoogleSans-Bold.ttf:system/fonts/GoogleSans-Bold.ttf \
+   vendor/potato/prebuilt/common/fonts/GoogleSans-BoldItalic.ttf:system/fonts/GoogleSans-BoldItalic.ttf
+
+ADDITIONAL_FONTS_FILE := vendor/potato/prebuilt/common/fonts/google-sans.xml
+
+# Turbo
+PRODUCT_PACKAGES += \
+    Turbo \
+    vendor/potato/prebuilt/common/etc/permissions/privapp-permissions-turbo.xml:system/etc/permissions/privapp-permissions-turbo.xml \
+    vendor/potato/prebuilt/common/etc/sysconfig/turbo.xml:system/etc/sysconfig/turbo.xml
+>>>>>>> 7a7d886f... potato: Introduce overlay for Lawnchair default conf
