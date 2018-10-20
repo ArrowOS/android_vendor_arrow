@@ -23,6 +23,7 @@ PRODUCT_PACKAGES += \
     Launcher3QuickStep \
     messaging \
     OmniJaws \
+    Phonograph \
     Simple-Gallery \
     stats \
     Stk
