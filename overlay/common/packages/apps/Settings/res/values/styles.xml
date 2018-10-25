@@ -28,6 +28,7 @@
     <style name="SuggestionCardIcon">
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:layout_alignParentStart">false</item>
+        <item name="android:tint">@*android:color/accent_device_default_light</item>
     </style>
 
 </resources>
