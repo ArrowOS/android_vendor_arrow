@@ -151,3 +151,6 @@ endif
 PRODUCT_PACKAGES += \
     charger_res_images
 
+# Weather
+PRODUCT_PACKAGES += \
+    WeatherClient
