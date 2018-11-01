@@ -14,6 +14,7 @@
 
 PRODUCT_COPY_FILES += \
 	vendor/arrow/sounds/alarms/A_real_hoot.ogg:system/media/audio/alarms/A_real_hoot.ogg \
+	vendor/arrow/sounds/alarms/wolf6.ogg:system/media/audio/alarms/wolf6.ogg \
 	vendor/arrow/sounds/alarms/Argon.ogg:system/media/audio/alarms/Argon.ogg \
 	vendor/arrow/sounds/alarms/Awaken.ogg:system/media/audio/alarms/Awaken.ogg \
 	vendor/arrow/sounds/alarms/Bounce.ogg:system/media/audio/alarms/Bounce.ogg \
@@ -104,6 +105,7 @@ PRODUCT_COPY_FILES += \
 	vendor/arrow/sounds/notifications/Tweeter.ogg:system/media/audio/notifications/Tweeter.ogg \
 	vendor/arrow/sounds/notifications/Twinkle.ogg:system/media/audio/notifications/Twinkle.ogg \
         vendor/arrow/sounds/notifications/Incoming_Suspense.ogg:system/media/audio/notifications/Incoming_Suspense.ogg \
+	vendor/arrow/sounds/ringtones/spooky_laugh.ogg:system/media/audio/ringtones/spooky_laugh.ogg \
 	vendor/arrow/sounds/ringtones/Atria.ogg:system/media/audio/ringtones/Atria.ogg \
 	vendor/arrow/sounds/ringtones/Beats.ogg:system/media/audio/ringtones/Beats.ogg \
 	vendor/arrow/sounds/ringtones/Callisto.ogg:system/media/audio/ringtones/Callisto.ogg \
@@ -139,5 +141,6 @@ PRODUCT_COPY_FILES += \
 	vendor/arrow/sounds/ringtones/Zen_too.ogg:system/media/audio/ringtones/Zen_too.ogg
 
 PRODUCT_PROPERTY_OVERRIDES += \
-   ro.config.ringtone=Zen_too.ogg \
-   ro.config.notification_sound=Incoming_Suspense.ogg
+   ro.config.ringtone=spooky_laugh.ogg \
+   ro.config.notification_sound=Incoming_Suspense.ogg \
+   ro.config.alarm_alert=wolf6.ogg
