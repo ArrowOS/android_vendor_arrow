@@ -103,6 +103,7 @@ PRODUCT_COPY_FILES += \
 	vendor/arrow/sounds/notifications/Tuneup.ogg:system/media/audio/notifications/Tuneup.ogg \
 	vendor/arrow/sounds/notifications/Tweeter.ogg:system/media/audio/notifications/Tweeter.ogg \
 	vendor/arrow/sounds/notifications/Twinkle.ogg:system/media/audio/notifications/Twinkle.ogg \
+        vendor/arrow/sounds/notifications/Incoming_Suspense.ogg:system/media/audio/notifications/Incoming_Suspense.ogg \
 	vendor/arrow/sounds/ringtones/Atria.ogg:system/media/audio/ringtones/Atria.ogg \
 	vendor/arrow/sounds/ringtones/Beats.ogg:system/media/audio/ringtones/Beats.ogg \
 	vendor/arrow/sounds/ringtones/Callisto.ogg:system/media/audio/ringtones/Callisto.ogg \
@@ -139,4 +140,4 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
    ro.config.ringtone=Zen_too.ogg \
-   ro.config.notification_sound=Chime.ogg
+   ro.config.notification_sound=Incoming_Suspense.ogg
