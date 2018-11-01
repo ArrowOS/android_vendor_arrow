@@ -24,6 +24,7 @@ PRODUCT_PACKAGES += \
     messaging \
     OmniJaws \
     Phonograph \
+    Recorder \
     Simple-Gallery \
     stats \
     Stk
