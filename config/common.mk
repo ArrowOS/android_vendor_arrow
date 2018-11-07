@@ -51,6 +51,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/arrow/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
+# Ambient Play
+PRODUCT_PACKAGES += \
+    AmbientPlayHistoryProvider
+
 # Sensitive Phone Numbers list
 PRODUCT_COPY_FILES += \
     vendor/arrow/prebuilt/common/etc/sensitive_pn.xml:system/etc/sensitive_pn.xml
