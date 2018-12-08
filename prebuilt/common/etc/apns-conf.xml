@@ -22573,7 +22573,7 @@
       type="mms"
   />
 
-  <apn carrier="Loop Internet (405854)"
+  <apn carrier="Jio 4G"
       mcc="405"
       mnc="854"
       apn="www"
@@ -22583,7 +22583,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop MMS (405854)"
+  <apn carrier="Jio MMS"
       mcc="405"
       mnc="854"
       apn="mizone"
@@ -22596,7 +22596,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop Internet (405855)"
+  <apn carrier="Jio 4G"
       mcc="405"
       mnc="855"
       apn="www"
@@ -22606,7 +22606,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop MMS (405855)"
+  <apn carrier="Jio MMS"
       mcc="405"
       mnc="855"
       apn="mizone"
@@ -22619,7 +22619,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop Internet (405856)"
+  <apn carrier="Jio 4G"
       mcc="405"
       mnc="856"
       apn="www"
@@ -22629,7 +22629,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop MMS (405856)"
+  <apn carrier="Jio MMS"
       mcc="405"
       mnc="856"
       apn="mizone"
@@ -22642,7 +22642,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop Internet (405857)"
+  <apn carrier="Jio 4G"
       mcc="405"
       mnc="857"
       apn="www"
@@ -22652,7 +22652,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop MMS (405857)"
+  <apn carrier="Jio MMS"
       mcc="405"
       mnc="857"
       apn="mizone"
@@ -22665,7 +22665,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop Internet (405858)"
+  <apn carrier="Jio 4G"
       mcc="405"
       mnc="858"
       apn="www"
@@ -22675,7 +22675,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop MMS (405858)"
+  <apn carrier="Jio MMS"
       mcc="405"
       mnc="858"
       apn="mizone"
@@ -22688,7 +22688,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop Internet (405859)"
+  <apn carrier="Jio 4G"
       mcc="405"
       mnc="859"
       apn="www"
@@ -22698,7 +22698,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop MMS (405859)"
+  <apn carrier="Jio MMS"
       mcc="405"
       mnc="859"
       apn="mizone"
@@ -22711,7 +22711,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop Internet (405860)"
+  <apn carrier="Jio 4G"
       mcc="405"
       mnc="860"
       apn="www"
@@ -22721,7 +22721,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop MMS (405860)"
+  <apn carrier="Jio MMS"
       mcc="405"
       mnc="860"
       apn="mizone"
@@ -22734,7 +22734,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop Internet (405861)"
+  <apn carrier="Jio 4G"
       mcc="405"
       mnc="861"
       apn="www"
@@ -22744,7 +22744,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop MMS (405861)"
+  <apn carrier="Jio MMS"
       mcc="405"
       mnc="861"
       apn="mizone"
@@ -22757,7 +22757,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop Internet (405862)"
+  <apn carrier="Jio 4G"
       mcc="405"
       mnc="862"
       apn="www"
@@ -22767,7 +22767,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop MMS (405862)"
+  <apn carrier="Jio MMS"
       mcc="405"
       mnc="862"
       apn="mizone"
@@ -22780,7 +22780,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop Internet (405863)"
+  <apn carrier="Jio 4G"
       mcc="405"
       mnc="863"
       apn="www"
@@ -22790,7 +22790,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop MMS (405863)"
+  <apn carrier="Jio MMS"
       mcc="405"
       mnc="863"
       apn="mizone"
@@ -22803,7 +22803,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop Internet (405864)"
+  <apn carrier="Jio 4G"
       mcc="405"
       mnc="864"
       apn="www"
@@ -22813,7 +22813,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop MMS (405864)"
+  <apn carrier="Jio MMS"
       mcc="405"
       mnc="864"
       apn="mizone"
@@ -22826,7 +22826,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop Internet (405865)"
+  <apn carrier="Jio 4G"
       mcc="405"
       mnc="865"
       apn="www"
@@ -22836,7 +22836,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop MMS (405865)"
+  <apn carrier="Jio MMS"
       mcc="405"
       mnc="865"
       apn="mizone"
@@ -22849,7 +22849,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop Internet (405866)"
+  <apn carrier="Jio 4G"
       mcc="405"
       mnc="866"
       apn="www"
@@ -22859,7 +22859,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop MMS (405866)"
+  <apn carrier="Jio MMS"
       mcc="405"
       mnc="866"
       apn="mizone"
@@ -22872,7 +22872,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop Internet (405867)"
+  <apn carrier="Jio 4G"
       mcc="405"
       mnc="867"
       apn="www"
@@ -22882,7 +22882,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop MMS (405867)"
+  <apn carrier="Jio MMS"
       mcc="405"
       mnc="867"
       apn="mizone"
@@ -22895,7 +22895,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop Internet (405868)"
+  <apn carrier="Jio 4G"
       mcc="405"
       mnc="868"
       apn="www"
@@ -22905,7 +22905,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop MMS (405868)"
+  <apn carrier="Jio MMS"
       mcc="405"
       mnc="868"
       apn="mizone"
@@ -22918,7 +22918,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop Internet (405869)"
+  <apn carrier="Jio 4G"
       mcc="405"
       mnc="869"
       apn="www"
@@ -22928,7 +22928,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop MMS (405869)"
+  <apn carrier="Jio MMS"
       mcc="405"
       mnc="869"
       apn="mizone"
@@ -22941,7 +22941,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop Internet (405870)"
+  <apn carrier="Jio 4G"
       mcc="405"
       mnc="870"
       apn="www"
@@ -22951,7 +22951,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop MMS (405870)"
+  <apn carrier="Jio MMS"
       mcc="405"
       mnc="870"
       apn="mizone"
@@ -22964,7 +22964,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop Internet (405871)"
+  <apn carrier="Jio 4G"
       mcc="405"
       mnc="871"
       apn="www"
@@ -22974,7 +22974,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop MMS (405871)"
+  <apn carrier="Jio MMS"
       mcc="405"
       mnc="871"
       apn="mizone"
@@ -22987,7 +22987,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop Internet (405872)"
+  <apn carrier="Jio 4G"
       mcc="405"
       mnc="872"
       apn="www"
@@ -22997,7 +22997,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop MMS (405872)"
+  <apn carrier="Jio MMS"
       mcc="405"
       mnc="872"
       apn="mizone"
@@ -23010,7 +23010,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop Internet (405873)"
+  <apn carrier="Jio 4G"
       mcc="405"
       mnc="873"
       apn="www"
@@ -23020,7 +23020,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop MMS (405873)"
+  <apn carrier="Jio MMS"
       mcc="405"
       mnc="873"
       apn="mizone"
@@ -23033,7 +23033,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop Internet (405874)"
+  <apn carrier="Jio 4G"
       mcc="405"
       mnc="874"
       apn="www"
@@ -23043,7 +23043,7 @@
       carrier_enabled="true"
   />
 
-  <apn carrier="Loop MMS (405874)"
+  <apn carrier="Jio MMS"
       mcc="405"
       mnc="874"
       apn="mizone"
