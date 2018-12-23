@@ -41,6 +41,7 @@ PRODUCT_COPY_FILES += \
 	vendor/arrow/sounds/alarms/Sway.ogg:system/media/audio/alarms/Sway.ogg \
 	vendor/arrow/sounds/alarms/Timer.ogg:system/media/audio/alarms/Timer.ogg \
 	vendor/arrow/sounds/alarms/Wag.ogg:system/media/audio/alarms/Wag.ogg \
+        vendor/arrow/sounds/alarms/christmas_bells.ogg:system/media/audio/alarms/christmas_bells.ogg \
 	vendor/arrow/sounds/ui/audio_end.ogg:system/media/audio/ui/audio_end.ogg \
 	vendor/arrow/sounds/ui/audio_initiate.ogg:system/media/audio/ui/audio_initiate.ogg \
 	vendor/arrow/sounds/ui/camera_click.ogg:system/media/audio/ui/camera_click.ogg \
@@ -100,6 +101,7 @@ PRODUCT_COPY_FILES += \
 	vendor/arrow/sounds/notifications/Tuneup.ogg:system/media/audio/notifications/Tuneup.ogg \
 	vendor/arrow/sounds/notifications/Tweeter.ogg:system/media/audio/notifications/Tweeter.ogg \
 	vendor/arrow/sounds/notifications/Twinkle.ogg:system/media/audio/notifications/Twinkle.ogg \
+        vendor/arrow/sounds/notifications/ho_ho_ho.ogg:system/media/audio/notifications/ho_ho_ho.ogg \
 	vendor/arrow/sounds/ringtones/Atria.ogg:system/media/audio/ringtones/Atria.ogg \
 	vendor/arrow/sounds/ringtones/Beats.ogg:system/media/audio/ringtones/Beats.ogg \
 	vendor/arrow/sounds/ringtones/Callisto.ogg:system/media/audio/ringtones/Callisto.ogg \
@@ -132,9 +134,10 @@ PRODUCT_COPY_FILES += \
 	vendor/arrow/sounds/ringtones/Triton.ogg:system/media/audio/ringtones/Triton.ogg \
 	vendor/arrow/sounds/ringtones/Umbriel.ogg:system/media/audio/ringtones/Umbriel.ogg \
 	vendor/arrow/sounds/ringtones/Zen.ogg:system/media/audio/ringtones/Zen.ogg \
-	vendor/arrow/sounds/ringtones/Zen_too.ogg:system/media/audio/ringtones/Zen_too.ogg
+	vendor/arrow/sounds/ringtones/Zen_too.ogg:system/media/audio/ringtones/Zen_too.ogg \
+	vendor/arrow/sounds/ringtones/christmas_hip_hop.ogg:system/media/audio/ringtones/christmas_hip_hop.ogg
 
 PRODUCT_PROPERTY_OVERRIDES += \
-   ro.config.ringtone=Zen_too.ogg,Dione.ogg \
-   ro.config.notification_sound=Chime.ogg \
-   ro.config.alarm_alert=Alarm_Classic.ogg
+   ro.config.ringtone=christmas_hip_hop.ogg,christmas_hip_hop.ogg \
+   ro.config.notification_sound=ho_ho_ho.ogg \
+   ro.config.alarm_alert=christmas_bells.ogg
