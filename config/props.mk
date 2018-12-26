@@ -67,7 +67,3 @@ else
 # Enable ADB authentication
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
-
-# Weather
-PRODUCT_PROPERTY_OVERRIDES += \
-    org.pixelexperience.weather.revision=2
