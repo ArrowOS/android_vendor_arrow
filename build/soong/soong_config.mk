@@ -12,6 +12,7 @@ $(call add_json_bool, Has_legacy_camera_hal1,                     $(filter true,
 $(call add_json_bool, Needs_legacy_camera_hal1_dyn_native_handle, $(filter true,$(TARGET_NEEDS_LEGACY_CAMERA_HAL1_DYN_NATIVE_HANDLE)))
 $(call add_json_bool, Needs_text_relocations,                     $(filter true,$(TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS)))
 $(call add_json_str,  Specific_camera_parameter_library,          $(TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY))
+$(call add_json_bool, Apply_msm8974_1440p_egl_workaround, $(filter true,$(TARGET_MSM8974_1440P_EGL_WORKAROUND)))
 $(call add_json_str_omitempty, Target_process_sdk_version_override, $(TARGET_PROCESS_SDK_VERSION_OVERRIDE))
 $(call add_json_str_omitempty,  Target_shim_libs,                           $(TARGET_LD_SHIM_LIBS))
 $(call add_json_bool, Uses_generic_camera_parameter_library,      $(if $(TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY),,true))
