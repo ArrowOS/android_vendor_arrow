@@ -115,6 +115,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Exchange2
 
+# Cutout control overlays
+PRODUCT_PACKAGES += \
+    HideCutout \
+    StatusBarStock
+
 # exFAT tools
  PRODUCT_PACKAGES += \
     fsck.exfat \
