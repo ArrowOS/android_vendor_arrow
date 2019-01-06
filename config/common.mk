@@ -59,6 +59,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/arrow/prebuilt/common/etc/sysconfig/pixel.xml:system/etc/sysconfig/pixel.xml
 
+# Power whitelist
+PRODUCT_COPY_FILES += \
+    vendor/arrow/config/permissions/custom-power-whitelist.xml:system/etc/sysconfig/custom-power-whitelist.xml
+
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
