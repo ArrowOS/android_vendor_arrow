@@ -20,14 +20,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
 endif
 
-ifeq ($(BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE),)
-  PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.device.cache_dir=/data/cache
-else
-  PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.device.cache_dir=/cache
-endif
-
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
