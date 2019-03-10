@@ -18,9 +18,9 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     Browser \
     Calendar \
+    CPixel_Launcher \
     ExactCalculator \
     LatinIME \
-    Launcher3QuickStep \
     messaging \
     OmniJaws \
     Phonograph \
