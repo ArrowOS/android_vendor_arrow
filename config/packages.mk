@@ -25,7 +25,6 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     Phonograph \
     Recorder \
-    Simple-Gallery \
     stats \
     Stk
 
