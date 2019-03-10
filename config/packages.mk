@@ -22,7 +22,6 @@ PRODUCT_PACKAGES += \
     LatinIME \
     Launcher3 \
     messaging \
-    Simple-Gallery \
     stats \
     OmniJaws \
     Trebuchet \
