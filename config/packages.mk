@@ -91,6 +91,7 @@ PRODUCT_PACKAGES += \
     bash \
     bzip2 \
     curl \
+    getcap \
     e2fsck \
     fsck.ntfs \
     gdbserver \
@@ -106,6 +107,7 @@ PRODUCT_PACKAGES += \
     oprofiled \
     pigz \
     powertop \
+    setcap \
     sqlite3 \
     strace \
     tune2fs \
