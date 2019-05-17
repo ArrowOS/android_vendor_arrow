@@ -31,8 +31,7 @@ on post-fs-data
     chmod 0640 /dev/fscklogs/log
 
     # Smart charging
-    chown system system /sys/class/power_supply/battery/battery_charging_enabled
-    chown system system /sys/class/power_supply/battery/charging_enabled
+    chown system system /sys/class/power_supply/battery/input_suspend
 
 on boot
     restorecon --recursive /sys/block/mmcblk0/queue
