@@ -46,7 +46,7 @@ trap cleanup 0
 #
 # $1: device name
 # $2: vendor name
-# $3: JDC root directory
+# $3: ARROW root directory
 # $4: is common device - optional, default to false
 # $5: cleanup - optional, default to true
 # $6: custom vendor makefile name - optional, default to false
@@ -67,15 +67,15 @@ function setup_vendor() {
         exit 1
     fi
 
-    export JDC_ROOT="$3"
-    if [ ! -d "$JDC_ROOT" ]; then
-        echo "\$JDC_ROOT must be set and valid before including this script!"
+    export ARROW_ROOT="$3"
+    if [ ! -d "$ARROW_ROOT" ]; then
+        echo "\$ARROW_ROOT must be set and valid before including this script!"
         exit 1
     fi
 
     export OUTDIR=vendor/"$VENDOR"/"$DEVICE"
-    if [ ! -d "$JDC_ROOT/$OUTDIR" ]; then
-        mkdir -p "$JDC_ROOT/$OUTDIR"
+    if [ ! -d "$ARROW_ROOT/$OUTDIR" ]; then
+        mkdir -p "$ARROW_ROOT/$OUTDIR"
     fi
 
     VNDNAME="$6"
@@ -83,9 +83,9 @@ function setup_vendor() {
         VNDNAME="$DEVICE"
     fi
 
-    export PRODUCTMK="$JDC_ROOT"/"$OUTDIR"/"$VNDNAME"-vendor.mk
-    export ANDROIDMK="$JDC_ROOT"/"$OUTDIR"/Android.mk
-    export BOARDMK="$JDC_ROOT"/"$OUTDIR"/BoardConfigVendor.mk
+    export PRODUCTMK="$ARROW_ROOT"/"$OUTDIR"/"$VNDNAME"-vendor.mk
+    export ANDROIDMK="$ARROW_ROOT"/"$OUTDIR"/Android.mk
+    export BOARDMK="$ARROW_ROOT"/"$OUTDIR"/BoardConfigVendor.mk
 
     if [ "$4" == "true" ] || [ "$4" == "1" ]; then
         COMMON=1
@@ -549,14 +549,14 @@ function write_header() {
         if [ $YEAR -eq 2017 ]; then
             printf "# Copyright (C) 2017 The LineageOS Project\n" >> $1
         elif [ $INITIAL_COPYRIGHT_YEAR -eq $YEAR ]; then
-            printf "# Copyright (C) $YEAR The LineageOS Project\n" >> $1
+            printf "# Copyright (C) $YEAR ArrowOS\n" >> $1
         elif [ $INITIAL_COPYRIGHT_YEAR -le 2017 ]; then
-            printf "# Copyright (C) 2017-$YEAR The LineageOS Project\n" >> $1
+            printf "# Copyright (C) 2017-$YEAR ArrowOS\n" >> $1
         else
-            printf "# Copyright (C) $INITIAL_COPYRIGHT_YEAR-$YEAR The LineageOS Project\n" >> $1
+            printf "# Copyright (C) $INITIAL_COPYRIGHT_YEAR-$YEAR ArrowOS\n" >> $1
         fi
     else
-        printf "# Copyright (C) $YEAR The LineageOS Project\n" > $1
+        printf "# Copyright (C) $YEAR ArrowOS\n" > $1
     fi
 
     cat << EOF >> $1
@@ -787,7 +787,7 @@ function get_file() {
 # Convert apk|jar .odex in the corresposing classes.dex
 #
 function oat2dex() {
-    local JDC_TARGET="$1"
+    local ARROW_TARGET="$1"
     local OEM_TARGET="$2"
     local SRC="$3"
     local TARGET=
@@ -795,8 +795,8 @@ function oat2dex() {
     local HOST="$(uname)"
 
     if [ -z "$BAKSMALIJAR" ] || [ -z "$SMALIJAR" ]; then
-        export BAKSMALIJAR="$JDC_ROOT"/vendor/aosp/build/tools/smali/baksmali.jar
-        export SMALIJAR="$JDC_ROOT"/vendor/aosp/build/tools/smali/smali.jar
+        export BAKSMALIJAR="$ARROW_ROOT"/vendor/arrow/build/tools/smali/baksmali.jar
+        export SMALIJAR="$ARROW_ROOT"/vendor/arrow/build/tools/smali/smali.jar
     fi
 
     if [ -z "$VDEXEXTRACTOR" ]; then
@@ -804,7 +804,7 @@ function oat2dex() {
     fi
 
     if [ -z "$CDEXCONVERTER" ]; then
-        export CDEXCONVERTER="$LINEAGE_ROOT"/vendor/lineage/build/tools/"$HOST"/compact_dex_converter
+        export CDEXCONVERTER="$ARROW_ROOT"/vendor/arrow/build/tools/"$HOST"/compact_dex_converter
     fi
 
     # Extract existing boot.oats to the temp folder
@@ -824,11 +824,11 @@ function oat2dex() {
         FULLY_DEODEXED=1 && return 0 # system is fully deodexed, return
     fi
 
-    if [ ! -f "$JDC_TARGET" ]; then
+    if [ ! -f "$ARROW_TARGET" ]; then
         return;
     fi
 
-    if grep "classes.dex" "$JDC_TARGET" >/dev/null; then
+    if grep "classes.dex" "$ARROW_TARGET" >/dev/null; then
         return 0 # target apk|jar is already odexed, return
     fi
 
@@ -1247,7 +1247,7 @@ function extract_firmware() {
     local FILELIST=( ${PRODUCT_COPY_FILES_LIST[@]} )
     local COUNT=${#FILELIST[@]}
     local SRC="$2"
-    local OUTPUT_DIR="$JDC_ROOT"/"$OUTDIR"/radio
+    local OUTPUT_DIR="$ARROW_ROOT"/"$OUTDIR"/radio
 
     if [ "$VENDOR_RADIO_STATE" -eq "0" ]; then
         echo "Cleaning firmware output directory ($OUTPUT_DIR).."
