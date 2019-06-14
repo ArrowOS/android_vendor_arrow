@@ -19,15 +19,15 @@
 <resources>
 
     <!-- Accent -->
-    <color name="accent_device_default_700">#FFFF5252</color>
-    <color name="accent_device_default_light">#FFFF5252</color>
-    <color name="accent_device_default_dark">#FFFF5252</color>
-    <color name="settings_icon_tint_color">#FFFF5252</color>
+    <color name="accent_device_default_700">#FFEA0024</color>
+    <color name="accent_device_default_light">#FFEA0024</color>
+    <color name="accent_device_default_dark">#FFEA0024</color>
+    <color name="settings_icon_tint_color">#FFEA0024</color>
 
     <!-- Generic colors -->
-    <color name="generic_theme_primary">#FFFF5252</color>
-    <color name="generic_theme_primary_dark">#FFCC4141</color>
-    <color name="generic_theme_accent">#FFE54949</color>
+    <color name="generic_theme_primary">#FFEA0024</color>
+    <color name="generic_theme_primary_dark">#FFEA0024</color>
+    <color name="generic_theme_accent">#FFEA0024</color>
 
     <!-- Fastscroller -->
     <color name="fastscroller_text_color">#FFFFFFFF</color>
