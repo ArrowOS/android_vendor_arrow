@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ARROW_MOD_VERSION = v9.0
+ARROW_MOD_VERSION = v10.0
 
 ifndef ARROW_BUILD_TYPE
     ARROW_BUILD_TYPE := UNOFFICIAL
@@ -26,7 +26,7 @@ endif
 CURRENT_DEVICE=$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3)
 
 ifdef ARROW_OFFICIAL
-   LIST = $(shell curl -s https://raw.githubusercontent.com/ArrowOS/android_vendor_arrow/arrow-9.x/arrow.devices)
+   LIST = $(shell curl -s https://raw.githubusercontent.com/ArrowOS/android_vendor_arrow/arrow-10.0/arrow.devices)
    FOUND_DEVICE =  $(filter $(CURRENT_DEVICE), $(LIST))
     ifeq ($(FOUND_DEVICE),$(CURRENT_DEVICE))
       IS_OFFICIAL=true
