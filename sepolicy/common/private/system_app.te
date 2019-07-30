@@ -1,0 +1,6 @@
+# For the updaters
+allow system_app cache_recovery_file:dir {add_name rw_file_perms};
+allow system_app cache_recovery_file:file {create rw_file_perms};
+
+# Allow Settings to read ro.vendor.build.security_patch
+get_prop(system_app, vendor_security_patch_level_prop)
