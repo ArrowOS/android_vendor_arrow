@@ -1,0 +1,1 @@
+genfscon proc /sys/kernel/deny_new_usb u:object_r:proc_deny_new_usb:s0
