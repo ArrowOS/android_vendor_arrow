@@ -1,0 +1,11 @@
+type backuptool, domain, coredomain;
+
+neverallow {
+    domain
+    -recovery
+    -update_engine
+} backuptool:process transition;
+
+userdebug_or_eng(`
+    permissive backuptool;
+')

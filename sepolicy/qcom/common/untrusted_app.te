@@ -1,0 +1,2 @@
+# allow apps to read battery status
+r_dir_file(untrusted_app, sysfs_battery_supply)
