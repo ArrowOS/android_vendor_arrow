@@ -1,0 +1,12 @@
+userdebug_or_eng(`
+  typeattribute sudaemon coredomain;
+
+  domain_trans(init, su_exec, sudaemon)
+
+  type_transition sudaemon socket_device:sock_file superuser_device;
+
+  # sudaemon is also permissive to permit setenforce.
+  permissive sudaemon;
+
+  app_domain(sudaemon)
+')

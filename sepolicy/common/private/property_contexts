@@ -1,0 +1,3 @@
+adb.network.port              u:object_r:adbtcp_prop:s0
+lineage.userinit.active       u:object_r:userinit_prop:s0
+recovery.perf.mode            u:object_r:lineage_recovery_prop:s0

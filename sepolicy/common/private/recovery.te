@@ -1,0 +1,34 @@
+recovery_only(`
+# Secure adb (setup_adbd)
+r_dir_file(recovery, adb_keys_file)
+set_prop(recovery, shell_prop)
+
+# Manage fstab and /adb_keys
+userdebug_or_eng(`
+allow recovery rootfs:file create_file_perms;
+allow recovery rootfs:file link;
+')
+allow recovery rootfs:dir create_dir_perms;
+
+# Sideload cache
+allow recovery proc_meminfo:file r_file_perms;
+
+# Read storage files and directories
+allow recovery tmpfs:dir mounton;
+r_dir_file(recovery, media_rw_data_file)
+r_dir_file(recovery, sdcard_type)
+
+# Control properties
+set_prop(recovery, ffs_prop)
+set_prop(recovery, lineage_recovery_prop)
+
+# Set system properties for various things
+set_prop(recovery, system_prop)
+
+# Switch to backuptool
+allow recovery self:process setexec;
+domain_trans(recovery, otapreopt_chroot_exec, backuptool)
+
+# Some addons require this for A/B installation compatibility
+allow recovery system_file:dir mounton;
+')

@@ -1,0 +1,4 @@
+allow system_server hal_lineage_livedisplay_hwservice:hwservice_manager find;
+binder_call(system_server, hal_livedisplay_default)
+
+allow system_server hal_lineage_power_hwservice:hwservice_manager find;

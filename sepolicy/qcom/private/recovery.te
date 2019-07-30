@@ -1,0 +1,6 @@
+recovery_only(`
+r_dir_file(recovery, sysfs_battery_supply)
+r_dir_file(recovery, sysfs_graphics)
+r_dir_file(recovery, sysfs_usb_supply)
+allow recovery sysfs_graphics:file write;
+')

@@ -1,0 +1,2 @@
+# Required in order to set lineage.service.adb.root
+set_prop(adbd, system_prop)
