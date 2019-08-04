@@ -55,6 +55,11 @@ on boot
     chown system system /sys/block/dm-0/queue/scheduler
     chmod 0664 /sys/block/dm-0/queue/scheduler
 
+on property:sys.boot_completed=1
+    # Restrict permissions to socket file
+    # to hide Magisk & co.
+    chmod 440 /proc/net/unix
+
 # bugreport is triggered by holding down volume down, volume up and power
 service bugreport /system/bin/dumpstate -d -p -z
     oneshot
