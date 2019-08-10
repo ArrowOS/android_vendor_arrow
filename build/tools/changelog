@@ -2,7 +2,7 @@
 
 # Exports
 
-. $ANDROID_BUILD_TOP/vendor/arrow/build/tools/colors
+. vendor/arrow/build/tools/colors
 
 export Changelog=Changelog.txt
 
