@@ -29,7 +29,7 @@ PRODUCT_PACKAGES += \
     Stk
 
 # Themes Dark
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     GBoardDarkTheme \
     SettingsDarkTheme \
     SystemDarkTheme \
@@ -37,14 +37,14 @@ PRODUCT_PACKAGES += \
     UpdaterDark
 
 # Themes Black
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     SettingsBlackTheme \
     SystemBlackTheme \
     SystemUIBlackTheme \
     UpdaterBlackAF
 
 # Accents
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     AmberAccent \
     BlackAccent \
     BlueAccent \
