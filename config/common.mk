@@ -63,6 +63,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/arrow/prebuilt/common/etc/sysconfig/custom-power-whitelist.xml:system/etc/sysconfig/custom-power-whitelist.xml
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    vendor/arrow/prebuilt/common/etc/permissions/privapp-permissions-arrow.xml:system/etc/permissions/privapp-permissions-arrow.xml
+
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
