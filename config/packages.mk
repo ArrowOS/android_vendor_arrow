@@ -16,7 +16,7 @@
 # Required packages
 PRODUCT_PACKAGES += \
     BluetoothExt \
-    Browser \
+    Chromium \
     Calendar \
     ExactCalculator \
     LatinIME \
