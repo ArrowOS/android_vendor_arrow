@@ -1,6 +1,6 @@
 add_json_str_omitempty = $(if $(strip $(2)),$(call add_json_str, $(1), $(2)))
 
-_contents := $(_contents)    "Arrow":{$(newline)
+_json_contents := $(_json_contents)    "Arrow":{$(newline)
 
 # See build/core/soong_config.mk for the add_json_* functions you can use here.
 $(call add_json_str_omitempty, Additional_gralloc_10_usage_bits, $(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS))
@@ -28,6 +28,6 @@ $(call add_json_bool, Uses_qcom_um_4_14_family, $(filter true,$(TARGET_USES_QCOM
 $(call add_json_bool, Target_use_sdclang,                         $(filter true,$(if $(strip $(TARGET_USE_SDCLANG)),true,false)))
 
 # This causes the build system to strip out the last comma in our nested struct, to keep the JSON valid.
-_contents := $(_contents)__SV_END
+_json_contents := $(_json_contents)__SV_END
 
-_contents := $(_contents)    },$(newline)
+_json_contents := $(_json_contents)    },$(newline)
