@@ -116,6 +116,11 @@ else
   KERNEL_MAKE_FLAGS += HOSTLDFLAGS="-L $(BUILD_TOP)/prebuilts/openssl/$(HOST_OS)-x86/1.1.1/lib/x86_64-linux-gnu"
 endif
 
+TOOLS_PATH_OVERRIDE := \
+    PATH=$(BUILD_TOP)/prebuilts/tools-lineage/$(HOST_OS)-x86/bin:$$PATH \
+    LD_LIBRARY_PATH=$(BUILD_TOP)/prebuilts/tools-lineage/$(HOST_OS)-x86/lib:$$LD_LIBRARY_PATH \
+    PERL5LIB=$(BUILD_TOP)/prebuilts/tools-lineage/$(HOST_OS)-x86/lib/perl-base
+
 # Set DTBO image locations so the build system knows to build them
 ifeq ($(TARGET_NEEDS_DTBOIMAGE),true)
 BOARD_PREBUILT_DTBOIMAGE ?= $(PRODUCT_OUT)/dtbo/arch/$(KERNEL_ARCH)/boot/dtbo.img
