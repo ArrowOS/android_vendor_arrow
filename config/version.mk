@@ -23,7 +23,7 @@ ifeq ($(ARROW_BETA),true)
     ARROW_BUILD_TYPE := BETA
 endif
 
-CURRENT_DEVICE=$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3)
+CURRENT_DEVICE=$(echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3)
 
 ifdef ARROW_OFFICIAL
    LIST = $(shell curl -s https://raw.githubusercontent.com/ArrowOS/android_vendor_arrow/arrow-10.0/arrow.devices)
