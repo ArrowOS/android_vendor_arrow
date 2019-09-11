@@ -28,49 +28,6 @@ PRODUCT_PACKAGES += \
     stats \
     Stk
 
-# Themes Dark
-#PRODUCT_PACKAGES += \
-    GBoardDarkTheme \
-    SettingsDarkTheme \
-    SystemDarkTheme \
-    SystemUIDarkTheme \
-    UpdaterDark
-
-# Themes Black
-#PRODUCT_PACKAGES += \
-    SettingsBlackTheme \
-    SystemBlackTheme \
-    SystemUIBlackTheme \
-    UpdaterBlackAF
-
-# Accents
-#PRODUCT_PACKAGES += \
-    AmberAccent \
-    BlackAccent \
-    BlueAccent \
-    BlueGreyAccent \
-    BrownAccent \
-    CyanAccent \
-    DeepOrangeAccent \
-    DeepPurpleAccent \
-    DuiDark \
-    GBoardDark \
-    GreenAccent \
-    GreyAccent \
-    IndigoAccent \
-    LightBlueAccent \
-    LightGreenAccent \
-    LimeAccent \
-    OrangeAccent \
-    PinkAccent \
-    PurpleAccent \
-    RedAccent \
-    SettingsDark \
-    SystemDark \
-    TealAccent \
-    YellowAccent \
-    WhiteAccent
-
 # Fonts
 PRODUCT_COPY_FILES += \
     vendor/arrow/fonts/GoogleSans-Regular.ttf:system/fonts/GoogleSans-Regular.ttf \
@@ -80,10 +37,6 @@ PRODUCT_COPY_FILES += \
     vendor/arrow/fonts/GoogleSans-Bold.ttf:system/fonts/GoogleSans-Bold.ttf \
     vendor/arrow/fonts/GoogleSans-BoldItalic.ttf:system/fonts/GoogleSans-BoldItalic.ttf
 ADDITIONAL_FONTS_FILE := vendor/arrow/fonts/google-sans.xml
-
-# Fonts packages
-PRODUCT_PACKAGES += \
-    invictrix-fonts
 
 # Extra tools
 PRODUCT_PACKAGES += \
