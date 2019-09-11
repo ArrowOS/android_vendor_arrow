@@ -44,32 +44,18 @@ PRODUCT_PACKAGES += \
     UpdaterBlackAF
 
 # Accents
-#PRODUCT_PACKAGES += \
-    AmberAccent \
-    BlackAccent \
-    BlueAccent \
-    BlueGreyAccent \
-    BrownAccent \
-    CyanAccent \
-    DeepOrangeAccent \
-    DeepPurpleAccent \
-    DuiDark \
-    GBoardDark \
-    GreenAccent \
-    GreyAccent \
-    IndigoAccent \
-    LightBlueAccent \
-    LightGreenAccent \
-    LimeAccent \
-    OrangeAccent \
-    PinkAccent \
-    PurpleAccent \
-    RedAccent \
-    SettingsDark \
-    SystemDark \
-    TealAccent \
-    YellowAccent \
-    WhiteAccent
+LOCAL_REQUIRED_MODULES := \
+    AccentColorYellowOverlay \
+    AccentColorVioletOverlay \
+    AccentColorTealOverlay \
+    AccentColorRedOverlay \
+    AccentColorQGreenOverlay \
+    AccentColorPinkOverlay \
+    AccentColorLightPurpleOverlay \
+    AccentColorIndigoOverlay \
+    AccentColorFlatPinkOverlay \
+    AccentColorCyanOverlay \
+    AccentColorBlueGrayOverlay
 
 # Fonts
 PRODUCT_COPY_FILES += \
