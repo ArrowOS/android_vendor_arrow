@@ -13,6 +13,7 @@ type Product_variables struct {
 	}
 	Supports_hw_fde_perf struct {
 		Cflags []string
+		Shared_libs []string
 	}
 	Supports_legacy_hw_fde struct {
 		Cflags []string
