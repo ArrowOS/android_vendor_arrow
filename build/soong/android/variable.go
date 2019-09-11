@@ -22,6 +22,8 @@ type Product_variables struct {
 	}
 	Has_legacy_camera_hal1 struct {
 		Cflags []string
+		Overrides []string
+		Shared_libs []string
 	}
 	Needs_legacy_camera_hal1_dyn_native_handle struct {
 		Cppflags []string
