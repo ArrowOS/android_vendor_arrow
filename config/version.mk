@@ -26,9 +26,8 @@ endif
 CURRENT_DEVICE=$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3)
 
 ifdef ARROW_OFFICIAL
-   LIST = $(shell curl -s https://raw.githubusercontent.com/ArrowOS/android_vendor_arrow/arrow-10.0/arrow.devices)
-   FOUND_DEVICE =  $(filter $(CURRENT_DEVICE), $(LIST))
-    ifeq ($(FOUND_DEVICE),$(CURRENT_DEVICE))
+   LIST = $(shell cat vendor/arrow/arrow.devices)
+    ifeq ($(filter $(CURRENT_DEVICE), $(LIST)), $(CURRENT_DEVICE))
       IS_OFFICIAL=true
       ARROW_BUILD_TYPE := OFFICIAL
 
@@ -38,7 +37,7 @@ PRODUCT_PACKAGES += \
     endif
     ifneq ($(IS_OFFICIAL), true)
        ARROW_BUILD_TYPE := UNOFFICIAL
-       $(error Device is not official "$(FOUND)")
+       $(error Device is not official "$(CURRENT_DEVICE)")
     endif
 endif
 
