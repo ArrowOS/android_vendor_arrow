@@ -30,7 +30,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.setupwizard.mode=OPTIONAL
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.build.selinux=1 \
     persist.sys.disable_rescue=true
 
 # Blur
