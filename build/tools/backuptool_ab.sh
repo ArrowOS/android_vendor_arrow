@@ -5,7 +5,7 @@
 
 export S=/system
 export C=/postinstall/tmp/backupdir
-export V=v9.0
+export V=v10.0
 
 export ADDOND_VERSION=2
 
@@ -50,7 +50,7 @@ if [ ! -r /system/build.prop ]; then
     return 0
 fi
 
-grep -q "^ro.modversion=v$V.*" /system/etc/prop.default /system/build.prop && return 1
+grep -q "^ro.modversion=$V.*" /system/etc/prop.default /system/build.prop && return 1
 
 echo "Not backing up files from incompatible version: $V"
 return 0
