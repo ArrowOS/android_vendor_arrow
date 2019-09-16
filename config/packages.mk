@@ -48,6 +48,17 @@ PRODUCT_PACKAGES += \
     AccentColorCyanOverlay \
     AccentColorBlueGrayOverlay
 
+# Custom Overlays
+# Settings
+PRODUCT_PACKAGES += \
+    SystemPitchBlackOverlay \
+    SystemDarkGrayOverlay \
+    SystemUIDarkGrayOverlay \
+    SystemStyleOverlay \
+    SystemUIStyleOverlay \
+    SystemNightOverlay \
+    SystemUINightOverlay
+
 # Fonts
 PRODUCT_COPY_FILES += \
     vendor/arrow/fonts/GoogleSans-Regular.ttf:system/fonts/GoogleSans-Regular.ttf \
