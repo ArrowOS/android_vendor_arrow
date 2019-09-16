@@ -43,6 +43,10 @@ PRODUCT_PACKAGES += \
     AccentColorCyanOverlay \
     AccentColorBlueGrayOverlay
 
+# SystemUI
+PRODUCT_PACKAGES += \
+    SettingsPitchBlackOverlay
+
 # Fonts
 PRODUCT_COPY_FILES += \
     vendor/arrow/fonts/GoogleSans-Regular.ttf:system/fonts/GoogleSans-Regular.ttf \
