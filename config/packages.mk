@@ -1,4 +1,4 @@
-# Copyright (C) 2018 ArrowOS
+# Copyright (C) 2018-2019 ArrowOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +16,6 @@
 # Required packages
 PRODUCT_PACKAGES += \
     BluetoothExt \
-    Chromium \
     Calendar \
     ExactCalculator \
     LatinIME \
@@ -27,6 +26,12 @@ PRODUCT_PACKAGES += \
     Recorder \
     stats \
     Stk
+
+ifeq ($(TARGET_EXCLUDE_CHROMIUM),true)
+  PRODUCT_PACKAGES += Browser
+else
+  PRODUCT_PACKAGES += Chromium
+endif
 
 # Themes Dark
 PRODUCT_PACKAGES += \
