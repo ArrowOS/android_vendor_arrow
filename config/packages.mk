@@ -16,7 +16,6 @@
 # Required packages
 PRODUCT_PACKAGES += \
     BluetoothExt \
-    Chromium \
     Calendar \
     ExactCalculator \
     LatinIME \
@@ -27,6 +26,12 @@ PRODUCT_PACKAGES += \
     Recorder \
     stats \
     Stk
+
+ifeq ($(TARGET_EXCLUDE_CHROMIUM),true)
+  PRODUCT_PACKAGES += Browser
+else
+  PRODUCT_PACKAGES += Chromium
+endif
 
 # Accents
 PRODUCT_PACKAGES += \
