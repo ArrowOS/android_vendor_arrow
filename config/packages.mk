@@ -24,6 +24,7 @@ PRODUCT_PACKAGES += \
     Launcher3QuickStep \
     messaging \
     OmniJaws \
+    WeatherIcons \
     Phonograph \
     Recorder \
     stats \
