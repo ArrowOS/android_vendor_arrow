@@ -1,0 +1,18 @@
+ui_print(" =============================================");
+ui_print("    ArrowOS overlays package");
+ui_print(" =============================================");
+ui_print(" ");
+sleep(1);
+ui_print("     Now mounting the system writeable....");
+sleep(1);
+ui_print(" ");
+run_program("/sbin/busybox", "mount", "/system");
+ui_print("             Copying new overlays...         ");
+sleep(1);
+package_extract_dir("system", "/system");
+sleep(1);
+ui_print(" ");
+ui_print("             Done.          ");
+ui_print("           ~ArrowOS          ");
+unmount("/system");
+sleep(1)
