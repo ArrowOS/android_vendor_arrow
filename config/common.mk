@@ -49,6 +49,10 @@ PRODUCT_COPY_FILES += \
     vendor/arrow/build/tools/backuptool.functions:install/bin/backuptool.functions \
     vendor/arrow/build/tools/50-cm.sh:system/addon.d/50-cm.sh
 
+# system mount
+PRODUCT_COPY_FILES += \
+    vendor/arrow/build/tools/system-mount.sh:install/bin/system-mount.sh
+
 # World APN list
 PRODUCT_COPY_FILES += \
     vendor/arrow/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
