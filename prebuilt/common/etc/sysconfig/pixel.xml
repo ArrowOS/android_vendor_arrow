@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<config>
-    <!-- The feature identifying devices which are able to use the Android Wellbeing app. -->
-    <feature name="com.google.android.feature.WELLBEING" />
-</config>
