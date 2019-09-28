@@ -11,6 +11,7 @@ cd $ANDROID_BUILD_TOP
 cd $overlays_path_top
 
 echo "cooking overlays"
+rm -rf $(get_build_var PRODUCT_OUT)/system/product/overlay
 mma
 if [ $? -eq 0 ]; then
     echo "overlays cooked!!"
