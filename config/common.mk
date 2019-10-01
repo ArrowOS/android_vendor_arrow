@@ -1,4 +1,4 @@
-# Copyright (C) 2018 ArrowOS
+# Copyright (C) 2019 ArrowOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,6 +21,9 @@ PRODUCT_COPY_FILES += \
 DEVICE_PACKAGE_OVERLAYS += \
     vendor/arrow/overlay/common \
     vendor/arrow/overlay/themes
+
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/arrow/overlay/themes/ArrowIcons
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
