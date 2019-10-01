@@ -20,7 +20,9 @@ PRODUCT_COPY_FILES += \
 
 DEVICE_PACKAGE_OVERLAYS += \
     vendor/arrow/overlay/common
-#    vendor/arrow/overlay/themes
+
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/arrow/overlay/themes/ArrowIcons
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
