@@ -22,6 +22,9 @@ DEVICE_PACKAGE_OVERLAYS += \
     vendor/arrow/overlay/common \
     vendor/arrow/overlay/themes
 
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/arrow/overlay/themes/ArrowIcons
+
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
