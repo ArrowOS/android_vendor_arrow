@@ -1,0 +1,93 @@
+<!--
+/**
+ * Copyright (c) 2019, ArrowOS
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="300"
+    android:viewportHeight="300">
+  <group android:translateX="54"
+      android:translateY="54">
+    <path
+        android:pathData="M192,104.96l0,86.79l-78.57,0l-54.43,-54.43l84.72,-80.64l48.28,48.28z">
+      <aapt:attr name="android:fillColor">
+        <gradient 
+            android:startY="95.98"
+            android:startX="100.34"
+            android:endY="189.69"
+            android:endX="194.06"
+            android:type="linear">
+          <item android:offset="0" android:color="#26000000"/>
+          <item android:offset="0.4" android:color="#00000000"/>
+        </gradient>
+      </aapt:attr>
+    </path>
+    <path
+        android:pathData="M136.2,140H66a10.81,10.81 0,0 1,-10.8 -10.8V80.23l-15,-17.82A5.55,5.55 0,0 1,39 59a5.4,5.4 0,0 1,5.4 -5.4h91.8A10.81,10.81 0,0 1,147 64.35v64.8A10.81,10.81 0,0 1,136.2 140"
+        android:fillColor="#fff"/>
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M55.2,78.23l-15,-17.82A5.58,5.58 0,0 1,39.1 58a5.36,5.36 0,0 0,1.14 4.46l15,17.82Z"
+        android:strokeAlpha="0.15"
+        android:fillAlpha="0.15"/>
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M136.2,138H66a10.81,10.81 0,0 1,-10.8 -10.8v2A10.81,10.81 0,0 0,66 140h70.2a10.81,10.81 0,0 0,10.8 -10.8v-2A10.81,10.81 0,0 1,136.2 138Z"
+        android:strokeAlpha="0.15"
+        android:fillAlpha="0.15"/>
+    <path
+        android:pathData="M73.8,69.75L128.2,69.75A2.5,2.5 0,0 1,130.7 72.25L130.7,78.05A2.5,2.5 0,0 1,128.2 80.55L73.8,80.55A2.5,2.5 0,0 1,71.3 78.05L71.3,72.25A2.5,2.5 0,0 1,73.8 69.75z"
+        android:fillColor="#8ce5b0"/>
+    <path
+        android:pathData="M73.8,91.35L128.2,91.35A2.5,2.5 0,0 1,130.7 93.85L130.7,99.65A2.5,2.5 0,0 1,128.2 102.15L73.8,102.15A2.5,2.5 0,0 1,71.3 99.65L71.3,93.85A2.5,2.5 0,0 1,73.8 91.35z"
+        android:fillColor="#8ce5b0"/>
+    <path
+        android:pathData="M73.8,112.95L101.5,112.95A2.5,2.5 0,0 1,104 115.45L104,121.25A2.5,2.5 0,0 1,101.5 123.75L73.8,123.75A2.5,2.5 0,0 1,71.3 121.25L71.3,115.45A2.5,2.5 0,0 1,73.8 112.95z"
+        android:fillColor="#8ce5b0"/>
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M128.2,69.75H73.8a2.5,2.5 0,0 0,-2.5 2.5v2a2.5,2.5 0,0 1,2.5 -2.5h54.4a2.5,2.5 0,0 1,2.5 2.5v-2A2.5,2.5 0,0 0,128.2 69.75Z"
+        android:strokeAlpha="0.05"
+        android:fillAlpha="0.05"/>
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M128.2,91.35H73.8a2.5,2.5 0,0 0,-2.5 2.5v2a2.5,2.5 0,0 1,2.5 -2.5h54.4a2.5,2.5 0,0 1,2.5 2.5v-2A2.5,2.5 0,0 0,128.2 91.35Z"
+        android:strokeAlpha="0.05"
+        android:fillAlpha="0.05"/>
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M101.5,113H73.8a2.5,2.5 0,0 0,-2.5 2.5v2a2.5,2.5 0,0 1,2.5 -2.5h27.7a2.5,2.5 0,0 1,2.5 2.5v-2A2.5,2.5 0,0 0,101.5 113Z"
+        android:strokeAlpha="0.05"
+        android:fillAlpha="0.05"/>
+    <path
+        android:pathData="M128.2,78.55H73.8a2.5,2.5 0,0 1,-2.5 -2.5v2a2.5,2.5 0,0 0,2.5 2.5h54.4a2.5,2.5 0,0 0,2.5 -2.5v-2A2.5,2.5 0,0 1,128.2 78.55Z"
+        android:strokeAlpha="0.2"
+        android:fillColor="#fff"
+        android:fillAlpha="0.2"/>
+    <path
+        android:pathData="M128.2,100.15H73.8a2.5,2.5 0,0 1,-2.5 -2.5v2a2.5,2.5 0,0 0,2.5 2.5h54.4a2.5,2.5 0,0 0,2.5 -2.5v-2A2.5,2.5 0,0 1,128.2 100.15Z"
+        android:strokeAlpha="0.2"
+        android:fillColor="#fff"
+        android:fillAlpha="0.2"/>
+    <path
+        android:pathData="M101.5,121.75H73.8a2.5,2.5 0,0 1,-2.5 -2.5v2a2.5,2.5 0,0 0,2.5 2.5h27.7a2.5,2.5 0,0 0,2.5 -2.5v-2A2.5,2.5 0,0 1,101.5 121.75Z"
+        android:strokeAlpha="0.2"
+        android:fillColor="#fff"
+        android:fillAlpha="0.2"/>
+  </group>
+</vector>
