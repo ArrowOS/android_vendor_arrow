@@ -14,9 +14,6 @@ type Product_variables struct {
 	Supports_hw_fde_perf struct {
 		Cflags []string
 	}
-	Supports_legacy_hw_fde struct {
-		Cflags []string
-	}
 	Device_support_wait_for_qsee struct {
 		Cflags []string
 	}
@@ -79,7 +76,6 @@ type ProductVariables struct {
 	Additional_gralloc_10_usage_bits  *string `json:",omitempty"`
 	Supports_hw_fde  *bool `json:",omitempty"`
 	Supports_hw_fde_perf  *bool `json:",omitempty"`
-	Supports_legacy_hw_fde  *bool `json:",omitempty"`
 	Device_support_wait_for_qsee  *bool `json:",omitempty"`
 	Apply_msm8974_1440p_egl_workaround  *bool `json:",omitempty"`
 	Has_legacy_camera_hal1  *bool `json:",omitempty"`
@@ -98,5 +94,5 @@ type ProductVariables struct {
         Uses_qcom_um_4_4_family  *bool `json:",omitempty"`
         Uses_qcom_um_4_9_family  *bool `json:",omitempty"`
         Uses_qcom_um_4_14_family  *bool `json:",omitempty"`
-	Target_use_sdclang							*bool `json:",omitempty"`
+	Target_use_sdclang  *bool `json:",omitempty"`
 }
