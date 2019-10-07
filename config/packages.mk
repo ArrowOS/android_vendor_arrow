@@ -122,10 +122,7 @@ PRODUCT_PACKAGES += \
 
 # These packages are excluded from user builds
 PRODUCT_PACKAGES_DEBUG += \
-    micro_bench \
-    procmem \
-    procrank \
-    strace
+    procmem
 endif
 
 # Charger images
