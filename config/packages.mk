@@ -22,7 +22,6 @@ PRODUCT_PACKAGES += \
     Launcher3QuickStep \
     messaging \
     OmniJaws \
-    Phonograph \
     Recorder \
     stats \
     Stk
