@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "76cd2278_31eb7630",
+        "filename": "build/soong/soong_config.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 12
+      },
+      "writtenOn": "2019-10-17T10:47:11Z",
+      "side": 1,
+      "message": "We already have a TARGET_KEYMASTER_WAIT_FOR_QSEE flag here. So no need of the complementary redundant flag TARGET_KEYMASTER_SKIP_WAITING_FOR_QSEE",
+      "revId": "d05638aea9cb6cffb4f7c4e4d496401eea53f43a",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196",
+      "unresolved": true
+    }
+  ]
+}
