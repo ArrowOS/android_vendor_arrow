@@ -174,33 +174,33 @@ def add_to_manifest(repos, fallback_branch=None):
     for repo in repos:
         repo_name = repo['repository']
         repo_target = repo['target_path']
-	if 'branch' in repo:
-	    repo_branch=repo['branch']
-	else:
-	    repo_branch=custom_default_revision
+        if 'branch' in repo:
+            repo_branch=repo['branch']
+        else:
+            repo_branch=custom_default_revision
 
-	if 'remote' in repo:
-	    repo_remote = repo['remote']
-	else:
-	    repo_remote=org_manifest
+        if 'remote' in repo:
+            repo_remote = repo['remote']
+        else:
+            repo_remote=org_manifest
 
         if is_in_manifest(repo_target):
             print('already exists: %s' % repo_target)
             continue
 
-	if repo_remote is None:
-	    repo_remote="github"
+        if repo_remote is None:
+            repo_remote="github"
 
-	if "/" not in repo_name and repo_remote is not org_manifest:
-	    repo_name = os.path.join(org_display, repo_name)
+        if "/" not in repo_name and repo_remote is not org_manifest:
+            repo_name = os.path.join(org_display, repo_name)
 
-	existing_m_project = None
+        existing_m_project = None
         if exists_in_tree(mlm, repo_target) != None:
-	    existing_m_project = exists_in_tree(mlm, repo_target)
+            existing_m_project = exists_in_tree(mlm, repo_target)
         elif exists_in_tree(arrowm, repo_target) != None:
-	    existing_m_project = exists_in_tree(arrowm, repo_target)
+            existing_m_project = exists_in_tree(arrowm, repo_target)
         elif exists_in_tree(halm, repo_target) != None:
-	    existing_m_project = exists_in_tree(halm, repo_target)
+            existing_m_project = exists_in_tree(halm, repo_target)
 
         if existing_m_project != None:
             if existing_m_project.attrib['path'] == repo['target_path']:
@@ -210,7 +210,6 @@ def add_to_manifest(repos, fallback_branch=None):
                 }))
 
         print('Adding dependency: %s -> %s' % (repo_name, repo_target))
-
         project = ElementTree.Element(
             "project",
             attrib={"path": repo_target,
@@ -226,6 +225,7 @@ def add_to_manifest(repos, fallback_branch=None):
             project.set('revision', fallback_branch)
         else:
             print("Using default branch for %s" % repo_name)
+            
         lm.append(project)
 
     indent(lm)
