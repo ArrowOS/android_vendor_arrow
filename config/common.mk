@@ -37,7 +37,7 @@ PRODUCT_COPY_FILES += \
     vendor/arrow/prebuilt/common/etc/init.local.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.arrow.rc
 
 # Backup Tool
-ifeq ($(AB_OTA_UPDATER),true)
+ifneq ($(AB_OTA_PARTITIONS),)
 PRODUCT_COPY_FILES += \
     vendor/arrow/build/tools/backuptool_ab.sh:system/bin/backuptool_ab.sh \
     vendor/arrow/build/tools/backuptool_ab.functions:system/bin/backuptool_ab.functions \
