@@ -26,7 +26,8 @@ PRODUCT_PACKAGES += \
     Phonograph \
     Recorder \
     stats \
-    Stk
+    Stk \
+    ThemePicker
 
 # Accents
 PRODUCT_PACKAGES += \
