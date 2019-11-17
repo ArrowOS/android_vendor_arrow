@@ -134,7 +134,7 @@ PRODUCT_COPY_FILES += \
 	vendor/arrow/sounds/ringtones/Zen.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Zen.ogg \
 	vendor/arrow/sounds/ringtones/Zen_too.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Zen_too.ogg
 
-PRODUCT_PROPERTY_OVERRIDES += \
-   ro.config.ringtone=Zen_too.ogg,Dione.ogg \
+PRODUCT_PRODUCT_PROPERTIES += \
+   ro.config.ringtone=Oberon.ogg \
    ro.config.notification_sound=Chime.ogg \
    ro.config.alarm_alert=Alarm_Classic.ogg
