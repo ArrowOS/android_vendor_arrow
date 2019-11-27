@@ -98,7 +98,8 @@ PRODUCT_PACKAGES += \
 
 # Exchange support
 PRODUCT_PACKAGES += \
-    Exchange2
+    Exchange2 \
+    UnifiedEmail
 
 # Cutout control overlays
 PRODUCT_PACKAGES += \
