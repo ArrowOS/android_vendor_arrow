@@ -25,3 +25,10 @@ include vendor/arrow/config/BoardConfigQcom.mk
 endif
 
 include vendor/arrow/config/BoardConfigSoong.mk
+
+GAPPS_VARIANT := nano
+TARGET_GAPPS_ARCH := arm64
+
+# GApps
+include vendor/gapps/config.mk
+
