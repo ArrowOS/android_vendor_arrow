@@ -92,3 +92,9 @@ include vendor/arrow/config/props.mk
 
 # Sounds
 include vendor/arrow/config/sounds.mk
+
+GAPPS_VARIANT := nano
+TARGET_GAPPS_ARCH := arm64
+
+# GApps
+include vendor/gapps/config.mk
