@@ -25,3 +25,5 @@ include vendor/arrow/config/BoardConfigQcom.mk
 endif
 
 include vendor/arrow/config/BoardConfigSoong.mk
+
+TARGET_GAPPS_ARCH := arm64

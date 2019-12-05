@@ -92,3 +92,6 @@ include vendor/arrow/config/props.mk
 
 # Sounds
 include vendor/arrow/config/sounds.mk
+
+# GApps
+include vendor/gapps/config.mk
