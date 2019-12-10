@@ -14,6 +14,7 @@
 # limitations under the License.
 
 ARROW_MOD_VERSION = v10.0
+ARROW_BUILD_ZIP_TYPE := VANILLA
 
 ifndef ARROW_BUILD_TYPE
     ARROW_BUILD_TYPE := UNOFFICIAL
@@ -21,6 +22,11 @@ endif
 
 ifeq ($(ARROW_BETA),true)
     ARROW_BUILD_TYPE := BETA
+endif
+
+ifdef ARROW_GAPPS
+    $(call inherit-product, vendor/gapps/config.mk)
+    ARROW_BUILD_ZIP_TYPE := GAPPS
 endif
 
 CURRENT_DEVICE=$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3)
@@ -41,11 +47,12 @@ PRODUCT_PACKAGES += \
     endif
 endif
 
-ARROW_VERSION := Arrow-$(ARROW_MOD_VERSION)-$(CURRENT_DEVICE)-$(ARROW_BUILD_TYPE)-$(shell date -u +%Y%m%d)
+ARROW_VERSION := Arrow-$(ARROW_MOD_VERSION)-$(CURRENT_DEVICE)-$(ARROW_BUILD_TYPE)-$(shell date -u +%Y%m%d)-$(ARROW_BUILD_ZIP_TYPE)
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
   ro.arrow.version=$(ARROW_VERSION) \
   ro.arrow.releasetype=$(ARROW_BUILD_TYPE) \
+  ro.arrow.ziptype=$(ARROW_BUILD_ZIP_TYPE) \
   ro.modversion=$(ARROW_MOD_VERSION)
 
 ARROW_DISPLAY_VERSION := Arrow-$(ARROW_MOD_VERSION)-$(ARROW_BUILD_TYPE)
