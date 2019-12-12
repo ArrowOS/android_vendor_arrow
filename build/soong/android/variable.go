@@ -14,7 +14,7 @@ type Product_variables struct {
 	Supports_hw_fde_perf struct {
 		Cflags []string
 	}
-	Device_support_wait_for_qsee struct {
+	Should_wait_for_qsee struct {
 		Cflags []string
 	}
 	Supports_extended_compress_format struct {
@@ -79,7 +79,7 @@ type ProductVariables struct {
 	Additional_gralloc_10_usage_bits  *string `json:",omitempty"`
 	Supports_hw_fde  *bool `json:",omitempty"`
 	Supports_hw_fde_perf  *bool `json:",omitempty"`
-	Device_support_wait_for_qsee  *bool `json:",omitempty"`
+	Should_wait_for_qsee  *bool `json:",omitempty"`
 	Apply_msm8974_1440p_egl_workaround  *bool `json:",omitempty"`
 	Has_legacy_camera_hal1  *bool `json:",omitempty"`
 	Needs_legacy_camera_hal1_dyn_native_handle  *bool `json:",omitempty"`
@@ -93,10 +93,10 @@ type ProductVariables struct {
 	Uses_nvidia_enhancements  *bool `json:",omitempty"`
 	Uses_qcom_bsp_legacy  *bool `json:",omitempty"`
 	Uses_qti_camera_device  *bool `json:",omitempty"`
-        Uses_qcom_um_family  *bool `json:",omitempty"`
-        Uses_qcom_um_3_18_family  *bool `json:",omitempty"`
-        Uses_qcom_um_4_4_family  *bool `json:",omitempty"`
-        Uses_qcom_um_4_9_family  *bool `json:",omitempty"`
-        Uses_qcom_um_4_14_family  *bool `json:",omitempty"`
+	Uses_qcom_um_family  *bool `json:",omitempty"`
+	Uses_qcom_um_3_18_family  *bool `json:",omitempty"`
+	Uses_qcom_um_4_4_family  *bool `json:",omitempty"`
+	Uses_qcom_um_4_9_family  *bool `json:",omitempty"`
+    Uses_qcom_um_4_14_family  *bool `json:",omitempty"`
 	Target_use_sdclang  *bool `json:",omitempty"`
 }
