@@ -25,7 +25,7 @@ ifeq ($(ARROW_BETA),true)
 endif
 
 ifdef ARROW_GAPPS
-    $(call inherit-product, vendor/gapps/config.mk)
+    $(call inherit-product, vendor/gapps/common/common-vendor.mk)
     ARROW_BUILD_ZIP_TYPE := GAPPS
 endif
 
