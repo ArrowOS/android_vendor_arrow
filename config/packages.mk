@@ -1,4 +1,4 @@
-# Copyright (C) 2018 ArrowOS
+# Copyright (C) 2018-2019 ArrowOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -64,29 +64,24 @@ PRODUCT_COPY_FILES += \
     vendor/arrow/fonts/GoogleSans-Italic.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/GoogleSans-Italic.ttf \
     vendor/arrow/fonts/GoogleSans-Bold.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/GoogleSans-Bold.ttf \
     vendor/arrow/fonts/GoogleSans-BoldItalic.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/GoogleSans-BoldItalic.ttf
+
 ADDITIONAL_FONTS_FILE := vendor/arrow/fonts/google-sans.xml
 
 # Extra tools
 PRODUCT_PACKAGES += \
     7z \
+    awk \
     bash \
     bzip2 \
     curl \
     getcap \
-    e2fsck \
-    fsck.ntfs \
     htop \
     lib7z \
     libsepol \
-    mke2fs \
-    mkfs.ntfs \
-    mount.ntfs \
     nano \
-    openvpn \
     pigz \
     powertop \
     setcap \
-    tune2fs \
     unrar \
     unzip \
     vim \
@@ -102,10 +97,14 @@ PRODUCT_PACKAGES += \
     HideCutout \
     StatusBarStock
 
-# exFAT tools
- PRODUCT_PACKAGES += \
+# Filesystems tools
+PRODUCT_PACKAGES += \
     fsck.exfat \
-    mkfs.exfat
+    fsck.ntfs \
+    mke2fs \
+    mkfs.exfat \
+    mkfs.ntfs \
+    mount.ntfs
 
 # Openssh
 PRODUCT_PACKAGES += \
