@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 ArrowOS
+# Copyright (C) 2018-2019 ArrowOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,12 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License
 
-# QCOM HW crypto
 include vendor/arrow/config/BoardConfigKernel.mk
-
-ifeq ($(TARGET_HW_DISK_ENCRYPTION),true)
-    TARGET_CRYPTFS_HW_PATH ?= vendor/qcom/opensource/cryptfs_hw
-endif
 
 ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
 include vendor/arrow/config/BoardConfigQcom.mk
