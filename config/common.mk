@@ -55,7 +55,7 @@ PRODUCT_COPY_FILES += \
 
 # World APN list
 PRODUCT_COPY_FILES += \
-    vendor/arrow/prebuilt/common/etc/apns-conf.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/apns-conf.xml
+    vendor/arrow/prebuilt/common/etc/apns-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
 
 # Sensitive Phone Numbers list
 PRODUCT_COPY_FILES += \
