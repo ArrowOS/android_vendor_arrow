@@ -1,4 +1,4 @@
-# Copyright (C) 2018 ArrowOS
+# Copyright (C) 2018-2019 ArrowOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,17 +22,16 @@ endif
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    keyguard.no_require_sim=true \
+PRODUCT_PRODUCT_PROPERTIES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
-    ro.setupwizard.rotation_locked=true \
-    ro.setupwizard.mode=OPTIONAL \
-    ro.setupwizard.wifi_required=false \
-    ro.com.android.wifi-watchlist=GoogleGuest \
     ro.setupwizard.enterprise_mode=1 \
-    ro.com.android.dateformat=MM-dd-yyyy \
-    ro.build.selinux=1
+    setupwizard.feature.predeferred_enabled=false \
+    ro.setupwizard.mode=OPTIONAL
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.build.selinux=1 \
+    persist.sys.disable_rescue=true
 
 # Media
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -41,10 +40,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.storage_manager.enabled=true
-
-# Disable Rescue Party
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.disable_rescue=true
 
 # TEMP: Enable transitional log for Privileged permissions
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
