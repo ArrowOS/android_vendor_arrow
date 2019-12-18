@@ -80,6 +80,9 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 # Bootanimation
 include vendor/arrow/config/bootanimation.mk
 
+# Fonts
+include vendor/arrow/config/fonts.mk
+
 # Packages
 include vendor/arrow/config/packages.mk
 
