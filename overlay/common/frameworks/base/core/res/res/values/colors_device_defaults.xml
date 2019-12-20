@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2016 The Android Open Source Project
+<!-- Copyright (C) 2016-2019 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,20 +14,26 @@
      limitations under the License.
 -->
 
-<!-- Colors specific to DeviceDefault themes. These are mostly pass-throughs to enable
-     overlaying new theme colors. -->
 <resources>
 
-    <color name="primary_device_default_dark">#ff2d2d2d</color>
-    <color name="primary_device_default_settings">#ff2d2d2d</color>
+<!-- Colors specific to DeviceDefault themes. These are mostly pass-throughs to enable
+     overlaying new theme colors. -->
+    <color name="accent_device_default_dark">#ff8ab4f8</color>
+    <color name="accent_device_default_light">#ff1a73e8</color>
+    <color name="background_device_default_light">#ffffffff</color>
+    <color name="background_floating_device_default_dark">#ff3c4043</color>
+    <color name="error_color_device_default_dark">#fff28b82</color>
+    <color name="error_color_device_default_light">#ffd93025</color>
     <color name="primary_dark_device_default_dark">#ff242424</color>
     <color name="primary_dark_device_default_settings">#ff242424</color>
-    <color name="secondary_device_default_settings">#ff3a3a3a</color>
-    <color name="tertiary_device_default_settings">#ff616161</color>
+    <color name="primary_dark_device_default_settings_light">#ffffffff</color>
+    <color name="primary_device_default_dark">#ff2d2d2d</color>
+    <color name="primary_device_default_settings">#ff2d2d2d</color>
+    <color name="primary_device_default_settings_light">#ffffffff</color>
     <color name="quaternary_device_default_settings">#ff9e9e9e</color>
-    <color name="accent_device_default_700">#ff3367d6</color>
-    <color name="accent_device_default_light">#ff4285f4</color>
-    <color name="accent_device_default_dark">#ff5e97f6</color>
-    <color name="accent_device_default_50">#ffe8f0fe</color>
+    <color name="secondary_device_default_settings">#ff3a3a3a</color>
+    <color name="system_error">#ffea4335</color>
+    <color name="tertiary_device_default_settings">#ff616161</color>
 
 </resources>
+
