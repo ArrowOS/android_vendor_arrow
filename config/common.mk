@@ -87,6 +87,15 @@ PRODUCT_COPY_FILES += \
     vendor/arrow/config/permissions/privapp-permissions-elgoog.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-elgoog.xml
 endif
 
+# Lawnchair
+ifeq ($(TARGET_EXCLUDE_LAWNCHAIR),)
+PRODUCT_PACKAGE_OVERLAYS += vendor/vendor/overlay/lawnchair
+
+PRODUCT_COPY_FILES += \
+    vendor/arrow/prebuilt/common/etc/permissions/privapp-permissions-lawnchair.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-lawnchair.xml \
+    vendor/arrow/prebuilt/common/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml
+endif
+
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
