@@ -1,7 +1,0 @@
-# NTFS-3g wants to drop permission
-allow vold self:capability { setgid setuid };
-
-# External storage
-allow vold mkfs_exec:file rx_file_perms;
-allow vold mnt_media_rw_stub_file:dir r_dir_perms;
-allow vold storage_stub_file:dir rw_dir_perms;

@@ -1,2 +1,0 @@
-user=_app isPrivApp=true seinfo=platform name=com.android.gallery3d domain=gallery_app type=app_data_file levelFrom=user
-user=_app isPrivApp=true seinfo=platform name=org.lineageos.snap domain=snap_app type=app_data_file levelFrom=user
