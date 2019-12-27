@@ -57,6 +57,13 @@ PRODUCT_PACKAGES += \
     SystemNightOverlay \
     SystemUINightOverlay
 
+# NavigationBar Gestural Mode No Pill Overlays
+PRODUCT_PACKAGES += \
+    NavBarGesturalNoPillOverlay \
+    NavBarGesturalNarrowBackNoPillOverlay \
+    NavBarGesturalWideBackNoPillOverlay \
+    NavBarGesturalExtraWideBackNoPillOverlay
+
 # Extra tools
 PRODUCT_PACKAGES += \
     7z \
