@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="23" android:compileSdkVersionCodename="6.0-2438415" package="com.android.internal.systemui.navbar.gestural_wide_back_nopill" platformBuildVersionCode="28" platformBuildVersionName="9">
+    <overlay android:category="com.android.internal.navigation_bar_mode" android:priority="1" android:targetPackage="android"/>
+    <application android:extractNativeLibs="false" android:hasCode="false" android:label="@string/navigation_bar_mode_title"/>
+</manifest>
