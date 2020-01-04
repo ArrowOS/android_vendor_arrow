@@ -34,4 +34,7 @@
     <!-- The color of the material notification background when dimmed -->
     <color name="notification_material_background_dimmed_color">#FF202125</color>
 
+    <!-- The color of the background in the grid of the Global Actions menu -->
+    <color name="global_actions_grid_background">#ff202125</color>
+
 </resources>
