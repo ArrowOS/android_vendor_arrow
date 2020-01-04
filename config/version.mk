@@ -14,24 +14,21 @@
 # limitations under the License.
 
 ARROW_MOD_VERSION = v10.0
+ARROW_BUILD_TYPE := UNOFFICIAL
 ARROW_BUILD_ZIP_TYPE := VANILLA
-
-ifndef ARROW_BUILD_TYPE
-    ARROW_BUILD_TYPE := UNOFFICIAL
-endif
 
 ifeq ($(ARROW_BETA),true)
     ARROW_BUILD_TYPE := BETA
 endif
 
-ifdef ARROW_GAPPS
+ifeq ($(ARROW_GAPPS), true)
     $(call inherit-product, vendor/gapps/common/common-vendor.mk)
     ARROW_BUILD_ZIP_TYPE := GAPPS
 endif
 
 CURRENT_DEVICE=$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3)
 
-ifdef ARROW_OFFICIAL
+ifeq ($(ARROW_OFFICIAL), true)
    LIST = $(shell cat vendor/arrow/arrow.devices)
     ifeq ($(filter $(CURRENT_DEVICE), $(LIST)), $(CURRENT_DEVICE))
       IS_OFFICIAL=true
