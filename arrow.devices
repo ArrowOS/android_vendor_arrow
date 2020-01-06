@@ -16,20 +16,30 @@
 # <chipset>          -  Specify your device chipset. This will be used
 #                       to assign the device to its appropriate jenkins node.
 #
+# Explicit declaration for nodes (Just in case)
+# $ - node1
+# @ - node 2
+# ! - node 3
+#
+# Example:
+# ! z2_plus userdebug msm8996
+# This will put z2_plus on node3 even if we mention msm8996 to be on different node.
+#
+#
 - A6020 userdebug msm8916
 - beryllium userdebug sdm845
-! cheeseburger userdebug msm8998
-! chiron userdebug msm8998
+- cheeseburger userdebug msm8998
+- chiron userdebug msm8998
 - clover userdebug sdm660
-! dumpling userdebug msm8998
-- land userdebug msm8953
+- dumpling userdebug msm8998
+- land userdebug msm8937
 - mido userdebug msm8953
 - polaris userdebug sdm845
-- potter userdebug msm8953
+! potter userdebug msm8953
 - sanders userdebug msm8953
-- s2 userdebug msm8952
+- s2 userdebug msm8976
 - violet userdebug sm6150
 - wayne userdebug sdm660
 - X01BD userdebug sdm660
-- z2_plus userdebug msm8998
-- z2_row userdebug msm8998
+! z2_plus userdebug msm8996
+! z2_row userdebug msm8996
