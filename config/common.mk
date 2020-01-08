@@ -63,8 +63,7 @@ PRODUCT_COPY_FILES += \
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    vendor/arrow/prebuilt/common/etc/permissions/privapp-permissions-arrow.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-arrow.xml \
-    vendor/arrow/prebuilt/common/etc/permissions/privapp-permissions-elgoog.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-elgoog.xml
+    vendor/arrow/prebuilt/common/etc/permissions/privapp-permissions-arrow.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-arrow.xml
 
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
