@@ -17,6 +17,12 @@
  */
 -->
 <resources>
-    <!-- settings background -->
-    <color name="primary_dark_material_settings">#202833</color>
+
+    <style name="Theme.DeviceDefault.QuickSettings" parent="android:Theme.DeviceDefault">
+        <!-- QS panel background -->
+        <item name="android:colorBackgroundFloating">#FF151618</item>
+
+        <!-- volume background -->
+        <item name="android:panelColorBackground">#FF151618</item>
+    </style>
 </resources>

@@ -17,6 +17,10 @@
  */
 -->
 <resources>
-    <!-- settings background -->
-    <color name="primary_dark_material_settings">#000000</color>
+
+     <!-- The background color of a notification card. -->
+    <color name="notification_material_background_color">#FF151618</color>
+
+    <color name="theme_generic_semi_transparent_color">#FF151618</color>
+
 </resources>
