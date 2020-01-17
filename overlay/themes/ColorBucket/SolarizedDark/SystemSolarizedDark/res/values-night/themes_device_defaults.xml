@@ -16,16 +16,19 @@
 
 <resources>
 
-    <style name="Theme.DeviceDefault.Resolver" parent="Theme.DeviceDefault.ResolverCommon">
-        <item name="colorBackgroundFloating">#ff202125</item>
+    <style name="Theme.DeviceDefault.Resolver" parent="@*android:style/Theme.DeviceDefault.ResolverCommon">
+        <item name="android:colorBackgroundFloating">#FF002b36</item>
+        <item name="android:colorAccent">@*android:color/accent_device_default_light</item>
     </style>
 
-    <style name="Theme.DeviceDefault.Settings.DialogBase" parent="Theme.Material.BaseDialog">
-        <item name="colorBackgroundFloating">#ff202125</item>
+    <style name="Theme.DeviceDefault.Settings.DialogBase" parent="@*android:style/Theme.Material.BaseDialog">
+        <item name="android:colorBackgroundFloating">#FF002b36</item>
+        <item name="android:colorAccent">@*android:color/accent_device_default_light</item>
     </style>
 
-    <style name="Theme.DeviceDefault.Settings.Dialog" parent="Theme.DeviceDefault.Settings.DialogBase">
-        <item name="colorBackgroundFloating">#ff202125</item>
+    <style name="Theme.DeviceDefault.Settings.Dialog" parent="@*android:style/Theme.DeviceDefault.Settings.DialogBase">
+        <item name="android:colorBackgroundFloating">#FF002b36</item>
+        <item name="android:colorAccent">@*android:color/accent_device_default_light</item>
     </style>
 
     <style name="Theme.DeviceDefault.System" parent="@*android:style/Theme.Material">
@@ -43,7 +46,7 @@
         <item name="android:colorSecondary">@*android:color/secondary_device_default_settings_light</item>
         <item name="android:colorAccent">@*android:color/accent_device_default_light</item>
         <item name="android:colorControlNormal">@*android:color/accent_device_default_dark</item>
-        <item name="android:colorBackgroundFloating">@*android:color/notification_material_background_color</item>
+        <item name="android:colorBackgroundFloating">#FF002b36</item>
         <item name="android:bottomRightRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:bottomLeftRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:topRightRadius">@*android:dimen/config_dialogCornerRadius</item>
@@ -65,7 +68,7 @@
         <item name="android:colorSecondary">@*android:color/secondary_device_default_settings_light</item>
         <item name="android:colorAccent">@*android:color/accent_device_default_light</item>
         <item name="android:colorControlNormal">@*android:color/accent_device_default_dark</item>
-        <item name="android:colorBackgroundFloating">@*android:color/notification_material_background_color</item>
+        <item name="android:colorBackgroundFloating">#FF002b36</item>
         <item name="android:bottomRightRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:bottomLeftRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:topRightRadius">@*android:dimen/config_dialogCornerRadius</item>
@@ -82,7 +85,7 @@
         <item name="android:textColorTertiary">#b3f5f5f5</item>
         <item name="android:textColorHint">#ff999999</item>
         <item name="android:textColorAlertDialogListItem">#ffffffff</item>
-        <item name="android:colorBackgroundFloating">@*android:color/notification_material_background_color</item>
+        <item name="android:colorBackgroundFloating">#FF002b36</item>
         <item name="android:bottomRightRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:bottomLeftRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:topRightRadius">@*android:dimen/config_dialogCornerRadius</item>
@@ -99,7 +102,7 @@
         <item name="android:textColorTertiary">#b3f5f5f5</item>
         <item name="android:textColorHint">#ff999999</item>
         <item name="android:textColorAlertDialogListItem">#ffffffff</item>
-        <item name="android:colorBackgroundFloating">@*android:color/notification_material_background_color</item>
+        <item name="android:colorBackgroundFloating">#FF002b36</item>
         <item name="android:bottomRightRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:bottomLeftRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:topRightRadius">@*android:dimen/config_dialogCornerRadius</item>
@@ -116,7 +119,7 @@
         <item name="android:textColorTertiary">#b3f5f5f5</item>
         <item name="android:textColorHint">#ff999999</item>
         <item name="android:textColorAlertDialogListItem">#ffffffff</item>
-        <item name="android:colorBackgroundFloating">@*android:color/notification_material_background_color</item>
+        <item name="android:colorBackgroundFloating">#FF002b36</item>
         <item name="android:bottomRightRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:bottomLeftRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:topRightRadius">@*android:dimen/config_dialogCornerRadius</item>
@@ -137,7 +140,7 @@
         <item name="android:textColorTertiary">#b3f5f5f5</item>
         <item name="android:textColorHint">#ff999999</item>
         <item name="android:textColorAlertDialogListItem">#ffffffff</item>
-        <item name="android:colorBackgroundFloating">@*android:color/notification_material_background_color</item>
+        <item name="android:colorBackgroundFloating">#FF002b36</item>
         <item name="android:bottomRightRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:bottomLeftRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:topRightRadius">@*android:dimen/config_dialogCornerRadius</item>
@@ -158,7 +161,7 @@
         <item name="android:textColorTertiary">#b3f5f5f5</item>
         <item name="android:textColorHint">#ff999999</item>
         <item name="android:textColorAlertDialogListItem">#ffffffff</item>
-        <item name="android:colorBackgroundFloating">@*android:color/notification_material_background_color</item>
+        <item name="android:colorBackgroundFloating">#FF002b36</item>
         <item name="android:bottomRightRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:bottomLeftRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:topRightRadius">@*android:dimen/config_dialogCornerRadius</item>
@@ -175,7 +178,7 @@
         <item name="android:textColorTertiary">#b3f5f5f5</item>
         <item name="android:textColorHint">#ff999999</item>
         <item name="android:textColorAlertDialogListItem">#ffffffff</item>
-        <item name="android:colorBackgroundFloating">@*android:color/notification_material_background_color</item>
+        <item name="android:colorBackgroundFloating">#FF002b36</item>
         <item name="android:bottomRightRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:bottomLeftRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:topRightRadius">@*android:dimen/config_dialogCornerRadius</item>
@@ -192,7 +195,7 @@
         <item name="android:textColorTertiary">#b3f5f5f5</item>
         <item name="android:textColorHint">#ff999999</item>
         <item name="android:textColorAlertDialogListItem">#ffffffff</item>
-        <item name="android:colorBackgroundFloating">@*android:color/notification_material_background_color</item>
+        <item name="android:colorBackgroundFloating">#FF002b36</item>
         <item name="android:bottomRightRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:bottomLeftRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:topRightRadius">@*android:dimen/config_dialogCornerRadius</item>
@@ -209,7 +212,7 @@
         <item name="android:textColorTertiary">#b3f5f5f5</item>
         <item name="android:textColorHint">#ff999999</item>
         <item name="android:textColorAlertDialogListItem">#ffffffff</item>
-        <item name="android:colorBackgroundFloating">@*android:color/notification_material_background_color</item>
+        <item name="android:colorBackgroundFloating">#FF002b36</item>
         <item name="android:bottomRightRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:bottomLeftRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:topRightRadius">@*android:dimen/config_dialogCornerRadius</item>
@@ -221,7 +224,7 @@
         <item name="android:colorPrimaryDark">@*android:color/primary_dark_device_default_settings</item>
         <item name="android:colorSecondary">@*android:color/secondary_device_default_settings</item>
         <item name="android:colorAccent">@*android:color/accent_device_default_dark</item>
-        <item name="android:colorBackgroundFloating">@*android:color/notification_material_background_color</item>
+        <item name="android:colorBackgroundFloating">#FF002b36</item>
         <item name="android:bottomRightRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:bottomLeftRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:topRightRadius">@*android:dimen/config_dialogCornerRadius</item>
