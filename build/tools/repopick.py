@@ -326,9 +326,12 @@ if __name__ == '__main__':
             print('Change %d not found, skipping' % change)
             continue
 
+        if review['project'] == "LineageOS/android":
+            review['project'] = "ArrowOS/android_manifest"
+
         mergables.append({
             'subject': review['subject'],
-            'project': review['project'],
+            'project': review['project'].replace("LineageOS", "ArrowOS"),
             'branch': review['branch'],
             'change_id': review['change_id'],
             'change_number': review['number'],
