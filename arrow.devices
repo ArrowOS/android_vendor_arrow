@@ -1,23 +1,51 @@
-athene userdebug
-bacon user
-beryllium user
-cheeseburger userdebug
-chef userdebug
-chiron userdebug
-dumpling userdebug
-enchilada userdebug
-land userdebug
-lavender userdebug
-lettuce userdebug
-mido userdebug
-polaris user
-potter user
-RMX1911 userdebug
-s2 userdebug
-sanders userdebug
-treble userdebug
-wayne userdebug
-whyred userdebug
-X01BD userdebug
-z2_plus user
-z2_row user
+#
+# Official devices list
+#
+# This will be parsed by our configs platform for initial setup
+# and configuration with jenkins.
+#
+# Format:
+# <device codename> <buildtype> <chipset>
+#
+# F.A.Q:
+# <device codename>  -  Official device codename used all over
+#                        the platform.
+#
+# <buildtype>        -  The default stable buildtype.
+#
+# <chipset>          -  Specify your device chipset. This will be used
+#                       to assign the device to its appropriate jenkins node.
+#
+# Explicit declaration for nodes (Just in case)
+# $ - node1
+# @ - node 2
+# ! - node 3
+#
+# Example:
+# ! z2_plus userdebug msm8996
+# This will put z2_plus on node3 even if we mention msm8996 to be on different node.
+#
+#
+
+- athene userdebug msm8953
+- bacon user msm8974
+- beryllium user sdm845
+- cheeseburger userdebug msm8998
+- chef userdebug sdm660
+- chiron userdebug msm8998
+- dumpling userdebug msm8998
+- enchilada userdebug sdm845
+- land userdebug msm8996
+- lavender userdebug sdm660
+- lettuce userdebug msm8916
+- mido userdebug msm8953
+- polaris user sdm845
+- potter user msm8996
+- RMX1911 userdebug sm6150
+- s2 userdebug msm8953
+- sanders userdebug msm8953
+- wayne userdebug sdm660
+- whyred userdebug sdm660
+- X01BD userdebug sdm660
+- z2_plus user msm8996
+- z2_row user msm8996
