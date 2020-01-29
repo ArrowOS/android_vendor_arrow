@@ -20,7 +20,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/arrow/overlay/themes/ArrowIcons
 
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/arrow/overlay/common
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    vendor/arrow/overlay/common \
+    vendor/arrow/overlay/themes/ArrowIcons
 
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
