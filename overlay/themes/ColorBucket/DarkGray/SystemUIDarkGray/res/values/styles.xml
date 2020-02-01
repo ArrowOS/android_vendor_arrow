@@ -13,19 +13,10 @@
   ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License
+  NOTE: You might also want to edit: core/res/res/values-night/*.xml
   -->
-
 <resources>
-    <style name="Theme.DeviceDefault.QuickSettings" parent="android:Theme.DeviceDefault">
-
-	<!-- Color palette -->
-        <item name="*android:colorPrimaryDark">@*android:color/primary_material_dark</item>
-        <item name="*android:colorSecondary">@*android:color/primary_dark_material_dark</item>
-
-        <!-- QS panel background -->
-        <item name="*android:colorBackgroundFloating">@*android:color/primary_material_dark</item>
-
-        <!-- volume background -->
-        <item name="*android:panelColorBackground">@*android:color/primary_material_dark</item>
+    <style name="qs_theme" parent="@*android:style/Theme.DeviceDefault.QuickSettings">
+        <item name="android:colorPrimary">@*android:color/background_material_light</item>
     </style>
 </resources>

@@ -1,4 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Arrow Themes</string>
+
+    <!-- Default values for our main themes -->
+    <string name="theme_name_default">Default</string>
+    <string name="theme_title_default">@string/theme_name_default</string>
+
+    <!-- Darkgray Theme -->
+    <string name="theme_name_darkgray">Dark gray</string>
+    <string name="theme_title_darkgray">@string/theme_name_darkgray</string>
+    <string name="theme_overlay_color_darkgray">com.android.theme.color.black</string>
+    <string name="theme_overlay_font_darkgray">com.android.theme.font.googlesans</string>
+    <string name="theme_overlay_style_android_darkgray">com.arrow.theme.darkgray.android</string>
+    <string name="theme_overlay_style_sysui_darkgray">com.arrow.theme.darkgray.systemui</string>
+    <string name="theme_overlay_style_settings_darkgray">com.arrow.theme.darkgray.settings</string>
+    <string name="theme_overlay_icon_android_darkgray">com.android.theme.icon_pack.rounded.android</string>
+    <string name="theme_overlay_icon_launcher_darkgray">com.android.theme.icon_pack.rounded.launcher</string> 
+    <string name="theme_overlay_icon_settings_darkgray">com.android.theme.icon_pack.rounded.settings</string>
+    <string name="theme_overlay_icon_sysui_darkgray">com.android.theme.icon_pack.rounded.systemui</string>
+    <string name="theme_overlay_shape_darkgray">com.android.theme.icon.circle</string>
+
+    <!-- Pitchblack Theme -->
+    <string name="theme_name_pitchblack">Pitch Black</string>
+    <string name="theme_title_pitchblack">@string/theme_name_pitchblack</string>
+    <string name="theme_overlay_color_pitchblack">com.android.theme.color.black</string>
+    <string name="theme_overlay_font_pitchblack">com.android.theme.font.googlesans</string>
+    <string name="theme_overlay_style_android_pitchblack">com.arrow.theme.pitchblack.android</string>
+    <string name="theme_overlay_style_sysui_pitchblack">com.arrow.theme.pitchblack.systemui</string>
+    <string name="theme_overlay_icon_android_pitchblack">com.android.theme.icon_pack.rounded.android</string>
+    <string name="theme_overlay_icon_launcher_pitchblack">com.android.theme.icon_pack.rounded.launcher</string>
+    <string name="theme_overlay_icon_settings_pitchblack">com.android.theme.icon_pack.rounded.settings</string>
+    <string name="theme_overlay_icon_sysui_pitchblack">com.android.theme.icon_pack.rounded.systemui</string>
+    <string name="theme_overlay_shape_pitchblack">com.android.theme.icon.circle</string>
+
+    <!-- Night Theme -->
+    <string name="theme_name_night">Night</string>
+    <string name="theme_title_night">@string/theme_name_night</string>
+    <string name="theme_overlay_color_night">com.android.theme.color.black</string>
+    <string name="theme_overlay_font_night">com.android.theme.font.googlesans</string>
+    <string name="theme_overlay_style_android_night">com.arrow.theme.night.android</string>
+    <string name="theme_overlay_style_sysui_night">com.arrow.theme.night.systemui</string>
+    <string name="theme_overlay_icon_android_night">com.android.theme.icon_pack.rounded.android</string>
+    <string name="theme_overlay_icon_launcher_night">com.android.theme.icon_pack.rounded.launcher</string>
+    <string name="theme_overlay_icon_settings_night">com.android.theme.icon_pack.rounded.settings</string>
+    <string name="theme_overlay_icon_sysui_night">com.android.theme.icon_pack.rounded.systemui</string>
+    <string name="theme_overlay_shape_night">com.android.theme.icon.circle</string>
+
+    <!-- Style Theme -->
+    <string name="theme_name_style">Style</string>
+    <string name="theme_title_style">@string/theme_name_style</string>
+    <string name="theme_overlay_color_style">com.android.theme.color.black</string>
+    <string name="theme_overlay_font_style">com.android.theme.font.googlesans</string>
+    <string name="theme_overlay_style_android_style">com.arrow.theme.style.android</string>
+    <string name="theme_overlay_style_sysui_style">com.arrow.theme.style.systemui</string>
+    <string name="theme_overlay_icon_android_style">com.android.theme.icon_pack.rounded.android</string>
+    <string name="theme_overlay_icon_launcher_style">com.android.theme.icon_pack.rounded.launcher</string>
+    <string name="theme_overlay_icon_settings_style">com.android.theme.icon_pack.rounded.settings</string>
+    <string name="theme_overlay_icon_sysui_style">com.android.theme.icon_pack.rounded.systemui</string>
+    <string name="theme_overlay_shape_style">com.android.theme.icon.circle</string>
+
+    <!-- Solarized Theme -->
+    <string name="theme_name_solarized">Solarized</string>
+    <string name="theme_title_solarized">@string/theme_name_solarized</string>
+    <string name="theme_overlay_color_solarized">com.android.theme.color.black</string>
+    <string name="theme_overlay_font_solarized">com.android.theme.font.googlesans</string>
+    <string name="theme_overlay_solarized_android_solarized">com.arrow.theme.solarized.android</string>
+    <string name="theme_overlay_solarized_sysui_solarized">com.arrow.theme.solarized.systemui</string>
+    <string name="theme_overlay_icon_android_solarized">com.android.theme.icon_pack.rounded.android</string>
+    <string name="theme_overlay_icon_launcher_solarized">com.android.theme.icon_pack.rounded.launcher</string>
+    <string name="theme_overlay_icon_settings_solarized">com.android.theme.icon_pack.rounded.settings</string>
+    <string name="theme_overlay_icon_sysui_solarized">com.android.theme.icon_pack.rounded.systemui</string>
+    <string name="theme_overlay_shape_solarized">com.android.theme.icon.circle</string>
+
 </resources>

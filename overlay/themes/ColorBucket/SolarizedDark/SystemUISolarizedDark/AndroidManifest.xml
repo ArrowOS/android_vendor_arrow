@@ -16,10 +16,10 @@
  */
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.android.dark.solarizeddarkExt"
+          package="com.arrow.theme.solarized.systemui"
           android:versionCode="1"
           android:versionName="1.0">
-    <overlay android:targetPackage="com.android.systemui" android:category="android.theme.customization.custom_overlays" android:priority="1"/>
+    <overlay android:targetPackage="com.android.systemui" android:category="android.theme.customization.style.systemui" android:priority="1"/>
 
-    <application android:hasCode="false"/>
+    <application android:label="Solarized" android:hasCode="false"/>
 </manifest>

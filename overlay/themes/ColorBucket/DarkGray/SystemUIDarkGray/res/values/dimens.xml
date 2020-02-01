@@ -16,16 +16,6 @@
   -->
 
 <resources>
-    <style name="Theme.DeviceDefault.QuickSettings" parent="android:Theme.DeviceDefault">
-
-	<!-- Color palette -->
-        <item name="*android:colorPrimaryDark">@*android:color/primary_material_dark</item>
-        <item name="*android:colorSecondary">@*android:color/primary_dark_material_dark</item>
-
-        <!-- QS panel background -->
-        <item name="*android:colorBackgroundFloating">@*android:color/primary_material_dark</item>
-
-        <!-- volume background -->
-        <item name="*android:panelColorBackground">@*android:color/primary_material_dark</item>
-    </style>
+    <!-- The height of the divider between the individual notifications. -->
+    <dimen name="notification_divider_height">0dp</dimen>
 </resources>
