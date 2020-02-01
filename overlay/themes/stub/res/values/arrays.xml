@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="themes" />
+    <string-array name="themes" >
+        <item>default</item>
+        <item>darkgray</item>
+        <item>pitchblack</item>
+        <item>night</item>
+        <item>style</item>
+        <item>solarized</item>
+    </string-array>
 </resources>
