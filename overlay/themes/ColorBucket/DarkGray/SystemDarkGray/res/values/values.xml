@@ -16,16 +16,16 @@
   -->
 
 <resources>
-    <style name="Theme.DeviceDefault.QuickSettings" parent="android:Theme.DeviceDefault">
+    <style name="Theme.DeviceDefault.QuickSettings" parent="android:Theme.DeviceDefault.Light">
 
 	<!-- Color palette -->
-        <item name="*android:colorPrimaryDark">@*android:color/primary_material_dark</item>
-        <item name="*android:colorSecondary">@*android:color/primary_dark_material_dark</item>
+        <item name="*android:colorPrimaryDark">@*android:color/primary_material_light</item>
+        <item name="*android:colorSecondary">@*android:color/primary_dark_material_light</item>
 
         <!-- QS panel background -->
-        <item name="*android:colorBackgroundFloating">@*android:color/primary_material_dark</item>
+        <item name="*android:colorBackgroundFloating">@*android:color/primary_material_light</item>
 
         <!-- volume background -->
-        <item name="*android:panelColorBackground">@*android:color/primary_material_dark</item>
+        <item name="*android:panelColorBackground">@*android:color/primary_material_light</item>
     </style>
 </resources>
