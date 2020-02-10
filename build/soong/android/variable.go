@@ -31,6 +31,9 @@ type Product_variables struct {
 	Needs_text_relocations struct {
 		Cppflags []string
 	}
+	Target_face_unlock_camera_id struct {
+		Cppflags []string
+	}
 	Target_init_vendor_lib struct {
 		Whole_static_libs []string
 	}
@@ -92,6 +95,7 @@ type ProductVariables struct {
 	Needs_text_relocations  *bool `json:",omitempty"`
 	Specific_camera_parameter_library  *string `json:",omitempty"`
 	Supports_extended_compress_format  *bool `json:",omitempty"`
+	Target_face_unlock_camera_id  *string `json:",omitempty"`
 	Target_init_vendor_lib  *string `json:",omitempty"`
 	Target_process_sdk_version_override  *string `json:",omitempty"`
 	Target_shim_libs  *string `json:",omitempty"`
