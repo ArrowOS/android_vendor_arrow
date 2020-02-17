@@ -1,4 +1,4 @@
-# Copyright (C) 2018-2019 ArrowOS
+# Copyright (C) 2018-2020 ArrowOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -26,7 +26,8 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI
+    SystemUI \
+    QuickStep
 
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
