@@ -1,4 +1,4 @@
-# Copyright (C) 2018-2019 ArrowOS
+# Copyright (C) 2018-2020 ArrowOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -42,7 +42,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.storage_manager.enabled=true
 
 # TEMP: Enable transitional log for Privileged permissions
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+PRODUCT_PRODUCT_PROPERTIES += \
     ro.control_privapp_permissions=log
 
 # Tethering - allow without requiring a provisioning app
