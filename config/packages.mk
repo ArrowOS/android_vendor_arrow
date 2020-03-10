@@ -22,6 +22,7 @@ PRODUCT_PACKAGES += \
     LatinIME \
     ParallelSpace \
     messaging \
+    Seedvault \
     SimpleGallery \
     Stk \
     stats \
