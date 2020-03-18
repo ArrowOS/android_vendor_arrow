@@ -104,3 +104,6 @@ include vendor/arrow/config/props.mk
 
 # Sounds
 include vendor/arrow/config/sounds.mk
+
+# SurfaceFlinger
+TARGET_USE_QCOM_SURFACEFLINGER := true
