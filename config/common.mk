@@ -58,9 +58,9 @@ PRODUCT_COPY_FILES += \
     vendor/arrow/build/tools/backuptool.functions:install/bin/backuptool.functions \
     vendor/arrow/build/tools/50-cm.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-cm.sh
 
-# system mount
+# World APN list
 PRODUCT_COPY_FILES += \
-    vendor/arrow/build/tools/system-mount.sh:install/bin/system-mount.sh
+    vendor/arrow/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # Sensitive Phone Numbers list
 PRODUCT_COPY_FILES += \
