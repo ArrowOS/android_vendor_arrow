@@ -56,7 +56,7 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/arrow/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/arrow/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/arrow/prebuilt/common/bin/50-cm.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-cm.sh
+    vendor/arrow/prebuilt/common/bin/50-lineage.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-lineage.sh
 
 # World APN list
 PRODUCT_COPY_FILES += \
