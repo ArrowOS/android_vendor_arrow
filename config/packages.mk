@@ -17,7 +17,7 @@
 PRODUCT_PACKAGES += \
     ArrowThemesStub \
     BluetoothExt \
-    Calendar \
+    SimpleCalendar \
     DuckDuckGo \
     ExactCalculator \
     LatinIME \
