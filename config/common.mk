@@ -46,6 +46,11 @@ PRODUCT_COPY_FILES += \
     vendor/arrow/prebuilt/common/etc/init.local.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.arrow.rc
 
 # Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/arrow/build/tools/backuptool.sh:install/bin/backuptool.sh \
+    vendor/arrow/build/tools/backuptool.functions:install/bin/backuptool.functions \
+    vendor/arrow/build/tools/50-cm.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-cm.sh
+
 ifneq ($(AB_OTA_PARTITIONS),)
 PRODUCT_COPY_FILES += \
     vendor/arrow/build/tools/backuptool_ab.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.sh \
@@ -57,12 +62,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 endif
 endif
 
-PRODUCT_COPY_FILES += \
-    vendor/arrow/build/tools/backuptool.sh:install/bin/backuptool.sh \
-    vendor/arrow/build/tools/backuptool.functions:install/bin/backuptool.functions \
-    vendor/arrow/build/tools/50-cm.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-cm.sh
-
-# system mount
+# System mount
 PRODUCT_COPY_FILES += \
     vendor/arrow/build/tools/system-mount.sh:install/bin/system-mount.sh
 
