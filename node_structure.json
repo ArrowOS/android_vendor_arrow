@@ -1,17 +1,17 @@
 {
     "arrow-1": [
         {
-            "hals":[ "msm8916", "msm8937", "msm8952", "msm8953", "msm8974", "msm8976"]
+            "hals":[ "msm8916", "msm8937", "msm8952", "msm8953", "msm8974", "msm8976", "msm8996"]
         }
     ],
     "arrow-2": [
         {
-            "hals":[ "msm8996", "msm8998", "sdm660"]
+            "hals":[ "sm8150", "msm8998", "sdm660", "sm6150", "sdm845"]
         }
     ],
     "arrow-3": [
         {
-            "hals":[ "sm8150", "sm6150", "sdm845"]
+            "hals":[]
         }
     ]
 }
