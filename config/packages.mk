@@ -61,7 +61,17 @@ PRODUCT_PACKAGES += \
     SystemNightOverlay \
     SystemUINightOverlay \
     SystemSolarizedDarkOverlay \
-    SystemUISolarizedDarkOverlay
+    SystemUISolarizedDarkOverlay \
+    SystemMaterialOceanOverlay \
+    SystemUIMaterialOceanOverlay \
+    SystemBakedGreenOverlay \
+    SystemUIBakedGreenOverlay \
+    SystemChocoXOverlay \
+    SystemUIChocoXOverlay \
+    SystemDarkAubergineOverlay \
+    SystemUIDarkAubergineOverlay \
+    SystemClearSpringOverlay \
+    SystemUIClearSpringOverlay
 
 # Charger mode images
 ifeq ($(TARGET_INCLUDE_PIXEL_CHARGER),true)
