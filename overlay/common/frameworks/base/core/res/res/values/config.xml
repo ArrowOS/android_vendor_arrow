@@ -93,4 +93,7 @@
 
     <!-- Whether safe headphone volume is enabled or not (country specific). -->
     <bool name="config_safe_media_volume_enabled">false</bool>
+
+    <!-- Turn on dark theme by default -->
+    <integer name="config_defaultNightMode">2</integer>
 </resources>
