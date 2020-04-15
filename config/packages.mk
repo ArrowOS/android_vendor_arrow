@@ -31,11 +31,6 @@ PRODUCT_PACKAGES += \
     Stk \
     ThemePicker
 
-ifeq ($(TARGET_EXCLUDE_LAWNCHAIR),)
-PRODUCT_PACKAGES += \
-    Lawnchair
-endif
-
 # Accents
 PRODUCT_PACKAGES += \
     AccentColorYellowOverlay \
