@@ -31,7 +31,7 @@ PRODUCT_PACKAGES += \
     Stk \
     ThemePicker
 
-ifeq ($(TARGET_EXCLUDE_LAWNCHAIR),)
+ifneq ($(TARGET_EXCLUDE_LAWNCHAIR), true)
 PRODUCT_PACKAGES += \
     Lawnchair \
     LawnConf

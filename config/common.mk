@@ -89,7 +89,7 @@ PRODUCT_COPY_FILES += \
 endif
 
 # Lawnchair
-ifeq ($(TARGET_EXCLUDE_LAWNCHAIR),)
+ifneq ($(TARGET_EXCLUDE_LAWNCHAIR), true)
 PRODUCT_PACKAGE_OVERLAYS += vendor/arrow/overlay/lawnchair
 
 PRODUCT_COPY_FILES += \
