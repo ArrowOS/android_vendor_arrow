@@ -91,4 +91,6 @@
     <!-- Corner radius of system progress bars -->
     <dimen name="config_progressBarCornerRadius">1000.0dip</dimen>
 
+    <!-- Whether safe headphone volume is enabled or not (country specific). -->
+    <bool name="config_safe_media_volume_enabled">false</bool>
 </resources>
