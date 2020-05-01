@@ -28,7 +28,8 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
-    Launcher3QuickStep
+    Launcher3QuickStep \
+	Lawnchair
 
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
@@ -95,6 +96,9 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/arrow/overlay/lawnchair
 PRODUCT_COPY_FILES += \
     vendor/arrow/prebuilt/common/etc/permissions/privapp-permissions-lawnchair.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-lawnchair.xml \
     vendor/arrow/prebuilt/common/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml
+
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+	Lawnchair
 endif
 
 # Do not include art debug targets
