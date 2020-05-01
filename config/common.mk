@@ -21,9 +21,8 @@ PRODUCT_PACKAGE_OVERLAYS += \
     vendor/arrow/overlay/themes/ArrowIcons
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    vendor/arrow/overlay/common \
-    vendor/arrow/overlay/themes/ArrowIcons \
-    vendor/arrow/overlay/lawnchair
+    vendor/arrow/overlay \
+    vendor/arrow/packages
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
