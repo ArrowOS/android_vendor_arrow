@@ -64,16 +64,6 @@
     <!-- Pixel -->
     <bool name="config_swipe_up_gesture_setting_available">true</bool>
     <bool name="config_smart_battery_available">true</bool>
-    <bool name="config_unplugTurnsOnScreen">true</bool>
-
-    <!-- Google Fonts -->
-    <string name="config_headlineFontFamily">google-sans</string>
-    <string name="config_headlineFontFamilyLight">google-sans</string>
-    <string name="config_headlineFontFeatureSettings">ss03</string>
-    <string name="config_headlineFontFamilyMedium">google-sans-medium</string>
-
-    <!-- PocketMode -->
-    <string name="config_pocketBridgeSysfsInpocket">/sys/kernel/pocket_judge/inpocket</string>
 
     <!-- The duration in which a recent task is considered in session and should be visible. -->
     <integer name="config_activeTaskDurationHours">12</integer>
