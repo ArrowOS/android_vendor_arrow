@@ -24,6 +24,7 @@ $(call add_json_bool, Uses_qcom_bsp_legacy,                       $(filter true,
 $(call add_json_bool, Uses_qti_camera_device,                     $(filter true,$(TARGET_USES_QTI_CAMERA_DEVICE)))
 $(call add_json_bool, Target_use_sdclang,                         $(filter true,$(if $(strip $(TARGET_USE_SDCLANG)),true,false)))
 $(call add_json_bool, Target_ignores_ftp_pptp_conntrack_failure, $(filter true,$(TARGET_IGNORES_FTP_PPTP_CONNTRACK_FAILURE)))
+$(call add_json_str_omitempty, Target_surfaceflinger_fod_lib, $(TARGET_SURFACEFLINGER_FOD_LIB))
 
 # This causes the build system to strip out the last comma in our nested struct, to keep the JSON valid.
 _json_contents := $(_json_contents)__SV_END
