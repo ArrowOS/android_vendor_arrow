@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "14c5f923_8aa29f56",
+        "filename": "arrow.devices",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2020-05-31T09:38:22Z",
+      "side": 1,
+      "message": "Leave these as is.",
+      "revId": "8140c348cb2a47b502efab8dfe548f9ecf9fe62e",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196",
+      "unresolved": true
+    }
+  ]
+}
