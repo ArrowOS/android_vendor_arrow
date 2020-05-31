@@ -27,19 +27,19 @@
 #
 #
 - A6020 userdebug msm8916
-$ beryllium userdebug sdm845
+- beryllium userdebug sdm845
 - cheeseburger userdebug msm8998
 - chiron userdebug msm8998
 - dumpling userdebug msm8998
-@ I01WD userdebug sm8150
+- I01WD userdebug sm8150
 - land userdebug msm8937
 - mido userdebug msm8953
-$ perseus userdebug sdm845
-$ polaris userdebug sdm845
-$ potter userdebug msm8953
+- perseus userdebug sdm845
+- polaris userdebug sdm845
+! potter userdebug msm8953
 - sanders userdebug msm8953
-@ violet userdebug sm6150
+- violet userdebug sm6150
 - wayne userdebug sdm660
 - whyred userdebug sdm660
-$ z2_plus userdebug msm8996
-$ z2_row userdebug msm8996
+! z2_plus userdebug msm8996
+- z2_row userdebug msm8996
