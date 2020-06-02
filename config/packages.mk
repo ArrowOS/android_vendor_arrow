@@ -25,7 +25,8 @@ PRODUCT_PACKAGES += \
     SimpleGallery \
     Stk \
     stats \
-    ThemePicker
+    ThemePicker \
+    TouchGestures
 
 ifeq ($(PRODUCT_TYPE), go)
 PRODUCT_PACKAGES += \
