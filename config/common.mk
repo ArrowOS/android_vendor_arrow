@@ -23,6 +23,10 @@ PRODUCT_PACKAGE_OVERLAYS += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     vendor/arrow/overlay/common
 
+# TouchGestures
+PRODUCT_PACKAGES += \
+    TouchGestures
+
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
