@@ -30,6 +30,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
 
+# LineageHW permission
+PRODUCT_COPY_FILES += \
+    vendor/arrow/config/permissions/privapp-permissions-lineagehw.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-lineagehw.xml
+
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
     vendor/arrow/config/permissions/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.software.nfc.beam.xml
