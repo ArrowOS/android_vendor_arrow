@@ -1,7 +1,6 @@
 # CyanogenMod Extras
 
 on init
-    export ANDROID_CACHE /cache
     export TERMINFO /system/etc/terminfo
 
     # Set up the BFQIO hierarchy
@@ -47,9 +46,6 @@ on boot
     chown system system /sys/block/dm-0/queue/scheduler
     chmod 0664 /sys/block/dm-0/queue/scheduler
     restorecon /sys/block/dm-0/queue/scheduler
-
-    # Persistent properties (only created if persist exists)
-    mkdir /persist/properties 0770 system system
 
 # bugreport is triggered by holding down volume down, volume up and power
 service bugreport /system/bin/dumpstate -d -p -z
