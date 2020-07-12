@@ -1,7 +1,6 @@
 # CyanogenMod Extras
 
 on init
-    export ANDROID_CACHE /cache
     export TERMINFO /system/etc/terminfo
 
     # Set up the BFQIO hierarchy
@@ -51,9 +50,6 @@ on boot
     # Vibrator intensity control
     chown system system /sys/class/timed_output/vibrator/vtg_level
     chmod 0644 /sys/class/timed_output/vibrator/vtg_level
-
-    # Persistent properties (only created if persist exists)
-    mkdir /persist/properties 0770 system system
 
 # bugreport is triggered by holding down volume down, volume up and power
 service bugreport /system/bin/dumpstate -d -p -z
