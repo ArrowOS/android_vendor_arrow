@@ -26,7 +26,6 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     WeatherIcons \
     Phonograph \
-    Recorder \
     SimpleGallery \
     stats \
     Stk \
