@@ -32,7 +32,6 @@ $ beryllium userdebug sdm845
 - chiron userdebug msm8998
 - clover userdebug sdm660
 - enchilada userdebug sdm845
-@ I01WD userdebug sm8150
 - land userdebug msm8937
 - mido userdebug msm8953
 $ perseus userdebug sdm845
