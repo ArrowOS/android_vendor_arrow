@@ -79,14 +79,16 @@ def add_auth(g_req):
     if github_auth:
         g_req.add_header("Authorization", "Basic %s" % github_auth)
 
+
 def exists_in_tree(lm, repository):
-     for child in lm.getchildren():
+    for child in lm.getchildren():
         try:
             if child.attrib['path'].endswith(repository):
                 return child
         except:
             pass
-     return None
+    return None
+
 
 def indent(elem, level=0):
     # in-place prettyprint formatter
@@ -118,6 +120,7 @@ def get_default(manifest=None):
     d = m.findall('default')[0]
     return d
 
+
 def get_remote(manifest=None, remote_name=None):
     m = manifest or load_manifest(default_manifest)
     if not remote_name:
@@ -126,6 +129,7 @@ def get_remote(manifest=None, remote_name=None):
     for remote in remotes:
         if remote_name == remote.get('name'):
             return remote
+
 
 def get_revision(manifest=None, p="build"):
     m = manifest or load_manifest(default_manifest)
@@ -174,38 +178,39 @@ def add_to_manifest(repos, fallback_branch=None):
     for repo in repos:
         repo_name = repo['repository']
         repo_target = repo['target_path']
-	if 'branch' in repo:
-	    repo_branch=repo['branch']
-	else:
-	    repo_branch=custom_default_revision
+        if 'branch' in repo:
+            repo_branch = repo['branch']
+        else:
+            repo_branch = custom_default_revision
 
-	if 'remote' in repo:
-	    repo_remote = repo['remote']
-	else:
-	    repo_remote=org_manifest
+        if 'remote' in repo:
+            repo_remote = repo['remote']
+        else:
+            repo_remote = org_manifest
 
         if is_in_manifest(repo_target):
             print('already exists: %s' % repo_target)
             continue
 
-	if repo_remote is None:
-	    repo_remote="github"
+        if repo_remote is None:
+            repo_remote = "github"
 
-	if "/" not in repo_name and repo_remote is not org_manifest:
-	    repo_name = os.path.join(org_display, repo_name)
+        if "/" not in repo_name and repo_remote is not org_manifest:
+            repo_name = os.path.join(org_display, repo_name)
 
-	existing_m_project = None
+        existing_m_project = None
         if exists_in_tree(mlm, repo_target) != None:
-	    existing_m_project = exists_in_tree(mlm, repo_target)
+            existing_m_project = exists_in_tree(mlm, repo_target)
         elif exists_in_tree(arrowm, repo_target) != None:
-	    existing_m_project = exists_in_tree(arrowm, repo_target)
+            existing_m_project = exists_in_tree(arrowm, repo_target)
         elif exists_in_tree(halm, repo_target) != None:
-	    existing_m_project = exists_in_tree(halm, repo_target)
+            existing_m_project = exists_in_tree(halm, repo_target)
 
         if existing_m_project != None:
             if existing_m_project.attrib['path'] == repo['target_path']:
-                print('%s already exists in main manifest, replacing with new dep' % repo_name)
-                lm.append(ElementTree.Element("remove-project", attrib = {
+                print(
+                    '%s already exists in main manifest, replacing with new dep' % repo_name)
+                lm.append(ElementTree.Element("remove-project", attrib={
                     "name": existing_m_project.attrib['name']
                 }))
 
@@ -235,6 +240,7 @@ def add_to_manifest(repos, fallback_branch=None):
     f = open(custom_local_manifest, 'w')
     f.write(raw_xml)
     f.close()
+
 
 _fetch_dep_cache = []
 
@@ -273,7 +279,8 @@ def fetch_dependencies(repo_path, fallback_branch=None):
 
     if syncable_repos:
         print('Syncing dependencies')
-        os.system('repo sync --force-sync --no-tags --current-branch --no-clone-bundle %s' % ' '.join(syncable_repos))
+        os.system('repo sync --force-sync --no-tags --current-branch --no-clone-bundle %s' %
+                  ' '.join(syncable_repos))
 
     for deprepo in syncable_repos:
         fetch_dependencies(deprepo)
@@ -378,7 +385,8 @@ def main():
         add_to_manifest(adding, fallback_branch)
 
         print("Syncing repository to retrieve project.")
-        os.system('repo sync --force-sync --no-clone-bundle --current-branch --no-tags %s' % repo_path)
+        os.system(
+            'repo sync --force-sync --no-clone-bundle --current-branch --no-tags %s' % repo_path)
         print("Repository synced!")
 
         fetch_dependencies(repo_path, fallback_branch)
@@ -389,6 +397,7 @@ def main():
           % (device, org_display))
     print("If this is in error, you may need to manually add it to your "
           "%s" % custom_local_manifest)
+
 
 if __name__ == "__main__":
     main()
