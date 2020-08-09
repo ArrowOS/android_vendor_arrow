@@ -1,0 +1,40 @@
+[vendor/arrow]
+2ac496a  arrow: Update changelog script  [Ido Ben-Hur]
+
+[vendor/arrow]
+
+[vendor/arrow]
+
+[vendor/arrow]
+
+[vendor/arrow]
+9d9e15f  vendor: Switch back to qcom platform type soongs vars [1/2]  [palaych]
+
+[vendor/arrow]
+dfde892  vendor: apns-conf: Drop proxy for Movistar  [althafvly]
+
+[vendor/arrow]
+
+[vendor/arrow]
+8f07a45  node_structure: Define some more SOCs  [kubersharma001]
+f3acc23  devices: Add Zenfone Max Pro M1  [kubersharma001]
+
+[vendor/arrow]
+703bb14  soong: Add flag for fod extension  [TheScarastic]
+
+[vendor/arrow]
+b8d6577  devices: Add Redmi K20Pro (raphael)  [kubersharma001]
+
+[vendor/arrow]
+
+[vendor/arrow]
+
+[vendor/arrow]
+
+[vendor/arrow]
+7968ea9  roomservice.py: format and lint  [Stefen Wakefield]
+2b31387  node_structure: Assign msm8994 to node1  [xmxrtyx]
+01656b3  vendor: Add angler to official  [xmxrtyx]
+
+[vendor/arrow]
+
