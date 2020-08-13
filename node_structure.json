@@ -6,7 +6,7 @@
     ],
     "arrow-2": [
         {
-            "hals":[ "msm8996", "msm8998", "sdm660"]
+            "hals":[ "msm8996", "msm8998", "sdm636", "sdm660"]
         }
     ],
     "arrow-3": [
