@@ -25,10 +25,26 @@ type Product_variables struct {
 		Overrides []string
 		Shared_libs []string
 	}
-	Qcom_um_soong_namespace struct {
+	Uses_qcom_um_3_18_family struct {
 		Cflags []string
 		Header_libs []string
 	}
+	Uses_qcom_um_4_4_family struct {
+		Cflags []string
+		Header_libs []string
+	}
+	Uses_qcom_um_4_9_family struct {
+		Cflags []string
+		Header_libs []string
+	}
+	Uses_qcom_um_4_14_family struct {
+		Cflags []string
+		Header_libs []string
+	}
+        Uses_qcom_um_4_19_family struct {
+		Cflags []string
+                Header_libs []string
+        }
 	Needs_legacy_camera_hal1_dyn_native_handle struct {
 		Cppflags []string
 	}
@@ -76,8 +92,12 @@ type ProductVariables struct {
 	Should_wait_for_qsee  *bool `json:",omitempty"`
 	Apply_msm8974_1440p_egl_workaround  *bool `json:",omitempty"`
 	Has_legacy_camera_hal1  *bool `json:",omitempty"`
-	Qcom_um_soong_namespace  *string `json:",omitempty"`
-	Needs_legacy_camera_hal1_dyn_native_handle  *bool `json:",omitempty"`
+	Uses_qcom_um_3_18_family  *bool `json:",omitempty"`
+	Uses_qcom_um_4_4_family  *bool `json:",omitempty"`
+	Uses_qcom_um_4_9_family  *bool `json:",omitempty"`
+        Uses_qcom_um_4_14_family  *bool `json:",omitempty"`
+	Uses_qcom_um_4_19_family  *bool `json:",omitempty"`
+        Needs_legacy_camera_hal1_dyn_native_handle  *bool `json:",omitempty"`
 	Needs_text_relocations  *bool `json:",omitempty"`
 	Specific_camera_parameter_library  *string `json:",omitempty"`
 	Supports_extended_compress_format  *bool `json:",omitempty"`
