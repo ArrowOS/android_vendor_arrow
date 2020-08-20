@@ -29,7 +29,7 @@ endif
 CURRENT_DEVICE=$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3)
 
 ifeq ($(ARROW_OFFICIAL), true)
-   LIST = $(shell cat vendor/arrow/arrow.devices | awk '$$1 != "#" { print $$2 }')
+   LIST = $(shell cat infrastructure/devices/arrow.devices | awk '$$1 != "#" { print $$2 }')
     ifeq ($(filter $(CURRENT_DEVICE), $(LIST)), $(CURRENT_DEVICE))
       IS_OFFICIAL=true
       ARROW_BUILD_TYPE := OFFICIAL
