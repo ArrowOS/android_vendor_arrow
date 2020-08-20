@@ -44,6 +44,22 @@ PRODUCT_PACKAGES += \
     endif
 endif
 
+ifeq ($(ARROW_COMMUNITY), true)
+   LIST = $(shell cat infrastructure/devices/arrow-community.devices | awk '$$1 != "#" { print $$2 }')
+    ifeq ($(filter $(CURRENT_DEVICE), $(LIST)), $(CURRENT_DEVICE))
+      IS_COMMUNITY=true
+      ARROW_BUILD_TYPE := COMMUNITY
+
+PRODUCT_PACKAGES += \
+    Updater
+
+    endif
+    ifneq ($(IS_COMMUNITY), true)
+       ARROW_BUILD_TYPE := UNOFFICIAL
+       $(error This isn't a community device "$(CURRENT_DEVICE)")
+    endif
+endif
+
 ARROW_VERSION := Arrow-$(ARROW_MOD_VERSION)-$(CURRENT_DEVICE)-$(ARROW_BUILD_TYPE)-$(shell date -u +%Y%m%d)-$(ARROW_BUILD_ZIP_TYPE)
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
