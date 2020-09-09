@@ -14,10 +14,10 @@
 
 include vendor/arrow/config/version.mk
 
-DEVICE_PACKAGE_OVERLAYS += \
+#DEVICE_PACKAGE_OVERLAYS += \
     vendor/arrow/overlay/common
 
-PRODUCT_PACKAGE_OVERLAYS += \
+#PRODUCT_PACKAGE_OVERLAYS += \
     vendor/arrow/overlay/themes/ArrowIcons
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
@@ -88,15 +88,15 @@ PRODUCT_COPY_FILES += \
 endif
 
 # Lawnchair
-ifeq ($(TARGET_EXCLUDE_LAWNCHAIR),)
-PRODUCT_PACKAGE_OVERLAYS += vendor/arrow/overlay/lawnchair
+#ifeq ($(TARGET_EXCLUDE_LAWNCHAIR),)
+#PRODUCT_PACKAGE_OVERLAYS += vendor/arrow/overlay/lawnchair
 
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     vendor/arrow/prebuilt/common/etc/permissions/privapp-permissions-lawnchair.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-lawnchair.xml \
     vendor/arrow/prebuilt/common/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml
 
-PRODUCT_DEXPREOPT_SPEED_APPS += Lawnchair
-endif
+#PRODUCT_DEXPREOPT_SPEED_APPS += Lawnchair
+#endif
 
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false

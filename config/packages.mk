@@ -15,7 +15,6 @@
 
 # Required packages
 PRODUCT_PACKAGES += \
-    ArrowThemesStub \
     BluetoothExt \
     SimpleCalendar \
     DuckDuckGo \
@@ -23,22 +22,22 @@ PRODUCT_PACKAGES += \
     LatinIME \
     Launcher3QuickStep \
     messaging \
-    OmniJaws \
-    WeatherIcons \
-    Phonograph \
     SimpleGallery \
-    stats \
     Stk \
     ThemePicker
+#    ArrowThemesStub \
+#    stats \
+#    OmniJaws \
+#    WeatherIcons
 
-ifeq ($(TARGET_EXCLUDE_LAWNCHAIR),)
-PRODUCT_PACKAGES += \
-    Lawnchair \
-    LawnConf
-endif
+#ifeq ($(TARGET_EXCLUDE_LAWNCHAIR),)
+#PRODUCT_PACKAGES += \
+#    Lawnchair \
+#    LawnConf
+#endif
 
 # Accents
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     AccentColorYellowOverlay \
     AccentColorVioletOverlay \
     AccentColorTealOverlay \
@@ -54,7 +53,7 @@ PRODUCT_PACKAGES += \
 
 # Custom Overlays
 # Settings
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     SystemPitchBlackOverlay \
     SystemUIPitchBlackOverlay \
     SystemDarkGrayOverlay \
@@ -67,7 +66,7 @@ PRODUCT_PACKAGES += \
     SystemUISolarizedDarkOverlay
 
 # NavigationBar Gestural Mode No Pill Overlays
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     NavBarGesturalNoPillOverlay \
     NavBarGesturalNarrowBackNoPillOverlay \
     NavBarGesturalWideBackNoPillOverlay \
