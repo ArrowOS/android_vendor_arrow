@@ -14,6 +14,8 @@
 
 include vendor/arrow/config/version.mk
 
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+
 #DEVICE_PACKAGE_OVERLAYS += \
     vendor/arrow/overlay/common
 
