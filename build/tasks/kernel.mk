@@ -1,4 +1,5 @@
 # Copyright (C) 2012 The CyanogenMod Project
+#           (C) 2017-2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -42,6 +43,8 @@
 #
 #   BOARD_DTBO_CFG                     = Path to a mkdtboimg.py config file
 #
+#   BOARD_CUSTOM_DTBOIMG_MK            = Path to a custom dtboimage makefile
+#
 #   KERNEL_CC                          = The C Compiler used. This is automatically set based
 #                                          on whether the clang version is set, optional.
 #   KERNEL_LD                          = The Linker used. This is automatically set based
@@ -69,6 +72,7 @@ VARIANT_DEFCONFIG := $(TARGET_KERNEL_VARIANT_CONFIG)
 SELINUX_DEFCONFIG := $(TARGET_KERNEL_SELINUX_CONFIG)
 
 ## Internal variables
+DTC := $(HOST_OUT_EXECUTABLES)/dtc
 KERNEL_OUT := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ
 DTBO_OUT := $(TARGET_OUT_INTERMEDIATES)/DTBO_OBJ
 DTB_OUT := $(TARGET_OUT_INTERMEDIATES)/DTB_OBJ
@@ -153,9 +157,6 @@ endif
 
 ifeq ($(FULL_KERNEL_BUILD),true)
 
-KERNEL_HEADERS_INSTALL_DIR := $(KERNEL_OUT)/usr
-KERNEL_HEADERS_INSTALL_DEPS := $(KERNEL_OUT)/.headers_install_deps
-
 ifeq ($(NEED_KERNEL_MODULE_ROOT),true)
 KERNEL_MODULES_OUT := $(TARGET_ROOT_OUT)
 KERNEL_DEPMOD_STAGING_DIR := $(KERNEL_BUILD_OUT_PREFIX)$(call intermediates-dir-for,PACKAGING,depmod_recovery)
@@ -176,7 +177,8 @@ KERNEL_MODULE_MOUNTPOINT := vendor
 endif
 MODULES_INTERMEDIATES := $(KERNEL_BUILD_OUT_PREFIX)$(call intermediates-dir-for,PACKAGING,kernel_modules)
 
-PATH_OVERRIDE :=
+# Add host bin out dir to path
+PATH_OVERRIDE := PATH=$(KERNEL_BUILD_OUT_PREFIX)$(HOST_OUT_EXECUTABLES):$$PATH
 ifeq ($(TARGET_KERNEL_CLANG_COMPILE),true)
     ifneq ($(TARGET_KERNEL_CLANG_VERSION),)
         KERNEL_CLANG_VERSION := clang-$(TARGET_KERNEL_CLANG_VERSION)
@@ -259,8 +261,8 @@ $(KERNEL_CONFIG): $(KERNEL_DEFCONFIG_SRC) $(KERNEL_ADDITIONAL_CONFIG_OUT)
 			$(call make-kernel-target,KCONFIG_ALLCONFIG=$(KERNEL_OUT)/.config alldefconfig); \
 		fi
 
-$(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD)
-	@echo "Building Kernel"
+$(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC)
+	@echo "Building Kernel Image ($(BOARD_KERNEL_IMAGE_NAME))"
 	$(call make-kernel-target,$(BOARD_KERNEL_IMAGE_NAME))
 	$(hide) if grep -q '^CONFIG_OF=y' $(KERNEL_CONFIG); then \
 			echo "Building DTBs"; \
@@ -297,10 +299,14 @@ alldefconfig: $(KERNEL_OUT)
 		 $(call make-kernel-target,alldefconfig)
 
 ifeq (true,$(filter true, $(TARGET_NEEDS_DTBOIMAGE) $(BOARD_KERNEL_SEPARATED_DTBO)))
-$(BOARD_PREBUILT_DTBOIMAGE): $(DTBS)
-ifeq ($(BOARD_KERNEL_SEPARATED_DTBO),true)
+ifneq ($(BOARD_CUSTOM_DTBOIMG_MK),)
+include $(BOARD_CUSTOM_DTBOIMG_MK)
+else
 MKDTIMG := $(HOST_OUT_EXECUTABLES)/mkdtimg$(HOST_EXECUTABLE_SUFFIX)
-$(BOARD_PREBUILT_DTBOIMAGE): $(MKDTIMG)
+MKDTBOIMG := $(HOST_OUT_EXECUTABLES)/mkdtboimg.py$(HOST_EXECUTABLE_SUFFIX)
+$(BOARD_PREBUILT_DTBOIMAGE): $(DTC) $(MKDTIMG) $(MKDTBOIMG)
+ifeq ($(BOARD_KERNEL_SEPARATED_DTBO),true)
+$(BOARD_PREBUILT_DTBOIMAGE):
 	@echo "Building dtbo.img"
 	$(call make-dtbo-target,$(KERNEL_DEFCONFIG))
 	$(call make-dtbo-target,dtbs)
@@ -315,11 +321,12 @@ $(BOARD_PREBUILT_DTBOIMAGE):
 	$(call make-dtbo-target,$(KERNEL_DEFCONFIG))
 	$(call make-dtbo-target,dtbo.img)
 endif # BOARD_KERNEL_SEPARATED_DTBO
+endif # BOARD_CUSTOM_DTBOIMG_MK
 endif # TARGET_NEEDS_DTBOIMAGE/BOARD_KERNEL_SEPARATED_DTBO
 
 ifeq ($(BOARD_INCLUDE_DTB_IN_BOOTIMG),true)
 ifeq ($(BOARD_PREBUILT_DTBIMAGE_DIR),)
-$(INSTALLED_DTBIMAGE_TARGET): $(DTBS)
+$(INSTALLED_DTBIMAGE_TARGET): $(DTC)
 	@echo "Building dtb.img"
 	$(call make-dtb-target,$(KERNEL_DEFCONFIG))
 	$(call make-dtb-target,dtbs)

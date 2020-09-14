@@ -10,4 +10,3 @@ include vendor/arrow/build/core/utils.mk
 
 # Include vendor platform definitions
 include vendor/arrow/build/core/vendor/*.mk
-
