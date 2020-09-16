@@ -34,7 +34,8 @@ PRODUCT_PACKAGES += \
 ifeq ($(TARGET_EXCLUDE_LAWNCHAIR),)
 PRODUCT_PACKAGES += \
     Lawnchair \
-    LawnConf
+    LawnConf \
+    PixelBridge
 endif
 
 # Accents
