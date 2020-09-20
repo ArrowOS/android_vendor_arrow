@@ -24,11 +24,11 @@ PRODUCT_PACKAGES += \
     messaging \
     SimpleGallery \
     Stk \
-    ThemePicker
-#    ArrowThemesStub \
-#    stats \
-#    OmniJaws \
-#    WeatherIcons
+    ThemePicker \
+    ArrowThemesStub \
+    stats \
+    OmniJaws \
+    WeatherIcons
 
 #ifeq ($(TARGET_EXCLUDE_LAWNCHAIR),)
 #PRODUCT_PACKAGES += \
@@ -37,7 +37,7 @@ PRODUCT_PACKAGES += \
 #endif
 
 # Accents
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     AccentColorYellowOverlay \
     AccentColorVioletOverlay \
     AccentColorTealOverlay \
@@ -53,7 +53,7 @@ PRODUCT_PACKAGES += \
 
 # Custom Overlays
 # Settings
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     SystemPitchBlackOverlay \
     SystemUIPitchBlackOverlay \
     SystemDarkGrayOverlay \
