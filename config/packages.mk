@@ -68,11 +68,8 @@ PRODUCT_PACKAGES += \
     SystemUISolarizedDarkOverlay
 
 # NavigationBar Gestural Mode No Pill Overlays
-#PRODUCT_PACKAGES += \
-    NavBarGesturalNoPillOverlay \
-    NavBarGesturalNarrowBackNoPillOverlay \
-    NavBarGesturalWideBackNoPillOverlay \
-    NavBarGesturalExtraWideBackNoPillOverlay
+PRODUCT_PACKAGES += \
+    NavBarGesturalNoPillOverlay
 
 # Extra tools
 PRODUCT_PACKAGES += \
