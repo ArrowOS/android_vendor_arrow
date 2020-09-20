@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /**
- * Copyright (c) 2019, ArrowOS
+ * Copyright (c) 2020, ArrowOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,12 +17,9 @@
  */
 -->
 <resources>
-    <integer name="config_navBarInteractionMode">2</integer>
-    <integer name="config_navBarOpacityMode">2</integer>
-
-    <bool name="config_allowSeamlessRotationDespiteNavBarMoving">true</bool>
-    <bool name="config_navBarAlwaysShowOnSideEdgeGesture">true</bool>
-    <bool name="config_navBarCanMove">false</bool>
-    <bool name="config_navBarNeedsScrim">false</bool>
-    <bool name="config_navBarTapThrough">true</bool>
+    <dimen name="navigation_handle_horizontal_margin">0.0dip</dimen>
+    <dimen name="navigation_handle_radius">0.0dip</dimen>
+    <dimen name="navigation_handle_sample_horizontal_margin">0.0dip</dimen>
+    <dimen name="navigation_home_handle_width">0.0dip</dimen>
+    <dimen name="navigation_home_handle_width_land">0.0dip</dimen>
 </resources>
