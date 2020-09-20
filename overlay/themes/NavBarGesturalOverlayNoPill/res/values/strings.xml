@@ -17,12 +17,5 @@
  */
 -->
 <resources>
-    <integer name="config_navBarInteractionMode">2</integer>
-    <integer name="config_navBarOpacityMode">2</integer>
-
-    <bool name="config_allowSeamlessRotationDespiteNavBarMoving">true</bool>
-    <bool name="config_navBarAlwaysShowOnSideEdgeGesture">true</bool>
-    <bool name="config_navBarCanMove">false</bool>
-    <bool name="config_navBarNeedsScrim">false</bool>
-    <bool name="config_navBarTapThrough">true</bool>
+    <string name="navigation_bar_mode_title">Gestural Navigation Bar No Pill</string>
 </resources>

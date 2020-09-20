@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /**
- * Copyright (c) 2019, ArrowOS
+ * Copyright (c) 2020, ArrowOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,12 +17,10 @@
  */
 -->
 <resources>
-    <integer name="config_navBarInteractionMode">2</integer>
-    <integer name="config_navBarOpacityMode">2</integer>
-
-    <bool name="config_allowSeamlessRotationDespiteNavBarMoving">true</bool>
-    <bool name="config_navBarAlwaysShowOnSideEdgeGesture">true</bool>
-    <bool name="config_navBarCanMove">false</bool>
-    <bool name="config_navBarNeedsScrim">false</bool>
-    <bool name="config_navBarTapThrough">true</bool>
+    <!-- Controls the navigation bar interaction mode:
+         0: 3 button mode (back, home, overview buttons)
+         1: 2 button mode (back, home buttons + swipe up for overview)
+         2: gestures only for back, home and overview 
+         3: gestures only for back, home and overview without pill -->
+    <integer name="config_navBarInteractionMode">3</integer>
 </resources>
