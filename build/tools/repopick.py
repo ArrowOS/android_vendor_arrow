@@ -153,7 +153,7 @@ def fetch_query(remote_url, query):
 
 if __name__ == '__main__':
     # Default to ArrowOS Gerrit
-    default_gerrit = 'https://review.arrowos.net'
+    default_gerrit = 'https://review.lineageos.org'
 
     parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description=textwrap.dedent('''\
         repopick.py is a utility to simplify the process of cherry picking
@@ -249,7 +249,7 @@ if __name__ == '__main__':
     #{project: {path, revision}}
 
     for project in projects:
-        name = ("ArrowOS/")+project.get('name')
+        name = ("LineageOS/")+project.get('name')
         path = project.get('path')
         revision = project.get('revision')
         if revision is None:
