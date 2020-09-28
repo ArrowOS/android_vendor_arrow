@@ -6,6 +6,7 @@
 export C=/tmp/backupdir
 export SYSDEV="$(readlink -nf "$2")"
 export SYSFS="$3"
+export V=v10.0
 
 # Scripts in /$S/addon.d expect to find backuptool.functions in /tmp
 cp -f /tmp/install/bin/backuptool.functions /tmp
@@ -28,6 +29,17 @@ restore_addon_d() {
   fi
 }
 
+# Proceed only if /system is the expected major and minor version
+check_prereq() {
+# If there is no build.prop file the partition is probably empty.
+if [ ! -r $S/build.prop ]; then
+    exit 127
+fi
+if ! grep -q "^ro.modversion=$V.*" $S/build.prop; then
+  echo "Not backing up files from incompatible version: $V"
+  exit 127
+fi
+}
 # Execute /$S/addon.d/*.sh scripts with $1 parameter
 run_stage() {
 if [ -d /tmp/addon.d/ ]; then
@@ -67,6 +79,7 @@ case "$1" in
   backup)
     mount_system
     mkdir -p $C
+    check_prereq
     preserve_addon_d
     run_stage pre-backup
     run_stage backup
@@ -75,6 +88,7 @@ case "$1" in
   ;;
   restore)
     mount_system
+    check_prereq
     run_stage pre-restore
     run_stage restore
     run_stage post-restore
