@@ -6,7 +6,7 @@
 export C=/tmp/backupdir
 export SYSDEV="$(readlink -nf "$2")"
 export SYSFS="$3"
-export V=v10.0
+export V=v11.0
 
 # Scripts in /$S/addon.d expect to find backuptool.functions in /tmp
 cp -f /tmp/install/bin/backuptool.functions /tmp
