@@ -17,6 +17,8 @@
  */
 -->
 <resources>
+    <color name="primary_device_default_dark">#FF151618</color>
+    <color name="primary_device_default_settings">#FF151618</color>
 
      <!-- The background color of a notification card. -->
     <color name="notification_material_background_color">#FF151618</color>
