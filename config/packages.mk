@@ -50,8 +50,8 @@ PRODUCT_PACKAGES += \
 # Custom Overlays
 # Settings
 PRODUCT_PACKAGES += \
-    SystemPitchBlackOverlay \
-    SystemUIPitchBlackOverlay \
+    SystemRavenBlackOverlay \
+    SystemUIRavenBlackOverlay \
     SystemDarkGrayOverlay \
     SystemUIDarkGrayOverlay \
     SystemStyleOverlay \
