@@ -61,10 +61,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 endif
 endif
 
-# System mount
-PRODUCT_COPY_FILES += \
-    vendor/arrow/build/tools/system-mount.sh:install/bin/system-mount.sh
-
 # Sensitive Phone Numbers list
 PRODUCT_COPY_FILES += \
     vendor/arrow/prebuilt/common/etc/sensitive_pn.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sensitive_pn.xml
