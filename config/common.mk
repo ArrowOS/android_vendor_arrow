@@ -88,6 +88,7 @@ PRODUCT_COPY_FILES += \
 endif
 
 # Lawnchair
+ifeq ($(ARROW_GAPPS),)
 ifeq ($(TARGET_EXCLUDE_LAWNCHAIR),)
 PRODUCT_PACKAGE_OVERLAYS += vendor/arrow/overlay/lawnchair
 
@@ -96,6 +97,7 @@ PRODUCT_COPY_FILES += \
     vendor/arrow/prebuilt/common/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml
 
 PRODUCT_DEXPREOPT_SPEED_APPS += Lawnchair
+endif
 endif
 
 # Do not include art debug targets
