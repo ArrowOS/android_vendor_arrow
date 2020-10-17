@@ -31,11 +31,13 @@ PRODUCT_PACKAGES += \
     Stk \
     ThemePicker
 
+ifeq ($(ARROW_GAPPS),)
 ifeq ($(TARGET_EXCLUDE_LAWNCHAIR),)
 PRODUCT_PACKAGES += \
     Lawnchair \
     LawnConf \
     PixelBridge
+endif
 endif
 
 # Accents
