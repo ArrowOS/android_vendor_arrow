@@ -32,12 +32,6 @@ PRODUCT_PACKAGES += \
 #    OmniJaws \
 #    WeatherIcons
 
-#ifeq ($(TARGET_EXCLUDE_LAWNCHAIR),)
-#PRODUCT_PACKAGES += \
-#    Lawnchair \
-#    LawnConf
-#endif
-
 # Accents
 PRODUCT_PACKAGES += \
     AccentColorYellowOverlay \
