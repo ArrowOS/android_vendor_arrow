@@ -26,10 +26,8 @@ PRODUCT_PACKAGES += \
     Stk \
     stats \
     ThemePicker \
-    ArrowThemesStub
-
-
-#    OmniJaws \
+    ArrowThemesStub \
+    OmniJaws 
 #    WeatherIcons
 
 # Accents
