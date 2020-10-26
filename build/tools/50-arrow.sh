@@ -1,10 +1,9 @@
 #!/sbin/sh
-# 
-# /system/addon.d/50-cm.sh
-# During a CM9 upgrade, this script backs up /system/etc/hosts,
 #
 # ADDOND_VERSION=2
 #
+# /system/addon.d/50-arrow.sh
+# During a ArrowOS upgrade, this script backs up /system/etc/hosts,
 # /system is formatted and reinstalled, then the file is restored.
 #
 
