@@ -47,13 +47,14 @@ restore_addon_d() {
 check_prereq() {
 # If there is no build.prop file the partition is probably empty.
 if [ ! -r /system/build.prop ]; then
-    exit 127
+  echo "Backup/restore is not possible. Partition is probably empty"
+  return 1
 fi
-
-grep -q "^ro.modversion=$V.*" /system/etc/prop.default /system/build.prop && return 1
-
-echo "Not backing up files from incompatible version: $V"
-exit 127
+if ! grep -q "^ro.modversion=$V.*" /system/etc/prop.default /system/build.prop; then
+  echo "Backup/restore is not possible. Incompatible ROM version: $V"
+  return 2
+fi
+return 0
 }
 
 # Execute /system/addon.d/*.sh scripts with $1 parameter
@@ -73,22 +74,24 @@ fi
 
 case "$1" in
   backup)
-    mkdir -p $C
-    check_prereq
-    preserve_addon_d
-    run_stage pre-backup
-    run_stage backup
-    run_stage post-backup
+    if check_prereq; then
+      mkdir -p $C
+      preserve_addon_d
+      run_stage pre-backup
+      run_stage backup
+      run_stage post-backup
+    fi
   ;;
   restore)
-    check_prereq
-    run_stage pre-restore
-    run_stage restore
-    run_stage post-restore
-    restore_addon_d
-    rm -rf $C
-    rm -rf /postinstall/tmp
-    sync
+    if check_prereq; then
+      run_stage pre-restore
+      run_stage restore
+      run_stage post-restore
+      restore_addon_d
+      rm -rf $C
+      rm -rf /postinstall/tmp
+      sync
+    fi
   ;;
   *)
     echo "Usage: $0 {backup|restore}"
