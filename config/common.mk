@@ -48,7 +48,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/arrow/build/tools/backuptool.sh:$(TARGET_COPY_OUT_SYSTEM)/install/bin/backuptool.sh \
     vendor/arrow/build/tools/backuptool.functions:$(TARGET_COPY_OUT_SYSTEM)/install/bin/backuptool.functions \
-    vendor/arrow/build/tools/50-cm.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-cm.sh
+    vendor/arrow/build/tools/50-arrow.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-arrow.sh
 
 ifneq ($(AB_OTA_PARTITIONS),)
 PRODUCT_COPY_FILES += \
