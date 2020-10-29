@@ -35,7 +35,7 @@ check_prereq() {
 if [ ! -r $S/build.prop ]; then
     exit 127
 fi
-if ! grep -q "^ro.modversion=$V.*" $S/build.prop; then
+if ! grep -q "^ro.modversion=$V.*" $S/etc/prop.default $S/build.prop; then
   echo "Not backing up files from incompatible version: $V"
   exit 127
 fi
