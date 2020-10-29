@@ -50,11 +50,11 @@ if [ ! -r /system/build.prop ]; then
     exit 127
 fi
 
-grep -q "^ro.modversion=$V.*" /system/etc/prop.default /system/build.prop && return 1
-
+if ! grep -q "^ro.modversion=$V.*" /system/etc/prop.default /system/build.prop; then
 echo "Not backing up files from incompatible version: $V"
 exit 127
 }
+fi
 
 # Execute /system/addon.d/*.sh scripts with $1 parameter
 run_stage() {
