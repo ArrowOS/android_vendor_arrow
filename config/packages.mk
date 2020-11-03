@@ -30,6 +30,10 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     WeatherIcons
 
+# SystemUI plugins
+PRODUCT_PACKAGES += \
+    QuickAccessWallet
+
 # Accents
 PRODUCT_PACKAGES += \
     AccentColorYellowOverlay \
