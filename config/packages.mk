@@ -70,6 +70,10 @@ PRODUCT_PACKAGES += \
     product_charger_res_images
 endif
 
+# Config
+PRODUCT_PACKAGES += \
+    SimpleDeviceConfig
+
 # Navbar
 PRODUCT_PACKAGES += \
     GesturalNavigationOverlayLong \
