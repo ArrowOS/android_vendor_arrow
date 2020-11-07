@@ -49,10 +49,6 @@ ifeq ($(ARROW_COMMUNITY), true)
     ifeq ($(filter $(CURRENT_DEVICE), $(LIST)), $(CURRENT_DEVICE))
       IS_COMMUNITY=true
       ARROW_BUILD_TYPE := COMMUNITY
-
-PRODUCT_PACKAGES += \
-    Updater
-
     endif
     ifneq ($(IS_COMMUNITY), true)
        ARROW_BUILD_TYPE := UNOFFICIAL
