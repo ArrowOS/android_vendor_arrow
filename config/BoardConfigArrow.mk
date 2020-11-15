@@ -20,3 +20,5 @@ include vendor/arrow/config/BoardConfigQcom.mk
 endif
 
 include vendor/arrow/config/BoardConfigSoong.mk
+
+-include device/arrow/sepolicy/common/sepolicy.mk
