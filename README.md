@@ -26,7 +26,7 @@ Where X is the thread your CPU can handle.
 
 For building instructions, please check :
 
-[ How to Compile ArrowOS from source for your Android Device](https://blog.arrowos.net/articles/compile.html)
+[ How to Compile ArrowOS from source for your Android Device](https://blog.arrowos.net/posts/compilation-guide)
 
 To apply for maintainership, please check :
 
