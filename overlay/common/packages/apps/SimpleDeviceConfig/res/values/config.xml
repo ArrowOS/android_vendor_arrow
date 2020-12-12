@@ -36,5 +36,13 @@
         <item>device_personalization_services/Captions__surface_sound_events=true</item>
         <item>device_personalization_services/Captions__visibility_playing_duration_millis=5000</item>
         <item>device_personalization_services/Captions__visibility_stopped_duration_millis=1500</item>
+
+        <!-- Screen attention (Pixel 2019) -->
+        <item>device_personalization_services/Attention__accel_sensor_enabled=false</item>
+        <item>device_personalization_services/Attention__accel_sensor_threshold_mss=0.2</item>
+        <item>device_personalization_services/Attention__enabled=true</item>
+        <item>device_personalization_services/Attention__margin_horizontal_px=1000</item>
+        <item>device_personalization_services/Attention__margin_vertical_px=1000</item>
+        <item>device_personalization_services/Attention__proximity_sensor_enabled=false</item>
     </string-array>
 </resources>
