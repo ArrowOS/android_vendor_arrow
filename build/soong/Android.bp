@@ -441,3 +441,20 @@ stagefright_qcom_legacy {
         },
     },
 }
+
+soong_config_module_type {
+    name: "needs_camera_boottime_timestamp",
+    module_type: "cc_defaults",
+    config_namespace: "arrowGlobalVars",
+    bool_variables: ["needs_camera_boottime_timestamp"],
+    properties: ["cppflags"],
+}
+
+needs_camera_boottime_timestamp {
+    name: "needs_camera_boottime_timestamp_defaults",
+    soong_config_variables: {
+        needs_camera_boottime_timestamp: {
+            cppflags: ["-DCAMERA_BOOTTIME_TIMESTAMP"],
+        },
+    },
+}
