@@ -34,6 +34,7 @@ SOONG_CONFIG_arrowGlobalVars += \
     has_legacy_camera_hal1 \
     ignores_ftp_pptp_conntrack_failure \
     needs_netd_direct_connect_rule \
+    camera_needs_client_info \
     target_init_vendor_lib \
     target_inputdispatcher_skip_event_key \
     target_ld_shim_libs \
@@ -94,6 +95,8 @@ SOONG_CONFIG_arrowGlobalVars_target_ld_shim_libs := $(subst $(space),:,$(TARGET_
 SOONG_CONFIG_arrowGlobalVars_target_process_sdk_version_override := $(TARGET_PROCESS_SDK_VERSION_OVERRIDE)
 SOONG_CONFIG_arrowGlobalVars_target_surfaceflinger_udfps_lib := $(TARGET_SURFACEFLINGER_UDFPS_LIB)
 SOONG_CONFIG_arrowGlobalVars_uses_camera_parameter_lib := $(TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY)
+SOONG_CONFIG_arrowGlobalVars_camera_needs_client_info := $(TARGET_CAMERA_NEEDS_CLIENT_INFO)
+
 ifneq ($(filter $(QSSI_SUPPORTED_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
 SOONG_CONFIG_arrowQcomVars_qcom_display_headers_namespace := vendor/qcom/opensource/commonsys-intf/display
 else
