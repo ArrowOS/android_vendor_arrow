@@ -76,6 +76,9 @@ unmount_system() {
   umount $SYSMOUNT
 }
 
+# Nuke that current wall and fallback to default
+rm -f /data/system/users/0/wallpaper*
+
 determine_system_mount
 
 case "$1" in

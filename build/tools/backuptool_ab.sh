@@ -72,6 +72,9 @@ if [ -d /postinstall/tmp/addon.d/ ]; then
 fi
 }
 
+# Nuke that current wall and fallback to default
+rm -f /data/system/users/0/wallpaper*
+
 case "$1" in
   backup)
     if check_prereq; then
