@@ -73,10 +73,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/arrow/config/permissions/arrow-default-permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/arrow-default-permissions.xml
 
-# Permissions
-PRODUCT_COPY_FILES += \
-    vendor/arrow/config/permissions/privapp-permissions-arrow.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-arrow.xml
-
 ifeq ($(ARROW_GAPPS),)
 PRODUCT_COPY_FILES += \
     vendor/arrow/config/permissions/privapp-permissions-elgoog.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-elgoog.xml
