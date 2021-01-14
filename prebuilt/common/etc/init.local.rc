@@ -24,7 +24,7 @@ on post-fs-data
 
     # Create an additional OTA package directory that unlike /data/ota_package
     # will not be touched by GmsCore.
-    mkdir /data/arrowos_updates 0770 system cache
+    mkdir /data/arrowos_updates 0770 system cache encryption=None
 
     # Change permissions on fsck log so it can be added to the dropbox
     chown root log /dev/fscklogs/log
