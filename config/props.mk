@@ -62,3 +62,8 @@ endif
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.surface_flinger.supports_background_blur=1 \
     ro.sf.blurs_are_expensive=1
+
+# GBoard
+PRODUCT_PRODUCT_PROPERTIES += \
+ro.com.google.ime.kb_pad_port_b=1
+
