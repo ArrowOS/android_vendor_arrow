@@ -21,14 +21,4 @@
 
     <!-- Fully-qualified class name for the styles & wallpaper picker activity. -->
     <string name="config_styles_and_wallpaper_picker_class" translatable="false">com.android.customization.picker.CustomizationPickerActivity</string>
-
-    <!-- Settings suggestion package name -->
-    <string name="config_settingssuggestion_package_name" translatable="false">
-        com.google.android.settings.intelligence
-    </string>
-
-    <!-- Settings suggestion service -->
-    <string name="config_settingssuggestion_package_class" translatable="false">
-        com.google.android.settings.intelligence.modules.suggestions.SuggestionService
-    </string>
 </resources>
