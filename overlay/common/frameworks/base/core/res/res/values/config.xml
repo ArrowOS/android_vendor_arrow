@@ -45,16 +45,6 @@
     <!--  Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">4</integer>
 
-    <!-- The package name for the default wellbeing app.
-         This package must be trusted, as it has the permissions to control other applications
-         on the device.
-         Example: "com.android.wellbeing"
-     -->
-    <string name="config_defaultWellbeingPackage">com.google.android.apps.wellbeing</string>
-
-    <!-- Flag indicating which package name can access the persistent data partition -->
-    <string name="config_persistentDataPackageName" translatable="false">com.google.android.gms</string>
-
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
          in hardware. -->
     <bool name="config_setColorTransformAccelerated">true</bool>
@@ -104,13 +94,6 @@
 
     <!-- Turn on dark theme by default -->
     <integer name="config_defaultNightMode">2</integer>
-
-    <!-- The component name, flattened to a string, for the default autofill service
-         to  enabled for an user. This service must be trusted, as it can be activated
-         without explicit consent of the user. If no autofill service with the
-          specified name exists on the device, autofill will be disabled by default.
-    -->
-    <string name="config_defaultAutofillService" translatable="false">com.google.android.gms/.autofill.service.AutofillService</string>
 
     <!-- Amount of time in ms the user needs to press the relevant keys to trigger the
          screenshot chord -->
