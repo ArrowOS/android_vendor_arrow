@@ -26,6 +26,7 @@
         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicNotificationsSettingsActivity</item>
         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.AddShortcutActivity</item>
         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryContentProvider</item>
+        <item>com.google.android.dialer/com.android.dialer.rtt.settings.impl.gateway.RttSettingsDeepLink</item>
     </string-array>
 
     <!-- Set this to true to enable the platform's auto-power-save modes like doze and
