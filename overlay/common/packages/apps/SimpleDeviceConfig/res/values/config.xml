@@ -34,6 +34,10 @@
             Device Personalization Services (AiAi)
         -->
 
+        <!-- Adaptive Sound (Pixel 2020) -->
+        <item>device_personalization_services/AdaptiveAudio__enable_adaptive_audio=false</item>
+        <item>device_personalization_services/AdaptiveAudio__show_promo_notification=false</item>
+
         <!-- Live Captions (Pixel 2017 + OEM) -->
         <item>device_personalization_services/Captions__manifest_url_template=https://storage.googleapis.com/captions/%{NAMESPACE}_%{VERSION}_manifest.json</item>
         <item>device_personalization_services/Captions__model_version_v1=20190613</item>
@@ -49,7 +53,9 @@
         <item>device_personalization_services/Fedex__enable_fedex=false</item>
         <item>device_personalization_services/Logging__enable_aiai_clearcut_logging=false</item>
         <item>device_personalization_services/NotificationAssistant__enable_service=false</item>
-        <item>device_personalization_services/Overview__enable_overview=false</item>
         <item>device_personalization_services/VisualCortex__enable=false</item>
+
+        <!-- Select text on recents -->
+        <item>device_personalization_services/Overview__enable_overview=true</item>
     </string-array>
 </resources>
