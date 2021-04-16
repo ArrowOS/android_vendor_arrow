@@ -87,6 +87,15 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+# Spoof fingerprint for Google Play Services and SafetyNet
+ifneq ($(PRODUCT_OVERRIDE_GMS_FINGERPRINT),true)
+ADDITIONAL_SYSTEM_PROPERTIES += \
+    ro.build.gms_fingerprint=google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-key
+else ifeq ($(PRODUCT_OVERRIDE_GMS_FINGERPRINT),true)
+ADDITIONAL_SYSTEM_PROPERTIES += \
+    ro.build.gms_fingerprint=$(PRODUCT_GMS_SPOOFING_FINGERPRINT)
+endif
+
 # Bootanimation
 include vendor/arrow/config/bootanimation.mk
 
