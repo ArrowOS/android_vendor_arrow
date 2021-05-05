@@ -15,6 +15,11 @@
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,vendor/arrow/sounds/pixel/,$(TARGET_COPY_OUT_PRODUCT)/media/audio)
 
+# Add 2019 Material product sounds (CC-BY 4.0)
+# Sourced from https://material.io/design/sound/sound-resources.html
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,vendor/arrow/sounds/material/,$(TARGET_COPY_OUT_PRODUCT)/media/audio)
+
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.alarm_alert=Bright_morning.ogg \
     ro.config.notification_sound=End_note.ogg \
