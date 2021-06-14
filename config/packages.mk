@@ -68,6 +68,11 @@ PRODUCT_PACKAGES += \
     vim \
     zip
 
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/bin/curl \
+    system/bin/getcap \
+    system/bin/setcap
+
 # Exchange support
 PRODUCT_PACKAGES += \
     Exchange2
@@ -96,6 +101,11 @@ PRODUCT_PACKAGES += \
 # These packages are excluded from user builds
 PRODUCT_PACKAGES_DEBUG += \
     procmem
+
+ifneq ($(TARGET_BUILD_VARIANT),user)
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/bin/procmem
+endif
 
 # Charger images
 PRODUCT_PACKAGES += \
