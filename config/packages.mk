@@ -67,7 +67,6 @@ PRODUCT_PACKAGES += \
     unrar \
     unzip \
     vim \
-    wget \
     zip
 
 # Exchange support
