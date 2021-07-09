@@ -134,8 +134,8 @@ PRODUCT_COPY_FILES += \
 	vendor/arrow/sounds/ringtones/Zen.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Zen.ogg \
 	vendor/arrow/sounds/ringtones/Zen_too.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Zen_too.ogg
 
-# Add 2019 Material product sounds (CC-BY 4.0)
-# Sourced from https://material.io/design/sound/sound-resources.html
+# 2019 Material product sounds (CC-BY 4.0)
+# Source: https://material.io/design/sound/sound-resources.html
 LOCAL_PATH := vendor/proton/audio
 PRODUCT_COPY_FILES += \
         vendor/arrow/alarms/material_gentle.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/material_gentle.ogg \
@@ -154,6 +154,52 @@ PRODUCT_COPY_FILES += \
         vendor/arrow/notifications/material_simple-celebration_2.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/notifications/material_simple-celebration_2.ogg \
         vendor/arrow/notifications/material_simple-celebration_3.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/notifications/material_simple-celebration_3.ogg \
         vendor/arrow/ringtones/material_minimal.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/material_minimal.ogg \
+
+# Plasma Mobile sounds (mixed CC0 / CC BY 4.0 / CC BY-SA 4.0)
+# Source: https://invent.kde.org/devinlin/plasma-mobile-sounds/-/tree/master
+PRODUCT_COPY_FILES += \
+        vendor/arrow/notifications/plasma-mobile_awaken.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/notifications/plasma-mobile_awaken.ogg \
+        vendor/arrow/notifications/plasma-mobile_blip.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/notifications/plasma-mobile_blip.ogg \
+        vendor/arrow/notifications/plasma-mobile_doorbell.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/notifications/plasma-mobile_doorbell.ogg \
+        vendor/arrow/notifications/plasma-mobile_pointed.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/notifications/plasma-mobile_pointed.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_arp.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/plasma-mobile_arp.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_crunch.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/plasma-mobile_crunch.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_elevated.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/plasma-mobile_elevated.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_errand.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/plasma-mobile_errand.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_gentle.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/plasma-mobile_gentle.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_glazed.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/plasma-mobile_glazed.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_lightly.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/plasma-mobile_lightly.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_machine.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/plasma-mobile_machine.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_miniature.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/plasma-mobile_miniature.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_morning-rush.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/plasma-mobile_morning-rush.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_nightlights.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/plasma-mobile_nightlights.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_on-the-way.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/plasma-mobile_on-the-way.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_progressive.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/plasma-mobile_progressive.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_revelation.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/plasma-mobile_revelation.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_slowly.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/plasma-mobile_slowly.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_spatial.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/plasma-mobile_spatial.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_unfamiliar.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/plasma-mobile_unfamiliar.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_wink.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/plasma-mobile_wink.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_wubstep.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/plasma-mobile_wubstep.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_arp.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/plasma-mobile_arp.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_crunch.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/plasma-mobile_crunch.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_elevated.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/plasma-mobile_elevated.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_errand.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/plasma-mobile_errand.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_gentle.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/plasma-mobile_gentle.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_glazed.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/plasma-mobile_glazed.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_lightly.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/plasma-mobile_lightly.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_machine.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/plasma-mobile_machine.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_miniature.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/plasma-mobile_miniature.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_morning-rush.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/plasma-mobile_morning-rush.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_nightlights.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/plasma-mobile_nightlights.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_on-the-way.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/plasma-mobile_on-the-way.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_progressive.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/plasma-mobile_progressive.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_revelation.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/plasma-mobile_revelation.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_slowly.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/plasma-mobile_slowly.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_spatial.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/plasma-mobile_spatial.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_unfamiliar.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/plasma-mobile_unfamiliar.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_wink.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/plasma-mobile_wink.ogg \
+        vendor/arrow/alarm_ringtones/plasma-mobile_wubstep.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/plasma-mobile_wubstep.ogg \
 
 # Use Material product sounds by default
 PRODUCT_PRODUCT_PROPERTIES += \
