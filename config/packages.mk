@@ -69,9 +69,7 @@ PRODUCT_PACKAGES += \
     SystemChocoXOverlay \
     SystemUIChocoXOverlay \
     SystemDarkAubergineOverlay \
-    SystemUIDarkAubergineOverlay \
-    SystemClearSpringOverlay \
-    SystemUIClearSpringOverlay
+    SystemUIDarkAubergineOverlay
 
 # Charger mode images
 ifeq ($(TARGET_INCLUDE_PIXEL_CHARGER),true)
@@ -112,11 +110,6 @@ PRODUCT_PACKAGES += \
 # Exchange support
 PRODUCT_PACKAGES += \
     Exchange2
-
-# Cutout control overlays
-PRODUCT_PACKAGES += \
-    HideCutout \
-    StatusBarStock
 
 # Filesystems tools
 PRODUCT_PACKAGES += \
