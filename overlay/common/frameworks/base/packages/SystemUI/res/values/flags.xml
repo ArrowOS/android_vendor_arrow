@@ -17,5 +17,6 @@
 
 <resources>
     <bool name="are_flags_overrideable">true</bool>
+    <bool name="flag_charging_ripple">true</bool>
 </resources>
 
