@@ -38,7 +38,7 @@ SOONG_CONFIG_arrowGlobalVars += \
     target_inputdispatcher_skip_event_key \
     target_ld_shim_libs \
     target_process_sdk_version_override \
-    target_surfaceflinger_fod_lib \
+    target_surfaceflinger_udfps_lib \
     uses_camera_parameter_lib
 
 SOONG_CONFIG_NAMESPACES += arrowNvidiaVars
@@ -83,7 +83,7 @@ TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?= 0
 TARGET_INIT_VENDOR_LIB ?= vendor_init
 TARGET_INPUTDISPATCHER_SKIP_EVENT_KEY ?= 0
 TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY ?= libcamera_parameters
-TARGET_SURFACEFLINGER_FOD_LIB ?= surfaceflinger_fod_lib
+TARGET_SURFACEFLINGER_UDFPS_LIB ?= surfaceflinger_udfps_lib
 
 # Soong value variables
 SOONG_CONFIG_arrowGlobalVars_additional_gralloc_10_usage_bits := $(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS)
@@ -92,7 +92,7 @@ SOONG_CONFIG_arrowGlobalVars_target_init_vendor_lib := $(TARGET_INIT_VENDOR_LIB)
 SOONG_CONFIG_arrowGlobalVars_target_inputdispatcher_skip_event_key := $(TARGET_INPUTDISPATCHER_SKIP_EVENT_KEY)
 SOONG_CONFIG_arrowGlobalVars_target_ld_shim_libs := $(subst $(space),:,$(TARGET_LD_SHIM_LIBS))
 SOONG_CONFIG_arrowGlobalVars_target_process_sdk_version_override := $(TARGET_PROCESS_SDK_VERSION_OVERRIDE)
-SOONG_CONFIG_arrowGlobalVars_target_surfaceflinger_fod_lib := $(TARGET_SURFACEFLINGER_FOD_LIB)
+SOONG_CONFIG_arrowGlobalVars_target_surfaceflinger_udfps_lib := $(TARGET_SURFACEFLINGER_UDFPS_LIB)
 SOONG_CONFIG_arrowGlobalVars_uses_camera_parameter_lib := $(TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY)
 ifneq ($(filter $(QSSI_SUPPORTED_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
 SOONG_CONFIG_arrowQcomVars_qcom_display_headers_namespace := vendor/qcom/opensource/commonsys-intf/display
