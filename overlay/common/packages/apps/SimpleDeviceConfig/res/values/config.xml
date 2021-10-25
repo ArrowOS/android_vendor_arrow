@@ -47,36 +47,5 @@
             Microphone: PHONE_CALL_MICROPHONE
         -->
         <item>privacy/discrete_history_ops_cslist=0,109,1,108,26,101,27,102,106,100,8,9,6,7,4,5,62,59,60,90,77,111,114,112,51,65,13,6,7,52,53,54,69,74,79,113,20,16,14,19,18,57</item>
-
-        <!--
-            Device Personalization Services (AiAi)
-        -->
-
-        <!-- Now Playing (Pixel 2017) -->
-        <item>device_personalization_services/NowPlaying__ambient_music_index_manifest_17_09_02=167:https://storage.googleapis.com/music-iq-db/updatable_ytm_db/20210221-030046/manifest.json</item>
-
-        <!-- Adaptive Sound (Pixel 2020) -->
-        <item>device_personalization_services/AdaptiveAudio__enable_adaptive_audio=false</item>
-        <item>device_personalization_services/AdaptiveAudio__show_promo_notification=false</item>
-
-        <!-- Live Captions (Pixel 2017 + OEM) -->
-        <item>device_personalization_services/Captions__manifest_url_template=https://storage.googleapis.com/captions/%{NAMESPACE}_%{VERSION}_manifest.json</item>
-        <item>device_personalization_services/Captions__model_version_v1=20190613</item>
-        <item>device_personalization_services/Captions__model_version_v1_2=20200112</item>
-        <item>device_personalization_services/Captions__speech_threshold=0.2</item>
-        <item>device_personalization_services/Captions__surface_sound_events=true</item>
-        <item>device_personalization_services/Captions__visibility_playing_duration_millis=5000</item>
-        <item>device_personalization_services/Captions__visibility_stopped_duration_millis=1500</item>
-
-        <!-- Disable unused AiAi features -->
-        <item>device_personalization_services/Autofill__enable=false</item>
-        <item>device_personalization_services/Autofill__enable_fa=false</item>
-        <item>device_personalization_services/Fedex__enable_fedex=false</item>
-        <item>device_personalization_services/Logging__enable_aiai_clearcut_logging=false</item>
-        <item>device_personalization_services/NotificationAssistant__enable_service=false</item>
-        <item>device_personalization_services/VisualCortex__enable=false</item>
-
-        <!-- Select text on recents -->
-        <item>device_personalization_services/Overview__enable_overview=true</item>
     </string-array>
 </resources>
