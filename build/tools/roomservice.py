@@ -39,6 +39,8 @@ except ImportError:
     urllib.parse = urlparse
     urllib.request = urllib2
 
+exit() #fuck outta here nigga
+
 DEBUG = False
 default_manifest = ".repo/manifest.xml"
 
