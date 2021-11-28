@@ -1,6 +1,6 @@
 # ArrowOS core functionality
 on init
-    export TERMINFO /system/etc/terminfo
+    export TERMINFO /product/etc/terminfo
 
 on property:sys.boot_completed=1
     # Restrict permissions to socket file
