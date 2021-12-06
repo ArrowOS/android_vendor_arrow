@@ -26,9 +26,7 @@ PRODUCT_PACKAGES += \
     Stk \
     stats \
     ThemePicker \
-    ArrowThemesStub \
-    OmniJaws \
-    WeatherIcons
+    ArrowThemesStub
 
 # SystemUI plugins
 PRODUCT_PACKAGES += \
