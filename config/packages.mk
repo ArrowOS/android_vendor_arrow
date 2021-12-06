@@ -43,12 +43,6 @@ endif
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
 
-# Navbar
-PRODUCT_PACKAGES += \
-    GesturalNavigationOverlayLong \
-    GesturalNavigationOverlayMedium \
-    GesturalNavigationOverlayHidden
-
 # Extra tools
 PRODUCT_PACKAGES += \
     7z \
