@@ -23,6 +23,12 @@ PRODUCT_PACKAGE_OVERLAYS += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     vendor/arrow/overlay/common
 
+# APEX Compression - disable for non A/B devices
+# TODO: Fix Updater issues on A only with  APEX compression
+ifneq ($(AB_OTA_UPDATER),)
+    OVERRIDE_PRODUCT_COMPRESSED_APEX := false
+endif
+
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
