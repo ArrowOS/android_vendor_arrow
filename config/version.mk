@@ -34,8 +34,10 @@ ifeq ($(ARROW_OFFICIAL), true)
       IS_OFFICIAL=true
       ARROW_BUILD_TYPE := OFFICIAL
 
+ifeq ($(AB_OTA_UPDATER), true)
 PRODUCT_PACKAGES += \
     Updater
+endif
 
     endif
     ifneq ($(IS_OFFICIAL), true)
