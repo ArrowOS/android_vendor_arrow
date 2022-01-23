@@ -115,3 +115,7 @@ PRODUCT_PACKAGES += \
 # World APN list
 PRODUCT_PACKAGES += \
     apns-conf.xml
+
+# Repainter integration
+PRODUCT_PACKAGES += \
+    RepainterServicePriv
