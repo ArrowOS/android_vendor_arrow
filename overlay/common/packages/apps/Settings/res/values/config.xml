@@ -37,4 +37,7 @@
     <!-- Manufacturer backup settings label -->
     <string name="config_backup_settings_label" translatable="true">@string/backup_transport_setting_label</string>
 
+    <!-- Whether or not device header widget tile should display in device info page -->
+    <bool name="config_show_device_header_in_device_info">false</bool>
+
 </resources>
