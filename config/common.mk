@@ -38,7 +38,7 @@ PRODUCT_COPY_FILES += \
 
 # init file
 PRODUCT_COPY_FILES += \
-    vendor/arrow/prebuilt/common/etc/init/init.arrow-system.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.arrow-system.rc \
+    vendor/arrow/prebuilt/common/etc/init/init.arrow-system_ext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.arrow-system_ext.rc \
     vendor/arrow/prebuilt/common/etc/init/init.arrow-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.arrow-updater.rc \
     vendor/arrow/prebuilt/common/etc/init/init.openssh.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.openssh.rc
 
