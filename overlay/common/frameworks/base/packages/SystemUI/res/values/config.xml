@@ -41,4 +41,7 @@
 
     <!-- Determines whether the shell features all run on another thread. -->
     <bool name="config_enableShellMainThread">true</bool>
+
+    <!-- SystemUI vendor service, used in config_systemUIServiceComponents. -->
+    <string name="config_systemUIVendorServiceComponent">com.arrow.android.systemui.ArrowServices</string>
 </resources>
