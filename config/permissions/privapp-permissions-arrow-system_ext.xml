@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+
+    <privapp-permissions package="com.android.settings">
+        <permission name="android.permission.MANAGE_APP_LOCK" />
+    </privapp-permissions>
+
+</permissions>
