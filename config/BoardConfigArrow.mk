@@ -20,3 +20,8 @@ include vendor/arrow/config/BoardConfigQcom.mk
 endif
 
 include vendor/arrow/config/BoardConfigSoong.mk
+
+# APEX
+ifeq ($(strip $(AB_OTA_PARTITIONS) $(AB_OTA_POSTINSTALL_CONFIG)),)
+    OVERRIDE_TARGET_FLATTEN_APEX := true
+endif
