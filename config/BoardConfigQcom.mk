@@ -33,6 +33,7 @@ SOONG_CONFIG_qtidisplay += \
     headless \
     llvmsa \
     gralloc4 \
+    udfps \
     default
 
 # Set default values for qtidisplay config
@@ -40,6 +41,7 @@ SOONG_CONFIG_qtidisplay_drmpp ?= false
 SOONG_CONFIG_qtidisplay_headless ?= false
 SOONG_CONFIG_qtidisplay_llvmsa ?= false
 SOONG_CONFIG_qtidisplay_gralloc4 ?= false
+SOONG_CONFIG_qtidisplay_udfps ?= false
 SOONG_CONFIG_qtidisplay_default ?= true
 
 # Tell HALs that we're compiling an AOSP build with an in-line kernel
