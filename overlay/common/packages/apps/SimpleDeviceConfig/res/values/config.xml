@@ -23,8 +23,6 @@
         <!-- ART heap compaction for cached apps -->
         <item>activity_manager/use_compaction=true</item>
 
-        <!-- Use new privacy indicators for location -->
-        <item>privacy/location_indicators_enabled=true</item>
         <!-- Allow users to disable location indicators in Developer Options -->
         <item>privacy/location_indicator_settings_enabled=true</item>
 
@@ -98,5 +96,10 @@
         <item>device_personalization_services/NotificationAssistant__enable_service=false</item>
         <item>device_personalization_services/VisualCortex__enable=false</item>
 
+    </string-array>
+
+    <string-array name="configs_base_soft">
+        <!-- Use new privacy indicators for location -->
+        <item>privacy/location_indicators_enabled=true</item>
     </string-array>
 </resources>
