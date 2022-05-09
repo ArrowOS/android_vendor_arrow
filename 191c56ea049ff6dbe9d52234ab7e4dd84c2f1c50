@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "22565e98_c4c402b8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 71
+      },
+      "writtenOn": "2022-05-09T08:02:28Z",
+      "side": 1,
+      "message": "We don\u0027t have AiAi in our gapps. In separate gapps it can be include with rro overlays. Useless change.",
+      "revId": "191c56ea049ff6dbe9d52234ab7e4dd84c2f1c50",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    }
+  ]
+}
