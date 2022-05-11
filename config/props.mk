@@ -44,6 +44,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.storage_manager.enabled=true
 
+# SystemUI
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    dalvik.vm.systemuicompilerfilter=speed
+
 # TEMP: Enable transitional log for Privileged permissions
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.control_privapp_permissions=log
