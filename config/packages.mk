@@ -110,3 +110,7 @@ PRODUCT_PACKAGES += \
 # World APN list
 PRODUCT_PACKAGES += \
     apns-conf.xml
+
+# GameSpace
+PRODUCT_PACKAGES += \
+    GameSpace
