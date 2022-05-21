@@ -75,3 +75,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Enable SystemUIDialog volume panel
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     sys.fflag.override.settings_volume_panel_in_systemui=true
+
+# Set default refresh rate threshold
+PRODUCT_VENDOR_PROPERTIES += \
+    debug.sf.frame_rate_multiple_threshold=60
