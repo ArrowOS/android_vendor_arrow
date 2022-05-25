@@ -17,5 +17,5 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Headline / Google Sans / Lato overlay -->
-    <string name="font_googlesans_overlay" translatable="false">Google Sans / Lato</string>
+    <string name="font_googlesanslato_overlay" translatable="false">Google Sans / Lato</string>
 </resources>
