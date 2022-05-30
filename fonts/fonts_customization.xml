@@ -185,4 +185,97 @@
   <alias name="Slate" to="Slate" weight="400"/>
   <alias name="Slate-book" to="Slate" weight="300" />
   <alias name="Slate-medium" to="Slate" weight="500" />
+
+  <family customizationType="new-named-family" name="inter">
+    <font weight="100" style="normal">Inter-VF.ttf
+      <axis tag="slnt" stylevalue="0"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="wght" stylevalue="100"/>
+    </font>
+    <font weight="100" style="italic">Inter-VF.ttf
+      <axis tag="slnt" stylevalue="-10"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="wght" stylevalue="100"/>
+    </font>
+    <font weight="200" style="normal">Inter-VF.ttf
+      <axis tag="slnt" stylevalue="0"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="wght" stylevalue="200"/>
+    </font>
+    <font weight="200" style="italic">Inter-VF.ttf
+      <axis tag="slnt" stylevalue="-10"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="wght" stylevalue="200"/>
+    </font>
+    <font weight="300" style="normal">Inter-VF.ttf
+      <axis tag="slnt" stylevalue="0"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="wght" stylevalue="300"/>
+    </font>
+    <font weight="300" style="italic">Inter-VF.ttf
+      <axis tag="slnt" stylevalue="-10"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="wght" stylevalue="300"/>
+    </font>
+    <font weight="400" style="normal">Inter-VF.ttf
+      <axis tag="slnt" stylevalue="0"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="wght" stylevalue="400"/>
+    </font>
+    <font weight="400" style="italic">Inter-VF.ttf
+      <axis tag="slnt" stylevalue="-10"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="wght" stylevalue="400"/>
+    </font>
+    <font weight="500" style="normal">Inter-VF.ttf
+      <axis tag="slnt" stylevalue="0"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="wght" stylevalue="500"/>
+    </font>
+    <font weight="500" style="italic">Inter-VF.ttf
+      <axis tag="slnt" stylevalue="-10"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="wght" stylevalue="500"/>
+    </font>
+    <font weight="600" style="normal">Inter-VF.ttf
+      <axis tag="slnt" stylevalue="0"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="wght" stylevalue="600"/>
+    </font>
+    <font weight="600" style="italic">Inter-VF.ttf
+      <axis tag="slnt" stylevalue="-10"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="wght" stylevalue="600"/>
+    </font>
+    <font weight="700" style="normal">Inter-VF.ttf
+      <axis tag="slnt" stylevalue="0"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="wght" stylevalue="700"/>
+    </font>
+    <font weight="700" style="italic">Inter-VF.ttf
+      <axis tag="slnt" stylevalue="-10"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="wght" stylevalue="700"/>
+    </font>
+    <font weight="800" style="normal">Inter-VF.ttf
+      <axis tag="slnt" stylevalue="0"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="wght" stylevalue="800"/>
+    </font>
+    <font weight="800" style="italic">Inter-VF.ttf
+      <axis tag="slnt" stylevalue="-10"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="wght" stylevalue="800"/>
+    </font>
+    <font weight="900" style="normal">Inter-VF.ttf
+      <axis tag="slnt" stylevalue="0"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="wght" stylevalue="900"/>
+    </font>
+    <font weight="900" style="italic">Inter-VF.ttf
+      <axis tag="slnt" stylevalue="-10"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="wght" stylevalue="900"/>
+    </font>
+  <alias name="inter-medium" to="inter" weight="500" />
 </fonts-modification>
