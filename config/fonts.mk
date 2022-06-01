@@ -22,7 +22,8 @@ PRODUCT_COPY_FILES += \
     vendor/arrow/fonts/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml \
     vendor/arrow/fonts/GoogleSans-Italic.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/GoogleSans-Italic.ttf \
     vendor/arrow/fonts/GoogleSans-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/GoogleSans-Regular.ttf \
-    vendor/arrow/fonts/Inter-VF.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/Inter-VF.ttf
+    vendor/arrow/fonts/Inter-VF.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/Inter-VF.ttf \
+    vendor/arrow/fonts/OppoSans-En-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/OppoSans-En-Regular.ttf
 
 PRODUCT_PACKAGES += \
     FontArbutusSourceOverlay \
@@ -30,4 +31,5 @@ PRODUCT_PACKAGES += \
     FontGoogleSansOverlay \
     FontGoogleSansLatoOverlay \
     FontInterOverlay \
+    FontOppoSansOverlay \
     FontRubikRubikOverlay
