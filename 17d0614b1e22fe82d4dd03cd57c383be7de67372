@@ -16,6 +16,23 @@
       "message": "not variable font",
       "revId": "17d0614b1e22fe82d4dd03cd57c383be7de67372",
       "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "adb93dd4_85a4604c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 71
+      },
+      "writtenOn": "2022-06-18T12:11:37Z",
+      "side": 1,
+      "message": "Not VF",
+      "revId": "17d0614b1e22fe82d4dd03cd57c383be7de67372",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
     }
   ]
 }
