@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
     Copyright (C) 2020 The Proton AOSP Project
+                  2022 The LineageOS Project
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -98,5 +99,7 @@
         <item>device_personalization_services/NotificationAssistant__enable_service=false</item>
         <item>device_personalization_services/VisualCortex__enable=false</item>
 
+        <!-- Disable always screen on -->
+        <item>attention_manager_service/keep_screen_on_enabled=false</item>
     </string-array>
 </resources>
