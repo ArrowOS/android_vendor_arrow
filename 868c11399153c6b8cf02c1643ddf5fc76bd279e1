@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "72da62d8_526e335d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 71
+      },
+      "writtenOn": "2022-07-18T13:33:17Z",
+      "side": 1,
+      "message": "Not, we don`t want do anything for paid apps.",
+      "revId": "868c11399153c6b8cf02c1643ddf5fc76bd279e1",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    }
+  ]
+}
