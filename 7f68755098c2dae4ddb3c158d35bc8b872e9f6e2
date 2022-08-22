@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dd509260_f8c2626b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 519
+      },
+      "writtenOn": "2022-08-22T13:05:56Z",
+      "side": 1,
+      "message": "Any reason why ? Cause it\u0027s needed for 4.19 to compile with clang-14 which is the one used as default",
+      "revId": "7f68755098c2dae4ddb3c158d35bc8b872e9f6e2",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    }
+  ]
+}
