@@ -49,7 +49,6 @@ SOONG_CONFIG_NAMESPACES += arrowQcomVars
 SOONG_CONFIG_arrowQcomVars += \
     supports_extended_compress_format \
     uses_pre_uplink_features_netmgrd \
-    uses_qcom_bsp_legacy \
     uses_qti_camera_device \
     needs_camera_boottime_timestamp
 
@@ -67,7 +66,6 @@ SOONG_CONFIG_arrowGlobalVars_needs_netd_direct_connect_rule := $(TARGET_NEEDS_NE
 SOONG_CONFIG_arrowNvidiaVars_uses_nvidia_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
 SOONG_CONFIG_arrowQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
 SOONG_CONFIG_arrowQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD)
-SOONG_CONFIG_arrowQcomVars_uses_qcom_bsp_legacy := $(TARGET_USES_QCOM_BSP_LEGACY)
 SOONG_CONFIG_arrowQcomVars_uses_qti_camera_device := $(TARGET_USES_QTI_CAMERA_DEVICE)
 SOONG_CONFIG_arrowQcomVars_needs_camera_boottime_timestamp := $(TARGET_CAMERA_BOOTTIME_TIMESTAMP)
 
