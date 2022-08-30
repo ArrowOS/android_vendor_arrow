@@ -118,23 +118,6 @@ surfaceflinger_udfps_lib {
     },
 }
 
-soong_config_module_type {
-    name: "needs_netd_direct_connect_rule",
-    module_type: "cc_defaults",
-    config_namespace: "arrowGlobalVars",
-    bool_variables: ["needs_netd_direct_connect_rule"],
-    properties: ["cppflags"],
-}
-
-needs_netd_direct_connect_rule {
-    name: "needs_netd_direct_connect_rule_defaults",
-    soong_config_variables: {
-        needs_netd_direct_connect_rule: {
-            cppflags: ["-DNEEDS_NETD_DIRECT_CONNECT_RULE"],
-        },
-    },
-}
-
 // NVIDIA specific config modules
 soong_config_module_type {
     name: "nvidia_enhancements",
