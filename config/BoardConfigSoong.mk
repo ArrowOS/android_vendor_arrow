@@ -38,7 +38,6 @@ SOONG_CONFIG_arrowGlobalVars += \
     target_ld_shim_libs \
     target_process_sdk_version_override \
     target_surfaceflinger_udfps_lib \
-    uses_camera_parameter_lib
 
 SOONG_CONFIG_NAMESPACES += arrowNvidiaVars
 SOONG_CONFIG_arrowNvidiaVars += \
@@ -83,7 +82,6 @@ SOONG_CONFIG_arrowGlobalVars_target_inputdispatcher_skip_event_key := $(TARGET_I
 SOONG_CONFIG_arrowGlobalVars_target_ld_shim_libs := $(subst $(space),:,$(TARGET_LD_SHIM_LIBS))
 SOONG_CONFIG_arrowGlobalVars_target_process_sdk_version_override := $(TARGET_PROCESS_SDK_VERSION_OVERRIDE)
 SOONG_CONFIG_arrowGlobalVars_target_surfaceflinger_udfps_lib := $(TARGET_SURFACEFLINGER_UDFPS_LIB)
-SOONG_CONFIG_arrowGlobalVars_uses_camera_parameter_lib := $(TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY)
 ifneq ($(filter $(QSSI_SUPPORTED_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
 SOONG_CONFIG_arrowQcomVars_qcom_display_headers_namespace := vendor/qcom/opensource/commonsys-intf/display
 else
