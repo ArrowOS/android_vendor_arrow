@@ -115,3 +115,9 @@ PRODUCT_PACKAGES += \
 # World APN list
 PRODUCT_PACKAGES += \
     apns-conf.xml
+
+# QR Code Scanner Component
+ifeq ($(ARROW_GAPPS), true)
+PRODUCT_PACKAGES += \
+    QRScannerOverlay
+endif
