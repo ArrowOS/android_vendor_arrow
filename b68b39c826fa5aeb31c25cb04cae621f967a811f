@@ -16,6 +16,23 @@
       "message": "Should be define in gapps repo.",
       "revId": "b68b39c826fa5aeb31c25cb04cae621f967a811f",
       "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7d455011_f67d72d7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2022-09-04T12:06:21Z",
+      "side": 1,
+      "message": "Hold for picks, to be merged into vendor/gapps.",
+      "revId": "b68b39c826fa5aeb31c25cb04cae621f967a811f",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
     }
   ]
 }
