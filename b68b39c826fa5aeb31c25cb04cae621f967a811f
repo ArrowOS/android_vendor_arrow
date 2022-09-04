@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eac6c8db_d192cc42",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 71
+      },
+      "writtenOn": "2022-09-04T11:34:48Z",
+      "side": 1,
+      "message": "Should be define in gapps repo.",
+      "revId": "b68b39c826fa5aeb31c25cb04cae621f967a811f",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    }
+  ]
+}
