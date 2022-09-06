@@ -33,6 +33,23 @@
       "message": "Hold for picks, to be merged into vendor/gapps.",
       "revId": "b68b39c826fa5aeb31c25cb04cae621f967a811f",
       "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d9bf0000_4d8fbb83",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2022-09-06T05:29:14Z",
+      "side": 1,
+      "message": "now inside vendor/gapps",
+      "revId": "b68b39c826fa5aeb31c25cb04cae621f967a811f",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
     }
   ]
 }
