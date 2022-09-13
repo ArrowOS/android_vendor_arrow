@@ -13,7 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License
 
+ifneq ($(TARGET_USES_KERNEL_PLATFORM),true)
 include vendor/arrow/config/BoardConfigKernel.mk
+endif
 
 ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
 include vendor/arrow/config/BoardConfigQcom.mk

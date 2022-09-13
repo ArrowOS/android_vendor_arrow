@@ -68,6 +68,7 @@
 #   TARGET_FORCE_PREBUILT_KERNEL       = Optional, use TARGET_PREBUILT_KERNEL even if
 #                                          kernel sources are present
 
+ifneq ($(TARGET_USES_KERNEL_PLATFORM),true)
 ifneq ($(TARGET_NO_KERNEL),true)
 
 ## Externally influenced variables
@@ -561,3 +562,4 @@ dtboimage: $(INSTALLED_DTBOIMAGE_TARGET)
 dtbimage: $(INSTALLED_DTBIMAGE_TARGET)
 
 endif # TARGET_NO_KERNEL
+endif # TARGET_USES_KERNEL_PLATFORM
