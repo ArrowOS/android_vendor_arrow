@@ -29,6 +29,7 @@ $(foreach v,$(EXPORT_TO_SOONG),$(eval $(call addVar,$(v))))
 SOONG_CONFIG_NAMESPACES += arrowGlobalVars
 SOONG_CONFIG_arrowGlobalVars += \
     additional_gralloc_10_usage_bits \
+    gralloc_handle_has_reserved_size \
     target_init_vendor_lib \
     target_inputdispatcher_skip_event_key \
     target_ld_shim_libs \
@@ -51,6 +52,7 @@ SOONG_CONFIG_arrowQcomVars += \
 endif
 
 # Soong bool variables
+SOONG_CONFIG_arrowGlobalVars_gralloc_handle_has_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE)
 SOONG_CONFIG_arrowNvidiaVars_uses_nvidia_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
 SOONG_CONFIG_arrowQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
 SOONG_CONFIG_arrowQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD)
@@ -58,6 +60,7 @@ SOONG_CONFIG_arrowGlobalVars_uses_egl_display_array := $(TARGET_USES_EGL_DISPLAY
 
 # Set default values
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?= 0
+TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE ?= false
 TARGET_INIT_VENDOR_LIB ?= vendor_init
 TARGET_INPUTDISPATCHER_SKIP_EVENT_KEY ?= 0
 TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY ?= libcamera_parameters
