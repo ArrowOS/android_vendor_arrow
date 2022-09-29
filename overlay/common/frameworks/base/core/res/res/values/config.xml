@@ -84,6 +84,10 @@
     <!-- Turn on dark theme by default -->
     <integer name="config_defaultNightMode">2</integer>
 
+    <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
+         in hardware. -->
+    <bool name="config_setColorTransformAccelerated">true</bool>
+
     <!-- The component name, flattened to a string, for the default autofill service
          to  enabled for an user. This service must be trusted, as it can be activated
          without explicit consent of the user. If no autofill service with the
