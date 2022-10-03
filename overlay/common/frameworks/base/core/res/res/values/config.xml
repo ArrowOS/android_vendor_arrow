@@ -158,4 +158,7 @@
 
     <!-- Whether or not to enable the lock screen entry point for the QR code scanner. -->
     <bool name="config_enableQrCodeScannerOnLockScreen">true</bool>
+
+    <!-- Default component for QR code scanner -->
+    <string name="config_defaultQrCodeComponent">com.android.camera2/org.lineageos.quickreader.ScannerActivity</string>
 </resources>
