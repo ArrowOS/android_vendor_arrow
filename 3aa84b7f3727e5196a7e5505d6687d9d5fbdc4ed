@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ee71370e_b9fa0fa1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 588
+      },
+      "writtenOn": "2022-10-05T04:26:27Z",
+      "side": 1,
+      "message": "what about vanilla ones?",
+      "revId": "3aa84b7f3727e5196a7e5505d6687d9d5fbdc4ed",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    }
+  ]
+}
