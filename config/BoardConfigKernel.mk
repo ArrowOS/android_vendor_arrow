@@ -29,6 +29,7 @@
 #   TARGET_KERNEL_CLANG_COMPILE        = Compile kernel with clang, defaults to true
 #   TARGET_KERNEL_NEW_GCC_COMPILE      = Compile kernel with newer version GCC, defaults to false
 #   TARGET_KERNEL_LLVM_BINUTILS        = Use LLVM binutils, defaults to true
+#   TARGET_KERNEL_USE_IAS              = To use LLVM's Integrated Assembler
 #   TARGET_KERNEL_VERSION              = Reported kernel version in top level kernel
 #                                        makefile. Can be overriden in device trees
 #                                        in the event of prebuilt kernel.
@@ -175,6 +176,23 @@ endif
         ifneq ($(TARGET_KERNEL_LLVM_BINUTILS), false)
             KERNEL_MAKE_FLAGS += LD=$(CLANG_PREBUILTS)/bin/ld.lld
             KERNEL_MAKE_FLAGS += AR=$(CLANG_PREBUILTS)/bin/llvm-ar
+        endif
+    endif
+    # Set the full path to LLVM Binutils for GCC users if needed.
+    ifneq ($(TARGET_KERNEL_NEW_GCC_COMPILE), false)
+        ifneq ($(TARGET_KERNEL_LLVM_BINUTILS), false)
+            KERNEL_MAKE_FLAGS += LD=$(GCC_PREBUILTS)/aarch64/aarch64-elf/bin/ld.lld
+            KERNEL_MAKE_FLAGS += AR=$(GCC_PREBUILTS)/aarch64/aarch64-elf/bin/llvm-ar
+            KERNEL_MAKE_FLAGS += NM=$(GCC_PREBUILTS)/aarch64/aarch64-elf/bin/llvm-nm
+            KERNEL_MAKE_FLAGS += OBJCOPY=$(GCC_PREBUILTS)/aarch64/aarch64-elf/bin/llvm-objcopy
+            KERNEL_MAKE_FLAGS += OBJDUMP=$(GCC_PREBUILTS)/aarch64/aarch64-elf/bin/llvm-objdump
+            KERNEL_MAKE_FLAGS += OBJSIZE=$(GCC_PREBUILTS)/aarch64/aarch64-elf/bin/llvm-objsize
+            KERNEL_MAKE_FLAGS += STRIP=$(GCC_PREBUILTS)/aarch64/aarch64-elf/bin/llvm-strip
+            ifneq ($(TARGET_KERNEL_USE_IAS), false)
+                KERNEL_MAKE_FLAGS += AS=$(GCC_PREBUILTS)/aarch64/aarch64-elf/bin/llvm-as
+            else
+                KERNEL_MAKE_FLAGS += AS=$(GCC_PREBUILTS)/aarch64/aarch64-elf/bin/aarch64-elf-as
+            endif
         endif
     endif
 else
