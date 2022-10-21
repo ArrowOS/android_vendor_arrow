@@ -20,6 +20,7 @@ PRODUCT_PACKAGES += \
     DuckDuckGo \
     ExactCalculator \
     LatinIME \
+    ParallelSpace \
     messaging \
     SimpleGallery \
     Stk \
