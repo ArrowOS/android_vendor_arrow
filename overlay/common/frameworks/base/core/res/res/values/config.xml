@@ -30,6 +30,7 @@
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService.ActiveReceiver</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService.Receiver</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService.SecretCodeReceiver</item>
+        <item>com.google.android.settings.intelligence/com.google.android.settings.intelligence.modules.batterywidget.impl.BatteryAppWidgetProvider</item>
     </string-array>
 
     <!-- Set this to true to enable the platform's auto-power-save modes like doze and
