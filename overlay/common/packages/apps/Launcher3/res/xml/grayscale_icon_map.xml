@@ -1202,6 +1202,7 @@
     <icon drawable="@drawable/themed_icon_vodafone" package="com.emeint.android.myservices"/>
     <icon drawable="@drawable/themed_icon_vodafone" package="com.vodafone.mcare"/>
     <icon drawable="@drawable/themed_icon_vodafone" package="com.vodafone.selfservis"/>
+    <icon drawable="@drawable/themed_icon_vodafone" package="om.vodafone.mva"/>
     <icon drawable="@drawable/themed_icon_volumestyles" package="com.tombayley.volumepanel"/>
     <icon drawable="@drawable/themed_icon_voot" package="com.tv.v18.viola"/>
     <icon drawable="@drawable/themed_icon_vpn_govpn" package="com.free.vpn.turbo.fast.secure.govpn"/>
