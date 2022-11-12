@@ -49,7 +49,7 @@ PRODUCT_PACKAGES += \
 
 # Themes
 PRODUCT_PACKAGES += \
-    AndroidBlackThemeOverlay
+    DarkBgOverlay
 
 # Extra tools
 PRODUCT_PACKAGES += \
