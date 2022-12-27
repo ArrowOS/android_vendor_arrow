@@ -28,8 +28,7 @@ PRODUCT_PACKAGES += \
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI \
-    Launcher3QuickStep
+    SystemUI
 
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
