@@ -24,8 +24,7 @@ PRODUCT_PACKAGES += \
     SimpleGallery \
     Stk \
     stats \
-    ThemePicker \
-    ArrowThemesStub
+    ThemePicker
 
 ifeq ($(PRODUCT_TYPE), go)
 PRODUCT_PACKAGES += \
