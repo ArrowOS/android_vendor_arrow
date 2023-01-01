@@ -16,6 +16,7 @@
      limitations under the License.
 -->
 <resources>
+    <!-- Package of the stub apk containing the themes descriptions -->
     <string name="themes_stub_package" translatable="false">net.arrowos.customisation</string>
 
     <!-- List of packages whose icons are used to preview the icon shape for a theme. These are
