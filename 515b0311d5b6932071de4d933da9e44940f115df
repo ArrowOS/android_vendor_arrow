@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7d512044_bb5d7eb5",
+        "filename": "config/common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 353
+      },
+      "writtenOn": "2023-01-04T08:19:43Z",
+      "side": 1,
+      "message": "Move to config/packages.mk",
+      "revId": "515b0311d5b6932071de4d933da9e44940f115df",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    }
+  ]
+}
