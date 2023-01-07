@@ -15,6 +15,7 @@
 
 # Required packages
 PRODUCT_PACKAGES += \
+    ArrowThemesStub \
     BluetoothExt \
     SimpleCalendar \
     DuckDuckGo \
