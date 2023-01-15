@@ -38,7 +38,8 @@ SOONG_CONFIG_arrowGlobalVars += \
     target_ld_shim_libs \
     target_surfaceflinger_udfps_lib \
     uses_egl_display_array \
-    uses_oplus_camera
+    uses_oplus_camera \
+    uses_nothing_camera
 
 SOONG_CONFIG_NAMESPACES += arrowNvidiaVars
 SOONG_CONFIG_arrowNvidiaVars += \
@@ -63,6 +64,7 @@ SOONG_CONFIG_arrowQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_
 SOONG_CONFIG_arrowQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD)
 SOONG_CONFIG_arrowGlobalVars_uses_egl_display_array := $(TARGET_USES_EGL_DISPLAY_ARRAY)
 SOONG_CONFIG_arrowGlobalVars_uses_oplus_camera := $(TARGET_USES_OPLUS_CAMERA)
+SOONG_CONFIG_arrowGlobalVars_uses_nothing_camera := $(TARGET_USES_NOTHING_CAMERA)
 
 # Set default values
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?= 0
