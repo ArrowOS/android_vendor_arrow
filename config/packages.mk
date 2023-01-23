@@ -19,6 +19,7 @@ PRODUCT_PACKAGES += \
     SimpleCalendar \
     DuckDuckGo \
     ExactCalculator \
+    GameSpace \
     LatinIME \
     ParallelSpace \
     messaging \
