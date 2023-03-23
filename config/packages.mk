@@ -55,11 +55,7 @@ PRODUCT_PACKAGES += \
 
 # Themes
 PRODUCT_PACKAGES += \
-    AndroidBlackThemeOverlay \
-    AndroidClearThemeOverlay \
-    AndroidVividThemeOverlay \
-    AndroidSnowPaintDropThemeOverlay \
-    AndroidEspressoThemeOverlay
+    AndroidBlackThemeOverlay
 
 # Extra tools
 PRODUCT_PACKAGES += \
