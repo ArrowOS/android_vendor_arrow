@@ -20,6 +20,7 @@ PRODUCT_PACKAGES += \
     DuckDuckGo \
     ExactCalculator \
     LatinIME \
+    Launcher3QuickStep \
     ParallelSpace \
     messaging \
     Seedvault \
@@ -28,20 +29,6 @@ PRODUCT_PACKAGES += \
     stats \
     ThemePicker \
     TouchGestures
-
-ifeq ($(PRODUCT_TYPE), go)
-PRODUCT_PACKAGES += \
-    ArrowLauncherGo
-
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    ArrowLauncherGo
-else
-PRODUCT_PACKAGES += \
-    ArrowLauncher
-
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    ArrowLauncher
-endif
 
 # SystemUI plugins
 PRODUCT_PACKAGES += \
