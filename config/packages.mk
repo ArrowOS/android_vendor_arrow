@@ -27,8 +27,7 @@ PRODUCT_PACKAGES += \
     SimpleGallery \
     Stk \
     stats \
-    ThemePicker \
-    TouchGestures
+    ThemePicker
 
 # SystemUI plugins
 PRODUCT_PACKAGES += \
