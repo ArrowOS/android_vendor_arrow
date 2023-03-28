@@ -48,10 +48,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
 
-# TEMP: Enable transitional log for Privileged permissions
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.control_privapp_permissions=log
-
 # Tethering - allow without requiring a provisioning app
 # (for devices that check this)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
