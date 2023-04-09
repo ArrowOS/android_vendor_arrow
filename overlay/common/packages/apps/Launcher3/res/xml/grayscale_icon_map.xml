@@ -381,6 +381,7 @@
     <icon drawable="@drawable/themed_icon_dolbyatmos" package="com.oneplus.sound.tuner"/>
     <icon drawable="@drawable/themed_icon_dolbyatmos" package="com.atmos.daxappui"/>
     <icon drawable="@drawable/themed_icon_dolbyatmos" package="com.dolby.daxappui"/>
+    <icon drawable="@drawable/themed_icon_dolbyatmos" package="com.motorola.dolby.dolbyui"/>
     <icon drawable="@drawable/themed_icon_doodle" package="xyz.zedler.patrick.doodle"/>
     <icon drawable="@drawable/themed_icon_doppelreim" package="com.double_rhyme.hoenickf.doppelreim"/>
     <icon drawable="@drawable/themed_icon_dota_underlords" package="com.valvesoftware.underlords"/>
@@ -742,6 +743,8 @@
     <icon drawable="@drawable/themed_icon_money_manager" package="com.realbyteapps.moneymanagerfree"/>
     <icon drawable="@drawable/themed_icon_moon_reader" package="com.flyersoft.moonreader"/>
     <icon drawable="@drawable/themed_icon_moon_reader_pro" package="com.flyersoft.moonreaderp"/>
+    <icon drawable="@drawable/themed_icon_moto_camera" package="com.motorola.camera3"/>
+    <icon drawable="@drawable/themed_icon_moto_camera" package="com.motorola.cameraone"/>
     <icon drawable="@drawable/themed_icon_mtmanager" package="bin.mt.plus"/>
     <icon drawable="@drawable/themed_icon_mtmanager" package="bin.mt.plus.canary"/>
     <icon drawable="@drawable/themed_icon_mts" package="ru.mts.mymts"/>
