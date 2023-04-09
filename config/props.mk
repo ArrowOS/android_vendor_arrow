@@ -75,3 +75,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Set default refresh rate threshold
 PRODUCT_VENDOR_PROPERTIES += \
     debug.sf.frame_rate_multiple_threshold=60
+
+# Monochromatic monet theme style
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.sysui.monochromatic=true
