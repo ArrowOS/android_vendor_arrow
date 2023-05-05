@@ -25,27 +25,28 @@ function gerritpush() {
     local PREFIX="ArrowOS/"
     local branch=arrow-13.1
     local ref=for
-    local options="%"
+    local push_options=""
 
     while [ "$#" -gt 0 ]; do
       case "$1" in
         -t)
-            options+="topic=$2,"; shift
+            push_options+=" -o \"topic=$2\""; shift
             ;;
         -c)
-            options+="l=Code-Review$2,"; shift
+            push_options+=" -o \"l=Code-Review$2\""; shift
             ;;
         -v)
-            options+="l=Verified$2,"; shift
+            push_options+=" -o \"l=Verified$2\""; shift
             ;;
         -p)
-            options+="private,"
+            push_options+=" -o private"
             ;;
         -w)
-            options+="wip,"
+            push_options+=" -o wip"
             ;;
         -d)
             ref=heads
+            push_options+=" -o skip-validation"
             ;;
         -b)
             branch="$2"; shift
@@ -71,7 +72,7 @@ function gerritpush() {
       read -r ARROW_GERRIT_USER
     fi
     export ARROW_GERRIT_USER
-    git push "ssh://$ARROW_GERRIT_USER@$GERRIT_URL:29418/$PREFIX$name" "HEAD:refs/$ref/$branch$options"
+    $(eval git push$push_options "ssh://$ARROW_GERRIT_USER@$GERRIT_URL:29418/$PREFIX$name" "HEAD:refs/$ref/$branch")
 }
 
 if [ -z ${CCACHE_EXEC} ]; then
