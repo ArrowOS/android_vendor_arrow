@@ -19,8 +19,17 @@
 <resources>
     <bool name="def_wifi_on">true</bool>
 
+    <bool name="def_screen_brightness_automatic_mode">true</bool>
+
     <string name="def_backup_transport">com.google.android.gms/.backup.BackupTransportService</string>
 
+    <!-- Default for UI touch sounds enabled -->
+    <bool name="def_sound_effects_enabled">false</bool>
+
+    <!-- Default setting for Settings.Global.MOBILE_DATA_ALWAYS_ON -->
+    <bool name="def_mobile_data_always_on">false</bool>
+
+    <!-- Default for Settings.Secure.ONE_HANDED_MODE_ENABLED -->
     <bool name="def_one_handed_mode_enabled">true</bool>
 
     <!-- Initial value for the Settings.Secure.IMMERSIVE_MODE_CONFIRMATIONS setting,
