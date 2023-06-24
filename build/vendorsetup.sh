@@ -48,6 +48,9 @@ function gerritpush() {
             ref=heads
             push_options+=" -o skip-validation"
             ;;
+        -f)
+            push_options+=" -f"
+            ;;
         -b)
             branch="$2"; shift
             ;;
