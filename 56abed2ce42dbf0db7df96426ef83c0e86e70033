@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b15f8971_e63eb0e2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 353
+      },
+      "writtenOn": "2023-06-24T13:53:27Z",
+      "side": 1,
+      "message": "Needed to build Aperture Camera\n\n`error: packages/apps/Aperture/app/Android.bp:7:1: \"Aperture\" depends on undefined module \"aapt_version_code_defaults\"`\n\nhttps://github.com/LineageOS/android_packages_apps_Aperture/commit/aca4ae5c172a8ab8f3e0079da3c4d583db12b078",
+      "revId": "56abed2ce42dbf0db7df96426ef83c0e86e70033",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    }
+  ]
+}
