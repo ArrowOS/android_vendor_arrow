@@ -276,6 +276,7 @@
     <icon drawable="@drawable/themed_icon_camera" package="net.sourceforge.opencamera"/>
     <icon drawable="@drawable/themed_icon_camera" package="com.samsung.android.scan3d"/>
     <icon drawable="@drawable/themed_icon_camera" package="com.samsung.android.ruler"/>
+    <icon drawable="@drawable/themed_icon_camera" package="com.oppo.camera" />
     <icon drawable="@drawable/themed_icon_camera" package="com.oplus.camera" />
     <icon drawable="@drawable/themed_icon_camera" package="com.google.android.apps.cameralite"/>
     <icon drawable="@drawable/themed_icon_camscanner" package="com.intsig.camscanner"/>
@@ -848,6 +849,7 @@
     <icon drawable="@drawable/themed_icon_photon_camera" package="com.particlesdevs.photoncamera"/>
     <icon drawable="@drawable/themed_icon_photoroom" package="com.photoroom.app"/>
     <icon drawable="@drawable/themed_icon_photos" package="com.google.android.apps.photos"/>
+    <icon drawable="@drawable/themed_icon_photos" package="com.oppo.gallery3d"/>
     <icon drawable="@drawable/themed_icon_photos" package="com.android.gallery3d"/>
     <icon drawable="@drawable/themed_icon_photos" package="com.android.gallery"/>
     <icon drawable="@drawable/themed_icon_phub" package="com.app.pornhub"/>
