@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Allow vendor/extra to override any property by setting it first
+$(call inherit-product-if-exists, vendor/extra/product.mk)
+
 include vendor/arrow/config/version.mk
 
 PRODUCT_PACKAGE_OVERLAYS += \
