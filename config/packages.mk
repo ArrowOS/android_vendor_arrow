@@ -37,7 +37,8 @@ PRODUCT_PACKAGES += \
 ifeq ($(TARGET_INCLUDE_PIXEL_CHARGER),true)
 PRODUCT_PACKAGES += \
     charger_res_images \
-    product_charger_res_images
+    product_charger_res_images \
+    product_charger_res_images_vendor
 endif
 
 # BtHelper
