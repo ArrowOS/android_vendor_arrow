@@ -37,7 +37,8 @@ SOONG_CONFIG_arrowGlobalVars += \
     target_inputdispatcher_skip_event_key \
     target_ld_shim_libs \
     target_surfaceflinger_udfps_lib \
-    uses_egl_display_array
+    uses_egl_display_array \
+    uses_miui_camera
 
 SOONG_CONFIG_NAMESPACES += arrowNvidiaVars
 SOONG_CONFIG_arrowNvidiaVars += \
@@ -83,3 +84,4 @@ SOONG_CONFIG_arrowQcomVars_qcom_display_headers_namespace := vendor/qcom/opensou
 else
 SOONG_CONFIG_arrowQcomVars_qcom_display_headers_namespace := $(QCOM_SOONG_NAMESPACE)/display
 endif
+SOONG_CONFIG_arrowGlobalVars_target_uses_miui_camera := $(TARGET_USES_MIUI_CAMERA)
