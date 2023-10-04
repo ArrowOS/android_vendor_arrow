@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e9fc9983_37fc4c13",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 353
+      },
+      "writtenOn": "2023-10-04T12:24:19Z",
+      "side": 1,
+      "message": "Tested on RMX2020 with AIDL Health HAL which supports charger on vendor. Works perfectly!",
+      "revId": "b7ee4097b7eaa73692d7557fcd517eca01859266",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    }
+  ]
+}
