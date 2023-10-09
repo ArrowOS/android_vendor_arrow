@@ -43,7 +43,7 @@ DEBUG = False
 default_manifest = ".repo/manifest.xml"
 
 custom_local_manifest = ".repo/local_manifests/roomservice.xml"
-custom_default_revision = "arrow-13.1"
+custom_default_revision = "arrow-14.0"
 custom_dependencies = "arrow.dependencies"
 org_manifest = "ArrowOS-Devices"  # leave empty if org is provided in manifest
 org_display = "ArrowOS-Devices"  # needed for displaying

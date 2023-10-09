@@ -23,7 +23,7 @@ function gerritpush() {
     local GERRIT_URL=review.arrowos.net
     local MANIFEST_PATH="$ANDROID_BUILD_TOP/manifest/arrow.xml"
     local PREFIX="ArrowOS/"
-    local branch=arrow-13.1
+    local branch=arrow-14.0
     local ref=for
     local push_options=""
 

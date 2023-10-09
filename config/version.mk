@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ARROW_MOD_VERSION = v13.1
+ARROW_MOD_VERSION = v14.0
 ARROW_BUILD_TYPE := UNOFFICIAL
 ARROW_BUILD_ZIP_TYPE := VANILLA
 
