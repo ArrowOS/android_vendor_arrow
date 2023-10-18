@@ -3149,6 +3149,9 @@
   <apn carrier="FarEasTone" mcc="466" mnc="01" apn="internet" type="default,supl" />
   <apn carrier="遠傳電信(Far EasTone) (Fetnet01)" mcc="466" mnc="01" apn="fetnet01" proxy="210.241.199.199" port="80" type="default,supl" />
   <apn carrier="FarEasTone MMS" mcc="466" mnc="01" apn="fetnet01" mmsc="http://mms" mmsproxy="210.241.199.199" mmsport="9201" type="mms" />
+  <apn carrier="亞太電信(APT) (UT)" carrier_id="1882" mcc="466" mnc="05" apn="gtnet" type="xcap" protocol="IPV4V6" roaming_protocol="IPV4V6" user_visible="false" />
+  <apn carrier="亞太電信(APT) (Internet)" carrier_id="1882" mcc="466" mnc="05" apn="gtnet" type="default,ia,supl" protocol="IPV4V6" />
+  <apn carrier="亞太電信(APT) (IMS)" carrier_id = "1882" mcc="466" mnc="05" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" user_visible="false" />
   <apn carrier="KGT" mcc="466" mnc="88" apn="internet" type="default,supl" />
   <apn carrier="KGT MMS" mcc="466" mnc="88" apn="kgtmms" mmsc="http://mms.kgtmms.net.tw/mms/wapenc" mmsproxy="172.28.33.5" mmsport="8080" type="mms" />
   <apn carrier="T Star-Internet" mcc="466" mnc="89" apn="internet" type="default,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
