@@ -169,10 +169,10 @@
 
     <!-- Build properties from a GMS certified device against current platform SPL level -->
     <string-array name="config_certifiedBuildProperties" translatable="false">
-        <item>ASUS_X00HD_4</item> <!-- Build.DEVICE -->
-        <item>WW_Phone</item>     <!-- Build.PRODUCT -->
-        <item>ASUS_X00HD</item>   <!-- Build.MODEL -->
-        <item>asus/WW_Phone/ASUS_X00HD_4:7.1.1/NMF26F/14.2016.1801.372-20180119:user/release-keys</item> <!-- Build.FINGERPRINT -->
+        <item>sailfish</item>   <!-- Build.DEVICE -->
+        <item>sailfish</item>   <!-- Build.PRODUCT -->
+        <item>Pixel</item>      <!-- Build.MODEL -->
+        <item>google/sailfish/sailfish:8.1.0/OPM2.171019.029/4657601:user/release-keys</item> <!-- Build.FINGERPRINT -->
     </string-array>
 
     <!-- Name of the font family to use in the default lockscreen clock -->
