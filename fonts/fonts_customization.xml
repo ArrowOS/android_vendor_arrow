@@ -141,6 +141,10 @@
     </font>
   </family>
 
+  <family customizationType="new-named-family" name="google-sans-clock">
+    <font>GoogleSansClock-Regular.ttf</font>
+  </family>
+
   <family customizationType="new-named-family" name="arbutus-slab">
     <font weight="400" style="normal">ArbutusSlab-Regular.ttf</font>
   </family>
